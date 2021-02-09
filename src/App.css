@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Karla:wght@400;500;700&family=Montserrat:wght@500&display=swap");
+:root {
+  --white-bgcolor: #f5f3f4;
+  --light-blue: #bdd5ea;
+  --blue: #22577a;
+  --dark-blue: #003049;
+  --light-orange: #ffd69a;
+  --orange: #f9a72a;
+}
