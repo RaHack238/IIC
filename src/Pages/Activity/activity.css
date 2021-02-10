@@ -5,7 +5,7 @@
 
 .activityIcons{
       margin-top: 5rem;
-      width: 55vw;
+      width: 60vw;
       height: 70vh;
       background-color: var(--light-blue);
       margin-right: 1.5rem;
@@ -16,15 +16,13 @@
 
 .updates{
       margin-top: 5rem;
-      width: 45vw;
-      height: 70vh;
+      width: 40vw;
       background-color: var(--light-orange);
       margin-left: 1.5rem;
       border-top-left-radius: 35px;
       border-bottom-left-radius: 35px;
       display: flex;
       justify-content: center;
-      align-items: center;
 }
 
 .individualUpdates{
@@ -32,4 +30,11 @@
       border-style: solid;
       border-color: var(--dark-blue);
       border-radius: 35px;
+      margin: 30px;
+      padding: 20px 0 0 0
+}
+hr{
+      color: var(--dark-blue);
+      height: 3px !important;
+      opacity: 1;
 }
