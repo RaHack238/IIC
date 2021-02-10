@@ -11,11 +11,10 @@
 	margin-right: 1.5rem;
 	border-top-right-radius: 35px;
 	border-bottom-right-radius: 35px;
-      display: flex;
-      padding-top:2rem;
-      flex-direction: column;
-      align-content: space-between;
-      
+	display: flex;
+	padding-top: 2rem;
+	flex-direction: column;
+	align-content: space-between;
 }
 
 .updates {
@@ -34,7 +33,7 @@
 	border-style: solid;
 	border-color: var(--dark-blue);
 	border-radius: 35px;
-      max-height: 45vh;
+	max-height: 45vh;
 	overflow: auto;
 	margin: 30px;
 	padding: 20px 0 0 0;
@@ -43,4 +42,10 @@ hr {
 	color: var(--dark-blue);
 	height: 3px !important;
 	opacity: 1;
+}
+
+.iconDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
