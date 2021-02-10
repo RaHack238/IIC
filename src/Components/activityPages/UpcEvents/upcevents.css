@@ -1,5 +1,5 @@
 .individualComponents {
-	background-color: var(--light-blue);
+	background-color: var(--opaque-blue);
 	position: fixed;
 	bottom: 0;
 	width: 100%;
