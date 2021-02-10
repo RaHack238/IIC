@@ -4,10 +4,6 @@
       align-items: center;
 }
 
-.individualComponents{
-      height:80vh;
-}
-
 .cross{
       align-self: flex-end  !important;
       width: 2rem;

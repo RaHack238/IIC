@@ -3,7 +3,7 @@ import { ReactComponent as Cross } from '../../vectors/cross.svg';
 import upcoming from '../../vectors/upcoming2.svg';
 import './upcevents.css';
 
-const UpcEvents = ({ upcevents, setView }) => (
+const UpcEvents = ({ upcevents, setView, setBlur }) => (
 	<div
 		className='individualComponents'
 		style={{ display: upcevents ? 'block' : 'none' }}
@@ -12,12 +12,13 @@ const UpcEvents = ({ upcevents, setView }) => (
 			className='cross'
 			onClick={() => {
 				setView({ upcevents: false });
+				setBlur(false);
 			}}
 		/>
 		<h2 style={{ color: 'var(--orange)' }}>Upcoming Events</h2>
 		<div className='upce-content'>
 			<img src={upcoming} className='upcoming' />
-			<div style={{display: 'inline-block', width: '65vw'}}>
+			<div style={{ display: 'inline-block', width: '65vw' }}>
 				<span>COMING SOON</span>
 			</div>
 		</div>

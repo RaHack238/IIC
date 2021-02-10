@@ -1,9 +1,8 @@
 import { React } from 'react';
-import { ReactComponent as Cross }  from "../../vectors/cross.svg";
-import './incubation.css';
-import incubate from '../../vectors/incubation2.svg';
+import { ReactComponent as Cross } from '../../vectors/cross.svg';
+import mic from '../../vectors/mic2.svg';
 
-const Incubation = ({ incubationView, setView, setBlur }) => {
+const MicView = ({ micView, setView, setBlur }) => {
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
@@ -14,12 +13,12 @@ const Incubation = ({ incubationView, setView, setBlur }) => {
 		<div
 			className='individualComponents'
 			id='individualSize'
-			style={{ display: incubationView ? 'block' : 'none' }}
+			style={{ display: micView ? 'block' : 'none' }}
 		>
 			<Cross
 				className='cross'
 				onClick={() => {
-					setView({ incubationView: false });
+					setView({ micView: false });
 					setBlur(false);
 				}}
 			/>
@@ -28,7 +27,7 @@ const Incubation = ({ incubationView, setView, setBlur }) => {
 
 			<div className='layout'>
 				<div className='images'>
-					<img src={incubate} alt='incubate-logo' style={imgStyle} />
+					<img src={mic} alt='incubate-logo' style={imgStyle} />
 				</div>
 
 				<div className='content'>
@@ -66,4 +65,4 @@ const Incubation = ({ incubationView, setView, setBlur }) => {
 	);
 };
 
-export default Incubation;
+export default MicView;
