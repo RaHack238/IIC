@@ -22,3 +22,7 @@
 .navbar__right {
   flex: 1;
 }
+.main__council__window {
+  width: 100%;
+  padding: 10px 30px;
+}
