@@ -7,6 +7,8 @@ import IdeaFunnel from '../../Components/activityPages/IdeaFunnel/ideafunnel';
 import AcademicProgram from '../../Components/activityPages/AcademicProgram/academicProgram';
 import StartupLabs from '../../Components/activityPages/StartupLabs/startup';
 import Incubation from '../../Components/activityPages/Incubation/incubation';
+import FieldVisit from '../../Components/activityPages/fieldVisit/fieldVisit'
+import Workshops from '../../Components/activityPages/Workshops/workshops'
 
 const Activity = () => {
 	const [view, setView] = useState({
@@ -74,8 +76,13 @@ const Activity = () => {
 			<div>
 				<Incubation incubationView={view.incubationView} setView={setView} />
 			</div>
+                  <div>
+				<Workshops workshopView={view.workshopView} setView={setView} />
+			</div>
 			<div>
 				<UpcEvents upcevents={view.upcevents} setView={setView} />
+                  </div>
+                  <div>
 				<FieldVisit fieldVisits={view.fieldVisits} setView={setView} />
 			</div>
 		</div>
