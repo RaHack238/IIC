@@ -4,13 +4,32 @@
 }
 
 .activityIcons{
+      margin-top: 5rem;
       width: 55vw;
-      height: 60vh;
-      background-color: #BDD5EA;
+      height: 70vh;
+      background-color: var(--light-blue);
+      margin-right: 1.5rem;
+      border-top-right-radius: 35px;
+      border-bottom-right-radius: 35px;
+      
 }
 
 .updates{
+      margin-top: 5rem;
       width: 45vw;
-      height: 60vh;
-      background-color: #FFD69A;
+      height: 70vh;
+      background-color: var(--light-orange);
+      margin-left: 1.5rem;
+      border-top-left-radius: 35px;
+      border-bottom-left-radius: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.individualUpdates{
+      background-color: var(--light-blue);
+      border-style: solid;
+      border-color: var(--dark-blue);
+      border-radius: 35px;
 }
