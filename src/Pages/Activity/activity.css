@@ -1,0 +1,16 @@
+.layout{
+      display: flex;
+      flex-direction: row;
+}
+
+.activityIcons{
+      width: 55vw;
+      height: 60vh;
+      background-color: #BDD5EA;
+}
+
+.updates{
+      width: 45vw;
+      height: 60vh;
+      background-color: #FFD69A;
+}
