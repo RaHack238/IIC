@@ -1,0 +1,9 @@
+.individualComponents {
+	background-color: var(--light-blue);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 30vh;
+	z-index: 1;
+	border-radius: 35px 35px 0 0;
+}

@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import './activity.css';
 import ActivityIcons from "../../Components/activityIcons/activityIcons";
+import UpcEvents from '../../Components/activityPages/UpcEvents/UpcEvents'
 
 const Activity = () => {
 	
@@ -54,10 +55,9 @@ const Activity = () => {
 					</div>
 				</div>
 			</div>
-			<div
-				className='individualComponents'
-				style={{ display: view.ifView ? 'block' : 'none' }}
-			></div>
+			<div>
+				<UpcEvents upcevents={view.upcevents} setView={setView} />
+			</div>
 		</div>
 	);
 };
