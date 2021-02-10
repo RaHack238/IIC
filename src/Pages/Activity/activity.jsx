@@ -35,25 +35,19 @@ const Activity = () => {
 	return (
 		<div className='layout'>
 			<div className='activityIcons'>
-				<div
-					style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-				>
+				<div className='iconDiv'>
 					<img src={funnel} alt='idea-funnel' style={imgStyle} />
 					<img src={ignite} alt='ignite' style={imgStyle1} />
 					<img src={acdprogram} alt='acdprogram' style={imgStyle1} />
 					<img src={startuplab} alt='startup-lab' style={imgStyle} />
 				</div>
-				<div
-					style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-				>
+				<div className='iconDiv'>
 					<img src={incubation} alt='incubation' style={imgStyle} />
 					<img src={workshops} alt='workshops' style={imgStyle} />
 					<img src={talks} alt='talks' style={imgStyle} />
 					<img src={mic} alt='mic-activity' style={imgStyle} />
 				</div>
-				<div
-					style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
-				>
+				<div className='iconDiv'>
 					<img src={visits} alt='field-visits' style={imgStyle1} />
 					<img src={upcevents} alt='upc-events' style={imgStyle1} />
 				</div>
