@@ -1,40 +1,41 @@
-.layout{
-      display: flex;
-      flex-direction: row;
+.layout {
+	display: flex;
+	flex-direction: row;
 }
 
-.activityIcons{
-      margin-top: 5rem;
-      width: 60vw;
-      height: 70vh;
-      background-color: var(--light-blue);
-      margin-right: 1.5rem;
-      border-top-right-radius: 35px;
-      border-bottom-right-radius: 35px;
-      
+.activityIcons {
+	margin-top: 5rem;
+	width: 60vw;
+	height: 70vh;
+	background-color: var(--light-blue);
+	margin-right: 1.5rem;
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
 }
 
-.updates{
-      margin-top: 5rem;
-      width: 40vw;
-      background-color: var(--light-orange);
-      margin-left: 1.5rem;
-      border-top-left-radius: 35px;
-      border-bottom-left-radius: 35px;
-      display: flex;
-      justify-content: center;
+.updates {
+	margin-top: 5rem;
+	width: 40vw;
+	background-color: var(--light-orange);
+	margin-left: 1.5rem;
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 35px;
+	display: flex;
+	justify-content: center;
 }
 
-.individualUpdates{
-      background-color: var(--light-blue);
-      border-style: solid;
-      border-color: var(--dark-blue);
-      border-radius: 35px;
-      margin: 30px;
-      padding: 20px 0 0 0
+.individualUpdates {
+	background-color: var(--light-blue);
+	border-style: solid;
+	border-color: var(--dark-blue);
+	border-radius: 35px;
+      max-height: 45vw;
+	overflow: auto;
+	margin: 30px;
+	padding: 20px 0 0 0;
 }
-hr{
-      color: var(--dark-blue);
-      height: 3px !important;
-      opacity: 1;
+hr {
+	color: var(--dark-blue);
+	height: 3px !important;
+	opacity: 1;
 }
