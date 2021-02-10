@@ -1,20 +1,7 @@
 .layout {
 	display: flex;
 	flex-direction: row;
-}
-
-.activityIcons {
-	margin-top: 5rem;
-	width: 60vw;
-	height: 70vh;
-	background-color: var(--light-blue);
-	margin-right: 1.5rem;
-	border-top-right-radius: 35px;
-	border-bottom-right-radius: 35px;
-	display: flex;
-	padding-top: 2rem;
-	flex-direction: column;
-	align-content: space-between;
+	z-index: -1;
 }
 
 .updates {
@@ -27,7 +14,18 @@
 	display: flex;
 	justify-content: center;
 }
-
+.activityIcons {
+	margin-top: 5rem;
+	width: 60vw;
+	background-color: var(--light-blue);
+	margin-right: 1.5rem;
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
+	display: flex;
+	padding-top: 2rem;
+	flex-direction: column;
+	align-content: space-between;
+}
 .individualUpdates {
 	background-color: var(--light-blue);
 	border-style: solid;
@@ -44,8 +42,12 @@ hr {
 	opacity: 1;
 }
 
-.iconDiv {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.individualComponents {
+	background-color: var(--light-blue);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 30vh;
+	z-index: 1;
+	border-radius: 35px 35px 0 0;
 }
