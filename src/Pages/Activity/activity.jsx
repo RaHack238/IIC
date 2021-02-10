@@ -2,6 +2,7 @@ import { React, useState } from 'react';
 import './activity.css';
 import ActivityIcons from "../../Components/activityIcons/activityIcons";
 import UpcEvents from '../../Components/activityPages/UpcEvents/UpcEvents'
+import FieldVisit from "../../Components/activityPages/fieldVisit/fieldVisit";
 
 const Activity = () => {
 	
@@ -57,6 +58,7 @@ const Activity = () => {
 			</div>
 			<div>
 				<UpcEvents upcevents={view.upcevents} setView={setView} />
+				<FieldVisit fieldVisits={view.fieldVisits} setView={setView} />
 			</div>
 		</div>
 	);
