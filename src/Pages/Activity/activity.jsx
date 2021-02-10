@@ -1,5 +1,4 @@
 import { React } from 'react';
-import { Table } from 'react-bootstrap';
 import './activity.css';
 import funnel from './ideaFunnel.svg';
 import ignite from './ignite.svg';
