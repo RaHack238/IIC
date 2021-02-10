@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import './activity.css';
-import ActivityIcons from "../../Components/activityIcons/activityIcons";
+import ActivityIcons from '../../Components/activityIcons/activityIcons';
 import UpcEvents from '../../Components/activityPages/UpcEvents/UpcEvents';
 import Ignite from '../../Components/activityPages/Ignite/ignite';
 import IdeaFunnel from '../../Components/activityPages/IdeaFunnel/ideafunnel';
@@ -9,7 +9,6 @@ import StartupLabs from '../../Components/activityPages/StartupLabs/startup';
 import Incubation from '../../Components/activityPages/Incubation/incubation';
 
 const Activity = () => {
-	
 	const [view, setView] = useState({
 		ifView: false,
 		igniteView: false,
@@ -24,7 +23,7 @@ const Activity = () => {
 	});
 	return (
 		<div>
-			<div className='layout' id="mainLayout">
+			<div className='layout' id='mainLayout'>
 				<div className='activityIcons'>
 					<ActivityIcons setView={setView} />
 				</div>
@@ -60,23 +59,24 @@ const Activity = () => {
 					</div>
 				</div>
 			</div>
-                  <div>
+			<div>
 				<IdeaFunnel ifView={view.ifView} setView={setView} />
 			</div>
-                  <div>
+			<div>
 				<Ignite igniteView={view.igniteView} setView={setView} />
 			</div>
-                  <div>
+			<div>
 				<AcademicProgram aepView={view.aepView} setView={setView} />
 			</div>
-                  <div>
+			<div>
 				<StartupLabs LabView={view.LabView} setView={setView} />
 			</div>
-                  <div>
+			<div>
 				<Incubation incubationView={view.incubationView} setView={setView} />
 			</div>
 			<div>
 				<UpcEvents upcevents={view.upcevents} setView={setView} />
+				<FieldVisit fieldVisits={view.fieldVisits} setView={setView} />
 			</div>
 		</div>
 	);

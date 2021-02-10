@@ -3,7 +3,23 @@
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	height: 30vh;
 	z-index: 1;
 	border-radius: 35px 35px 0 0;
+    display: flex;
+}
+
+.cross{
+    width: 2rem;
+    margin: 0.5rem 0.5rem 0 0;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+.upcoming{
+    width: 17rem;
+    margin: 3rem 3rem 1rem 1rem;
+}
+.upce-content{
+    display: flex;
+    align-items: center;
+    font-size: 70px;
 }
