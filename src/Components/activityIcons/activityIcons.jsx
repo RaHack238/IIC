@@ -8,7 +8,7 @@ import upcevents from './assets/UpcomingEvents.svg';
 import incubation from './assets/Incubation.svg';
 import mic from './assets/MICActivity.svg';
 import talks from './assets/Talks.svg';
-import workshops from './assets/workshops.svg';
+import workshops from './assets/Workshops.svg';
 import './activityIcons.css'
 
 const ActivityIcons = ({setView, setBlur}) => {
