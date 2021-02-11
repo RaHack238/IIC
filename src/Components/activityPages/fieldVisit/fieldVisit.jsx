@@ -2,10 +2,18 @@ import { React } from 'react';
 import { ReactComponent as Cross } from '../../vectors/cross.svg';
 import fieldvisits from '../../vectors/fieldvisits2.svg';
 
-const FieldVisit = ({ fieldVisits, setView }) => (
-	<div
+const FieldVisit = ({ fieldVisits, setView }) => {
+	const imgStyle={
+            width:'30vw',
+            height:'30vh',
+            margin:'2rem'
+      }
+
+	return(
+		<div
 		className='individualComponents'
 		style={{ display: fieldVisits ? 'block' : 'none' }}
+		id="idsize"
 	>
 		<Cross
 			className='cross'
@@ -14,13 +22,19 @@ const FieldVisit = ({ fieldVisits, setView }) => (
 			}}
 		/>
 		<h2 style={{ color: 'var(--orange)' }}>Field Visits</h2>
-		<div className='upce-content'>
-			<img src={fieldvisits} className='upcoming' />
-			<div style={{ display: 'inline-block', width: '65vw' }}>
-				<span>COMING SOON</span>
+
+		<div className="layout">
+			<div className="images">
+				<img src={fieldvisits} alt="fielf-visit-icon" style={imgStyle} />
+			</div>
+
+			<div className="content">
+				<h1 style={{color:'var(--dark-blue)',textAlign:'center'}}>COMING SOON!</h1>
 			</div>
 		</div>
 	</div>
-);
+	)
+	
+};
 
 export default FieldVisit;

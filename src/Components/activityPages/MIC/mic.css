@@ -13,4 +13,10 @@
       margin: 2rem !important;
 }
 
-
+#MIC{
+      overflow-y: scroll;
+}
+.yellow{
+      color: var(--orange);
+      font-weight: bold;
+}
