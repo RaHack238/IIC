@@ -42,7 +42,7 @@ hr {
 	height: 3px !important;
 	opacity: 1;
 }
-.yellow{
+.yellow {
 	color: var(--orange);
 	font-weight: bold;
 }
@@ -53,6 +53,7 @@ hr {
 	width: 100%;
 	z-index: 1;
 	border-radius: 35px 35px 0 0;
-    display: flex;
-    overflow: auto;
+	display: flex;
+	max-height: 100vh;
+	overflow: auto;
 }

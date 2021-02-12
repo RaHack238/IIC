@@ -2,13 +2,15 @@ import { React, useState } from 'react';
 import './activity.css';
 import ActivityIcons from '../../Components/activityIcons/activityIcons';
 import UpcEvents from '../../Components/activityPages/UpcEvents/UpcEvents';
-import FieldVisit from '../../Components/activityPages/fieldVisit/fieldVisit';
 import Ignite from '../../Components/activityPages/Ignite/ignite';
 import IdeaFunnel from '../../Components/activityPages/IdeaFunnel/ideafunnel';
 import AcademicProgram from '../../Components/activityPages/AcademicProgram/academicProgram';
 import StartupLabs from '../../Components/activityPages/StartupLabs/startup';
 import Incubation from '../../Components/activityPages/Incubation/incubation';
+import FieldVisit from '../../Components/activityPages/fieldVisit/fieldVisit';
 import Workshops from '../../Components/activityPages/Workshops/workshops';
+import Talks from '../../Components/activityPages/Talks/talks';
+import MIC from '../../Components/activityPages/MIC/mic';
 
 const Activity = () => {
 	const [view, setView] = useState({
@@ -23,7 +25,7 @@ const Activity = () => {
 		fieldVisits: false,
 		upcevents: false,
 	});
-	const [blur, setBlur] = useState(false)
+	const [blur, setBlur] = useState(false);
 	return (
 		<div>
 			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
@@ -64,24 +66,44 @@ const Activity = () => {
 			</div>
 			<div>
 				<IdeaFunnel ifView={view.ifView} setView={setView} setBlur={setBlur} />
+			</div>
+			<div>
 				<Ignite igniteView={view.igniteView} setView={setView} setBlur={setBlur} />
+			</div>
+			<div>
 				<AcademicProgram
 					aepView={view.aepView}
 					setView={setView}
 					setBlur={setBlur}
 				/>
+			</div>
+			<div>
 				<StartupLabs LabView={view.LabView} setView={setView} setBlur={setBlur} />
+			</div>
+			<div>
 				<Incubation
 					incubationView={view.incubationView}
 					setView={setView}
 					setBlur={setBlur}
 				/>
+			</div>
+			<div>
 				<Workshops
 					workshopView={view.workshopView}
 					setView={setView}
 					setBlur={setBlur}
 				/>
+			</div>
+			<div>
+				<Talks eniView={view.eniView} setView={setView} setBlur={setBlur} />
+			</div>
+			<div>
+				<MIC micView={view.micView} setView={setView} setBlur={setBlur} />
+			</div>
+			<div>
 				<UpcEvents upcevents={view.upcevents} setView={setView} setBlur={setBlur} />
+			</div>
+			<div>
 				<FieldVisit
 					fieldVisits={view.fieldVisits}
 					setView={setView}

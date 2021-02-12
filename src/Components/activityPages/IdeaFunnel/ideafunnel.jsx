@@ -1,5 +1,5 @@
 import { React } from 'react';
-import { ReactComponent as Cross }  from "../../vectors/cross.svg";
+import { ReactComponent as Cross } from '../../vectors/cross.svg';
 import './ideafunnel.css';
 import ideafunnel from '../../vectors/ideaFunnel2.svg';
 import ideafunnelposter from '../../vectors/ideafunnel3.svg';
@@ -24,6 +24,8 @@ const IdeaFunnel = ({ ifView, setView, setBlur }) => {
 					setBlur(false);
 				}}
 			/>
+
+			<h1 style={{ color: 'var(--orange)' }}>Idea Funnel</h1>
 
 			<div className='images'>
 				<img src={ideafunnel} alt='icon' style={imgStyle} />
