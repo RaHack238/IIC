@@ -9,6 +9,8 @@ import StartupLabs from '../../Components/activityPages/StartupLabs/startup';
 import Incubation from '../../Components/activityPages/Incubation/incubation';
 import FieldVisit from '../../Components/activityPages/fieldVisit/fieldVisit'
 import Workshops from '../../Components/activityPages/Workshops/workshops'
+import Talks from '../../Components/activityPages/Talks/talks';
+import MIC from '../../Components/activityPages/MIC/mic'
 
 const Activity = () => {
 	const [view, setView] = useState({
@@ -78,6 +80,12 @@ const Activity = () => {
 			</div>
                   <div>
 				<Workshops workshopView={view.workshopView} setView={setView} />
+			</div>
+			<div>
+				<Talks eniView = {view.eniView} setView={setView} />
+			</div>
+			<div>
+				<MIC micView = {view.micView} setView={setView} />
 			</div>
 			<div>
 				<UpcEvents upcevents={view.upcevents} setView={setView} />

@@ -21,6 +21,9 @@ const IdeaFunnel = ({ifView,setView}) => {
                         setView({igniteView: false})
                   }}/>
 
+                  <h1 style={{color:'var(--orange)'}}>Idea Funnel</h1>
+
+
                   <div className="images">
                         <img src={ideafunnel} alt="icon" style={imgStyle} />
                         <img src={ideafunnelposter} alt="poster" style={imgStyle} />

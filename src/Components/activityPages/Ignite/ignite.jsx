@@ -19,6 +19,8 @@ const Ignite = ({igniteView, setView}) => {
                         setView({igniteView: false})
                   }}/>
 
+                  <h1 style={{color:'var(--orange)'}}>Ignite PoC Grant (Proof of Concept)</h1>
+
                   <div className="images">
                         <img src={igniteIcon} alt="ignite-icon" style={imgStyle}/>
                         <img src={ignitePoster} alt="ignite-poster" style={imgStyle}/>
