@@ -8,8 +8,7 @@ import IdeaFunnel from '../../Components/activityPages/IdeaFunnel/ideafunnel';
 import AcademicProgram from '../../Components/activityPages/AcademicProgram/academicProgram';
 import StartupLabs from '../../Components/activityPages/StartupLabs/startup';
 import Incubation from '../../Components/activityPages/Incubation/incubation';
-import MicView from '../../Components/activityPages/micView/micView';
-import Eni from '../../Components/activityPages/eni/eni';
+import Workshops from '../../Components/activityPages/Workshops/workshops';
 
 const Activity = () => {
 	const [view, setView] = useState({
@@ -77,14 +76,17 @@ const Activity = () => {
 					setView={setView}
 					setBlur={setBlur}
 				/>
+				<Workshops
+					workshopView={view.workshopView}
+					setView={setView}
+					setBlur={setBlur}
+				/>
 				<UpcEvents upcevents={view.upcevents} setView={setView} setBlur={setBlur} />
 				<FieldVisit
 					fieldVisits={view.fieldVisits}
 					setView={setView}
 					setBlur={setBlur}
 				/>
-				<MicView micView={view.micView} setView={setView} setBlur={setBlur} />
-				<Eni eniView={view.eniView} setView={setView} setBlur={setBlur} />
 			</div>
 		</div>
 	);
