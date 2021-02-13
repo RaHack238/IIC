@@ -66,44 +66,26 @@ const Activity = () => {
 			</div>
 			<div>
 				<IdeaFunnel ifView={view.ifView} setView={setView} setBlur={setBlur} />
-			</div>
-			<div>
 				<Ignite igniteView={view.igniteView} setView={setView} setBlur={setBlur} />
-			</div>
-			<div>
 				<AcademicProgram
 					aepView={view.aepView}
 					setView={setView}
 					setBlur={setBlur}
 				/>
-			</div>
-			<div>
 				<StartupLabs LabView={view.LabView} setView={setView} setBlur={setBlur} />
-			</div>
-			<div>
 				<Incubation
 					incubationView={view.incubationView}
 					setView={setView}
 					setBlur={setBlur}
 				/>
-			</div>
-			<div>
 				<Workshops
 					workshopView={view.workshopView}
 					setView={setView}
 					setBlur={setBlur}
 				/>
-			</div>
-			<div>
 				<Talks eniView={view.eniView} setView={setView} setBlur={setBlur} />
-			</div>
-			<div>
 				<MIC micView={view.micView} setView={setView} setBlur={setBlur} />
-			</div>
-			<div>
 				<UpcEvents upcevents={view.upcevents} setView={setView} setBlur={setBlur} />
-			</div>
-			<div>
 				<FieldVisit
 					fieldVisits={view.fieldVisits}
 					setView={setView}

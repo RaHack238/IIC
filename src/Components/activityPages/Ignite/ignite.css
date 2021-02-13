@@ -1,8 +1,8 @@
-.images{
+/* .images{
       display:flex;
       justify-content: center;
       align-items: center;
-}
+} */
 
 .cross{
       align-self: flex-end  !important;

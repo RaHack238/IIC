@@ -25,14 +25,16 @@ const MIC = ({ micView, setView, setBlur }) => {
 				className='cross'
 				onClick={() => {
 					setView({ micView: false });
-                              setBlur(false);
+					setBlur(false);
 				}}
 			/>
 
 			<h1 style={{ color: 'var(--orange)' }}>MIC Activities</h1>
 
 			<div className='layout'>
-				<img src={micicon} alt='mic-icon' style={imgStyle} />
+				<div className='images'>
+					<img src={micicon} alt='incubate-logo' style={imgStyle} />
+				</div>
 
 				<div className='content'>
 					<p style={{ color: 'var(--dark-blue)' }}>
@@ -69,7 +71,9 @@ const MIC = ({ micView, setView, setBlur }) => {
 						</p>
 						<br />
 						<p className='yellow'>Toycathon:</p>
-						<img src={toy} alt='toycathon' style={toyStyle} />
+						<div className='images'>
+							<img src={toy} alt='toycathon' style={toyStyle} />
+						</div>
 					</p>
 				</div>
 			</div>
