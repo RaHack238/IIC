@@ -1,0 +1,70 @@
+.layout {
+	display: flex;
+	flex-direction: row;
+	z-index: -1;
+	/* filter: ; */
+}
+
+.updates {
+	margin-top: 5rem;
+	width: 40vw;
+	background-color: var(--light-orange);
+	margin-left: 1.5rem;
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 35px;
+	display: flex;
+	justify-content: center;
+}
+.activityIcons {
+	margin-top: 5rem;
+	width: 60vw;
+	background-color: var(--light-blue);
+	margin-right: 1.5rem;
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
+	display: flex;
+	padding-top: 2rem;
+	flex-direction: column;
+	align-content: space-between;
+}
+.individualUpdates {
+	background-color: var(--light-blue);
+	border-style: solid;
+	border-color: var(--dark-blue);
+	border-radius: 35px;
+	max-height: 45vh;
+	overflow: auto;
+	margin: 30px;
+	padding: 20px 0 0 0;
+}
+hr {
+	color: var(--dark-blue);
+	height: 3px !important;
+	opacity: 1;
+}
+.yellow {
+	color: var(--orange);
+	font-weight: bold;
+}
+.individualComponents {
+	background-color: var(--opaque-blue);
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+	border-radius: 35px 35px 0 0;
+	display: flex;
+	max-height: 100vh;
+	overflow: auto;
+}
+.images {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media only screen and (max-width: 950px) {
+	.images{
+		display: none;
+	}
+}
