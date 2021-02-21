@@ -20,7 +20,7 @@ const Workshops = ({ workshopView, setView, setBlur }) => {
 				className='cross'
 				onClick={() => {
 					setView({ workshopView: false });
-                              setBlur(false);
+					setBlur(false);
 				}}
 			/>
 			<h1 style={{ color: 'var(--orange)' }}>Workshops and Seminars</h1>

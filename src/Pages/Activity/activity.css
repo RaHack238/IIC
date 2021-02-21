@@ -2,28 +2,37 @@
 	display: flex;
 	flex-direction: row;
 	z-index: -1;
-	/* filter: ; */
+	justify-content: space-between;
+	width: 100%;
+}
+.updateContainer {
+	margin-top: 5rem;
+	right: 0;
+	width: 40vw;
+	background-color: var(--light-orange);
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 35px;
+	margin-left: 1.5rem;
 }
 
 .updates {
-	margin-top: 5rem;
-	width: 40vw;
-	background-color: var(--light-orange);
-	margin-left: 1.5rem;
-	border-top-left-radius: 35px;
-	border-bottom-left-radius: 35px;
 	display: flex;
 	justify-content: center;
 }
-.activityIcons {
+.activity {
 	margin-top: 5rem;
+	padding-top: 2rem 0 2rem;
+	display: flex;
+}
+.activityIcons {
 	width: 60vw;
-	background-color: var(--light-blue);
-	margin-right: 1.5rem;
 	border-top-right-radius: 35px;
 	border-bottom-right-radius: 35px;
+	height: 100%;
+	background-color: var(--light-blue);
+	margin-right: 1.5rem;
+	left: 0;
 	display: flex;
-	padding-top: 2rem;
 	flex-direction: column;
 	align-content: space-between;
 }
@@ -63,8 +72,53 @@ hr {
 	align-items: center;
 }
 
-@media only screen and (max-width: 950px) {
-	.images{
+.iconButton {
+	background-color: var(--light-blue);
+	width: 40px;
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
+	left: 0;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+}
+.updateButton {
+	background-color: var(--light-orange);
+	width: 40px;
+	margin-top: 5rem;
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 35px;
+	right: 0;
+	height: 80vh;
+	justify-content: center;
+	align-items: center;
+}
+.updateIcon {
+	background-color: var(--light-orange);
+	width: 40px;
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 35px;
+	right: 0;
+}
+
+@media only screen and (max-width: 720px) {
+	.images {
 		display: none;
+	}
+	.updates {
+		display: flex;
+		height: 80vh;
+		justify-self: flex-end;
+		align-self: flex-end;
+	}
+	.updateContainer {
+		width: 100%;
+	}
+	.individualUpdates {
+		max-height: 55vh;
+	}
+	.activityIcons {
+		height: 80vh;
+		width: 100%;
 	}
 }

@@ -9,9 +9,9 @@ import incubation from './assets/Incubation.svg';
 import mic from './assets/MICActivity.svg';
 import talks from './assets/Talks.svg';
 import workshops from './assets/workshops.svg';
-import './activityIcons.css'
+import './activityIcons.css';
 
-const ActivityIcons = ({setView, setBlur}) => {
+const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 	const imgStyle = {
 		width: '15vw',
 		height: '20vh',
@@ -25,7 +25,10 @@ const ActivityIcons = ({setView, setBlur}) => {
 		cursor: 'pointer',
 	};
 	return (
-		<div>
+		<div
+			className='activityIcons'
+			style={{ display: mobile ? (display ? 'flex' : 'none') : '' }}
+		>
 			<div className='iconDiv'>
 				<img
 					src={funnel}
@@ -35,7 +38,7 @@ const ActivityIcons = ({setView, setBlur}) => {
 						setView({
 							ifView: true,
 						});
-						setBlur(true)
+						setBlur(true);
 					}}
 				/>
 				<img

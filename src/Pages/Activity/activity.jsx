@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './activity.css';
 import ActivityIcons from '../../Components/activityIcons/activityIcons';
 import UpcEvents from '../../Components/activityPages/UpcEvents/UpcEvents';
@@ -11,8 +11,11 @@ import FieldVisit from '../../Components/activityPages/fieldVisit/fieldVisit';
 import Workshops from '../../Components/activityPages/Workshops/workshops';
 import Talks from '../../Components/activityPages/Talks/talks';
 import MIC from '../../Components/activityPages/MIC/mic';
+import IconButton from '../../Components/iconButton/iconButton';
+import Update from '../../Components/activityIcons/update/update';
 
 const Activity = () => {
+	const hasWindow = typeof window !== 'undefined';
 	const [view, setView] = useState({
 		ifView: false,
 		igniteView: false,
@@ -26,41 +29,58 @@ const Activity = () => {
 		upcevents: false,
 	});
 	const [blur, setBlur] = useState(false);
+	const [mobile, setMobile] = useState(false);
+	const [updateV, setUpdateV] = useState(true);
+	const [iconV, setIconV] = useState(false);
+
+	useEffect(() => {
+		const width = hasWindow ? window.innerWidth : null;
+		if (width < 720) {
+			setMobile(true);
+		}
+		console.log(width);
+	}, []);
+
 	return (
 		<div>
+			{console.log(mobile)}
 			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
-				<div className='activityIcons'>
-					<ActivityIcons setView={setView} setBlur={setBlur} />
+				<div className='activity' style={{ width: iconV ? '100%' : '' }}>
+					<div
+						className='iconButton'
+						style={{ display: mobile ? (iconV ? 'none' : 'flex') : 'none' }}
+						onClick={() => {
+							setIconV(true);
+							setUpdateV(false);
+						}}
+					>
+						&rarr;
+					</div>
+
+					<ActivityIcons
+						setView={setView}
+						setBlur={setBlur}
+						mobile={mobile}
+						display={iconV}
+					/>
 				</div>
-				<div className='container updates'>
-					<div style={{ display: 'flex', flexDirection: 'column' }}>
-						<h1 style={{ color: 'var(--dark-blue)', marginTop: '4rem' }}>Updates</h1>
-						<div className='individualUpdates'>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua
-								<hr />
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua
-								<hr />
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua
-								<hr />
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua
-								<hr />
-							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua
-							</p>
-						</div>
+				<div
+					className='updateButton'
+					style={{ display: updateV ? 'none' : 'flex' }}
+					onClick={() => {
+						setIconV(false);
+						setUpdateV(true);
+					}}
+				>
+					{' '}
+					&larr;
+				</div>
+				<div
+					className='updateContainer'
+					style={{ display: mobile ? (updateV ? 'flex' : 'none') : 'flex' }}
+				>
+					<div className='container updates'>
+						<Update />
 					</div>
 				</div>
 			</div>
