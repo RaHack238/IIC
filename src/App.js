@@ -14,6 +14,7 @@ function App() {
 				<Route exact path='/' component={Home} />
 				<Route path='/activities' component={Activity} />
 				<Route path='/contact-us' component={ContactUs} />
+				<Route path='/program' />
 			</Switch>
 		</div>
 	);
