@@ -10,6 +10,9 @@
     color: transparent;
     background-color: transparent;
     margin-left: 1.75vw;
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%);
 }
 
 #navitems{
@@ -47,7 +50,13 @@
 
 #closingNav div{
     position: relative;
-    top: 0.38vw;
+    top: 0.10vw;
+}
+
+.cross{
+    position: relative;
+    top: 30% !important;
+    transform: translateY(-50%) !important;
 }
 
 @media only screen and (max-width: 500px){
