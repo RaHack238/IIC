@@ -13,9 +13,9 @@
       margin: 2rem !important;
 }
 
-#MIC{
+/* #MIC{
       overflow-y: scroll;
-}
+} */
 .yellow{
       color: var(--orange);
       font-weight: bold;

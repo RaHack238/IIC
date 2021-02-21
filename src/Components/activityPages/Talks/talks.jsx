@@ -3,7 +3,7 @@ import { ReactComponent as Cross }  from "../../vectors/cross.svg";
 import './talks.css';
 import talksicon from '../../vectors/leadership2.svg';
 
-const Talks = ({eniView,setView}) => {
+const Talks = ({eniView,setView,setBlur}) => {
 
       const imgStyle={
             width:'30vw',
@@ -14,7 +14,8 @@ const Talks = ({eniView,setView}) => {
       return(
             <div className="individualComponents" id="size2" style={{display: eniView? 'block':'none'}}>
                   <Cross className="cross" onClick={() => {
-                        setView({eniView: false})
+                        setView({eniView: false});
+                        setBlur(false);
                   }}/>
                   <h1 style={{color:'var(--orange)'}}>Entrepreneurship and Leadership Talks</h1>
                   <div className="layout">

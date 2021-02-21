@@ -1,24 +1,18 @@
 import { React } from 'react';
 import { ReactComponent as Cross } from '../../vectors/cross.svg';
-import './mic.css';
-import micicon from '../../vectors/mic2.svg';
-import toy from '../../vectors/toy.svg';
+import mic from '../../vectors/mic2.svg';
 
-const MIC = ({ micView, setView, setBlur }) => {
+const MicView = ({ micView, setView, setBlur }) => {
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
 		margin: '2rem',
 	};
 
-	const toyStyle = {
-		marginLeft: '8rem',
-	};
-
 	return (
 		<div
 			className='individualComponents'
-			id='MIC'
+			id='individualSize'
 			style={{ display: micView ? 'block' : 'none' }}
 		>
 			<Cross
@@ -29,11 +23,13 @@ const MIC = ({ micView, setView, setBlur }) => {
 				}}
 			/>
 
-			<h1 style={{ color: 'var(--orange)' }}>MIC Activities</h1>
+			<h1 style={{ color: 'var(--orange)' }}>
+				Enterpreneurship & Leadership Talks
+			</h1>
 
 			<div className='layout'>
 				<div className='images'>
-					<img src={micicon} alt='incubate-logo' style={imgStyle} />
+					<img src={mic} alt='incubate-logo' style={imgStyle} />
 				</div>
 
 				<div className='content'>
@@ -41,7 +37,7 @@ const MIC = ({ micView, setView, setBlur }) => {
 						Pre-incubation programs are designed to be :
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)' }}>
+					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem' }}>
 						Moving forward with its objectives to engage large number of faculty,
 						students and staff in various innovation and entrepreneurship related
 						activities such as ideation, problem solving, Proof of Concept
@@ -55,12 +51,11 @@ const MIC = ({ micView, setView, setBlur }) => {
 						participate in these activities so that the innovation and
 						entrepreneurship ecosystem gets established and stabilised.
 						<p>
-							<br />
 							<span className='yellow'>Kapila:</span> The Innovation Cell schedule
 							launched{' '}
 							<span className='yellow'>
-								“KAPILA: Kalam Program for IP Literacy and Awareness to boost IP”{' '}
-							</span>
+								“KAPILA: Kalam Program for IP Literacy and Awareness to boost IP”
+							</span>{' '}
 							filing in the country by Higher Education Institutions. Under this
 							program and as a first step, “IP Literacy Week” is being organized during
 							15 - 23 October 2020 to celebrate the birth anniversary of a visionary
@@ -69,11 +64,10 @@ const MIC = ({ micView, setView, setBlur }) => {
 							<span className='yellow'>IPR Quiz</span> was conducted to create interest
 							and spread knowledge amongst the student community at IIT Goa.
 						</p>
-						<br />
-						<p className='yellow'>Toycathon:</p>
-						<div className='images'>
-							<img src={toy} alt='toycathon' style={toyStyle} />
-						</div>
+						<p>
+							<span className='yellow'>Toycathon:</span>
+                            <img />
+						</p>
 					</p>
 				</div>
 			</div>
@@ -81,4 +75,4 @@ const MIC = ({ micView, setView, setBlur }) => {
 	);
 };
 
-export default MIC;
+export default MicView;

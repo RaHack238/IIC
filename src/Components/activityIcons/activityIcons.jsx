@@ -11,7 +11,7 @@ import talks from './assets/Talks.svg';
 import workshops from './assets/workshops.svg';
 import './activityIcons.css'
 
-const ActivityIcons = ({setView}) => {
+const ActivityIcons = ({setView, setBlur}) => {
 	const imgStyle = {
 		width: '15vw',
 		height: '20vh',
@@ -35,6 +35,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							ifView: true,
 						});
+						setBlur(true)
 					}}
 				/>
 				<img
@@ -45,6 +46,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							igniteView: true,
 						});
+						setBlur(true);
 					}}
 				/>
 				<img
@@ -55,6 +57,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							aepView: true,
 						});
+						setBlur(true);
 					}}
 				/>
 				<img
@@ -65,6 +68,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							LabView: true,
 						});
+						setBlur(true);
 					}}
 				/>
 			</div>
@@ -77,6 +81,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							incubationView: true,
 						});
+						setBlur(true);
 					}}
 				/>
 				<img
@@ -87,6 +92,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							workshopView: true,
 						});
+						setBlur(true);
 					}}
 				/>
 				<img
@@ -97,6 +103,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							eniView: true,
 						});
+						setBlur(true);
 					}}
 				/>
 				<img
@@ -107,6 +114,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							micView: true,
 						});
+						setBlur(true);
 					}}
 				/>
 			</div>
@@ -119,6 +127,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							fieldVisits: true,
 						});
+						setBlur(true);
 					}}
 				/>
 				<img
@@ -129,6 +138,7 @@ const ActivityIcons = ({setView}) => {
 						setView({
 							upcevents: true,
 						});
+						setBlur(true);
 					}}
 				/>
 			</div>

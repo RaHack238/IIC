@@ -7,10 +7,10 @@ import IdeaFunnel from '../../Components/activityPages/IdeaFunnel/ideafunnel';
 import AcademicProgram from '../../Components/activityPages/AcademicProgram/academicProgram';
 import StartupLabs from '../../Components/activityPages/StartupLabs/startup';
 import Incubation from '../../Components/activityPages/Incubation/incubation';
-import FieldVisit from '../../Components/activityPages/fieldVisit/fieldVisit'
-import Workshops from '../../Components/activityPages/Workshops/workshops'
+import FieldVisit from '../../Components/activityPages/fieldVisit/fieldVisit';
+import Workshops from '../../Components/activityPages/Workshops/workshops';
 import Talks from '../../Components/activityPages/Talks/talks';
-import MIC from '../../Components/activityPages/MIC/mic'
+import MIC from '../../Components/activityPages/MIC/mic';
 
 const Activity = () => {
 	const [view, setView] = useState({
@@ -25,11 +25,12 @@ const Activity = () => {
 		fieldVisits: false,
 		upcevents: false,
 	});
+	const [blur, setBlur] = useState(false);
 	return (
 		<div>
-			<div className='layout' id='mainLayout'>
+			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
 				<div className='activityIcons'>
-					<ActivityIcons setView={setView} />
+					<ActivityIcons setView={setView} setBlur={setBlur} />
 				</div>
 				<div className='container updates'>
 					<div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -64,34 +65,32 @@ const Activity = () => {
 				</div>
 			</div>
 			<div>
-				<IdeaFunnel ifView={view.ifView} setView={setView} />
-			</div>
-			<div>
-				<Ignite igniteView={view.igniteView} setView={setView} />
-			</div>
-			<div>
-				<AcademicProgram aepView={view.aepView} setView={setView} />
-			</div>
-			<div>
-				<StartupLabs LabView={view.LabView} setView={setView} />
-			</div>
-			<div>
-				<Incubation incubationView={view.incubationView} setView={setView} />
-			</div>
-                  <div>
-				<Workshops workshopView={view.workshopView} setView={setView} />
-			</div>
-			<div>
-				<Talks eniView = {view.eniView} setView={setView} />
-			</div>
-			<div>
-				<MIC micView = {view.micView} setView={setView} />
-			</div>
-			<div>
-				<UpcEvents upcevents={view.upcevents} setView={setView} />
-                  </div>
-                  <div>
-				<FieldVisit fieldVisits={view.fieldVisits} setView={setView} />
+				<IdeaFunnel ifView={view.ifView} setView={setView} setBlur={setBlur} />
+				<Ignite igniteView={view.igniteView} setView={setView} setBlur={setBlur} />
+				<AcademicProgram
+					aepView={view.aepView}
+					setView={setView}
+					setBlur={setBlur}
+				/>
+				<StartupLabs LabView={view.LabView} setView={setView} setBlur={setBlur} />
+				<Incubation
+					incubationView={view.incubationView}
+					setView={setView}
+					setBlur={setBlur}
+				/>
+				<Workshops
+					workshopView={view.workshopView}
+					setView={setView}
+					setBlur={setBlur}
+				/>
+				<Talks eniView={view.eniView} setView={setView} setBlur={setBlur} />
+				<MIC micView={view.micView} setView={setView} setBlur={setBlur} />
+				<UpcEvents upcevents={view.upcevents} setView={setView} setBlur={setBlur} />
+				<FieldVisit
+					fieldVisits={view.fieldVisits}
+					setView={setView}
+					setBlur={setBlur}
+				/>
 			</div>
 		</div>
 	);
