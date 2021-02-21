@@ -3,13 +3,13 @@ import { React, useState } from 'react';
 import iitlogo from './assets/iit goa logo@1X.svg'
 import yellowStrip from './assets/Rectangle 1.svg'
 import iiclogo from './assets/iiclogo.svg'
-import NavBar from '../Navbar/Navbar'
+
 
 
 const Home=()=>{
     return(
         <div id='outer492002'>
-            <NavBar/>
+
             <div id='iitlogo'>
                 <img src={iitlogo}></img>
             </div>

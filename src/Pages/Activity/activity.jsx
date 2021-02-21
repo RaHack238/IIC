@@ -11,7 +11,6 @@ import FieldVisit from '../../Components/activityPages/fieldVisit/fieldVisit';
 import Workshops from '../../Components/activityPages/Workshops/workshops';
 import Talks from '../../Components/activityPages/Talks/talks';
 import MIC from '../../Components/activityPages/MIC/mic';
-import IconButton from '../../Components/iconButton/iconButton';
 import Update from '../../Components/activityIcons/update/update';
 
 const Activity = () => {
