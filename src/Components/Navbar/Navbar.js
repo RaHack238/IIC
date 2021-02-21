@@ -30,14 +30,14 @@ export default class NavBar extends React.Component{
         }else{
             nav=(
                 <div id="closingNav">
-                    <div>
+                    <div id="nbcontainer">
                         <div id="navitems">
                             <a>Activities</a>
                             <a>Programs</a>
                             <a>Council</a>
                         </div>
                         <div id="buttonouter">
-                            <button id="navButton" type="button" onClick={this.NavbarExpandHandler}>
+                            <button id="navButton" type="button" class="cross" onClick={this.NavbarExpandHandler}>
                                 <img src={xmark}></img>
                             </button>
                         </div>
