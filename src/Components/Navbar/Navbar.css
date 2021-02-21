@@ -1,0 +1,51 @@
+#buttonouter{
+    height: 4.16vw;
+    display: inline-block;
+}
+#navButton{
+    width: 3.16vw;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    margin-left: 1.75vw;
+}
+
+#navitems{
+    display: inline-flex;
+    width: 24.79vw;
+    justify-content: space-around;
+}
+
+#navitems a{
+    color: #577399;
+    font-family: Karla-SemiBold;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#navButton img{
+    height: 100%;
+    width: 100%;
+}
+
+#navdiv{
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+    z-index: 100;
+}
+
+#closingNav{
+    background-color:#FFD69A;
+    
+    border-bottom-left-radius: 1.5vw;
+    position: relative;
+}
+
+#closingNav div{
+    position: relative;
+    top: 0.38vw;
+}
