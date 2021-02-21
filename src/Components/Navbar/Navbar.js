@@ -3,20 +3,24 @@ import './Navbar.css';
 import menuButton from './menu.svg';
 import xmark from './x-mark.svg';
 import { Link } from 'react-router-dom';
+import { withRouter, useLocation } from 'react-router-dom';
 
-export default class NavBar extends React.Component {
-	state = {
-		showNavlines: true,
-	};
-
+class NavBar extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			showNavlines: true,
+		};
+	}
+	
 	NavbarExpandHandler = () => {
 		const doesShow = this.state.showNavlines;
 		this.setState({ showNavlines: !doesShow });
 	};
 
 	render() {
+		
 		let nav = null;
-
 		if (this.state.showNavlines) {
 			nav = (
 				<div id='buttonouter'>
@@ -28,6 +32,7 @@ export default class NavBar extends React.Component {
 		} else {
 			nav = (
 				<div id='closingNav'>
+					
 					<div id='nbcontainer'>
 						<div id='navitems'>
 							<Link to='/activities'>Activities</Link>
@@ -53,3 +58,7 @@ export default class NavBar extends React.Component {
 		return <div id='navdiv'>{nav}</div>;
 	}
 }
+export default withRouter(NavBar);
+
+
+// this.props.location.pathname;

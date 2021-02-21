@@ -9,7 +9,6 @@ function App() {
 	return (
 		<div className='App'>
 			<NavBar />
-
 			<Switch>
 				<Route exact path='/' component={Home} />
 				<Route path='/activities' component={Activity} />
