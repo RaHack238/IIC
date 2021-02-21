@@ -5,39 +5,60 @@ import "./PersonCard.css";
 export default class PersonCard extends Component {
   state = { flipped: false };
 
-  setFlipTrue = () => {
+  setFlipTrue = (e) => {
+    e.preventDefault();
     this.setState({ flipped: true });
-    console.log(true);
+    console.log(true, this.props.index);
   };
-  setFlipFalse = () => {
+  setFlipFalse = (e) => {
+    e.preventDefault();
     this.setState({ flipped: false });
-    console.log(false);
-  };
-  toggleFlip = () => {
-    console.log(!this.state.flipped);
-    this.setState({ flipped: !this.state.flipped });
+    console.log(false, this.props.index);
   };
 
   render() {
     return (
       <div
-        className="col-sm-3 flip-card"
-        onMouseEnter={this.setFlipTrue}
-        onMouseLeave={this.setFlipFalse}
-        onClick={this.toggleFlip}
+        className={"col-md-4 col-lg-3 col-6 flip-card"}
+        onMouseEnter={(e) => this.setFlipTrue(e)}
+        onMouseLeave={(e) => this.setFlipFalse(e)}
       >
         <div
           className={
             this.state.flipped ? "flip-card-inner flipped" : "flip-card-inner"
           }
         >
-          <div className="flip-card-front">
-            <img src="img_avatar.png" alt="Avatar" className="avatar__image" />
+          <div className="flip-card-front ">
+            <img src={this.props.img} alt="Avatar" className="avatar__image" />
           </div>
-          <div className="flip-card-back">
-            <h1 className="member__name">Full Name</h1>
-            <p className="member_designation">Designation</p>
-            <p className="member__email">Email</p>
+          <div
+            className={
+              "flip-card-back " +
+              (this.props.index % 2 !== 0
+                ? "bg__light__blue"
+                : "bg__dark__blue")
+            }
+          >
+            <h1
+              className={
+                "member__name " +
+                (this.props.index % 2 !== 0
+                  ? "text__color__blue"
+                  : "text__color__orange")
+              }
+            >
+              {this.props.name}
+            </h1>
+            <p
+              className={
+                "member__designation " +
+                (this.props.index % 2 !== 0
+                  ? "text__color__blue"
+                  : "text__color__orange")
+              }
+            >
+              {this.props.designation}
+            </p>
           </div>
         </div>
       </div>

@@ -1,6 +1,9 @@
 .flip-card {
   background-color: transparent;
-  height: 100px;
+  height: 200px;
+  width: 175px;
+  margin: 20px 15px;
+  border-radius: 20px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -17,6 +20,7 @@
   transition: all 0.8s ease;
   transform-style: preserve-3d;
   border: 1px solid #9c9c9c;
+  border-radius: 20px;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -32,19 +36,52 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 20px;
 }
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
   color: black;
+  border-radius: 20px;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   color: white;
   transform: rotateY(180deg);
+  border-radius: 20px;
+}
+.bg__light__blue {
+  background-color: var(--light-blue);
+}
+.bg__dark__blue {
+  background-color: var(--blue);
 }
 .avatar__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.member__name {
+  font-family: "Domine";
+  font-weight: 600;
+  font-size: 1rem;
+}
+.member__designation {
+  font-family: "Domine";
+  font-weight: 400;
+  font-size: 1rem;
+}
+.text__color__blue {
+  color: var(--dark-blue);
+}
+.text__color__orange {
+  color: var(--orange);
 }
