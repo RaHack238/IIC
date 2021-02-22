@@ -25,6 +25,7 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 			className='activityIcons iconDiv'
 			style={{ display: mobile ? (display ? 'flex' : 'none') : '', width:mobile? '100%':'', overflowY: mobile? 'scroll':''}}
 		>
+			<div className="indIcons">
 			<img
 				src={funnel}
 				alt='idea-funnel'
@@ -36,6 +37,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue', }}>Idea Funnel</h5>
+			</div>
+
+			<div className="indIcons">
 			<img
 				src={ignite}
 				alt='ignite'
@@ -47,6 +52,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue'}}>Ignite</h5>
+			</div>
+
+			<div className="indIcons">
 			<img
 				src={acdprogram}
 				alt='acdprogram'
@@ -58,6 +67,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue'}}>Academic Program</h5>
+			</div>
+
+			<div className="indIcons">
 			<img
 				src={startuplab}
 				alt='startup-lab'
@@ -69,6 +82,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue'}}>Startup Labs</h5>
+			</div>
+
+			<div className="indIcons">
 			<img
 				src={incubation}
 				alt='incubation'
@@ -80,6 +97,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue'}}>Incubation</h5>
+			</div>
+
+			< div className="indIcons">
 			<img
 				src={workshops}
 				alt='workshops'
@@ -91,6 +112,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue', }}>Workshops & Seminars</h5>
+			</div>
+
+			< div className="indIcons">
 			<img
 				src={talks}
 				alt='talks'
@@ -102,6 +127,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue', }}>Talks</h5>
+			</div>
+
+			< div className="indIcons">
 			<img
 				src={mic}
 				alt='mic-activity'
@@ -113,6 +142,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue', }}>MIC Activities</h5>
+			</div>
+
+			<div className="indIcons">
 			<img
 				src={visits}
 				alt='field-visits'
@@ -124,6 +157,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue', }}>Field Visits</h5>
+			</div>
+
+			<div className="indIcons">
 			<img
 				src={upcevents}
 				alt='upc-events'
@@ -135,6 +172,8 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
+			<h5 style={{color:'var(--dark-blue', }}>Upcoming Events</h5>
+			</div>
 		</div>
 	);
 };
