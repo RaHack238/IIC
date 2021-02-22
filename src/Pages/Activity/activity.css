@@ -90,7 +90,7 @@ hr {
 	border-top-right-radius: 35px;
 	border-bottom-right-radius: 35px;
 	left: 0;
-	height: 80vh;
+	height: 86vh;
 	justify-content: center;
 	align-items: center;
 	display: none;
@@ -98,11 +98,11 @@ hr {
 .updateButton {
 	background-color: var(--light-orange);
 	width: 40px;
-	margin-top: 1rem;
+	margin-top: 2rem;
 	border-top-left-radius: 35px;
 	border-bottom-left-radius: 35px;
 	right: 0;
-	height: 80vh;
+	height: 85vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -131,7 +131,7 @@ hr {
 	}
 	.updates {
 		display: flex;
-		height: 80vh;
+		height: 85vh;
 		justify-self: flex-end;
 		align-self: flex-end;
 	}
@@ -142,7 +142,7 @@ hr {
 		max-height: 55vh;
 	}
 	.activityIcons {
-		height: 80vh;
+		height: 85vh;
 		width: 100%;
 	}.iconButton {
 		display: flex;
