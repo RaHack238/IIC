@@ -3,7 +3,7 @@ import { ReactComponent as Cross } from '../../vectors/cross.svg';
 import './workshops.css';
 import workshopicon from '../../vectors/workshops2.svg';
 
-const Workshops = ({ workshopView, setView, setBlur }) => {
+const Workshops = ({ workshopView, setView, setBlur,mobile }) => {
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
@@ -23,7 +23,7 @@ const Workshops = ({ workshopView, setView, setBlur }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 style={{ color: 'var(--orange)' }}>Workshops and Seminars</h1>
+			<h1 style={{ color: 'var(--orange)',textAlign:  'center'  }}>Workshops and Seminars</h1>
 
 			<div className='layout'>
 				<div className='images'>

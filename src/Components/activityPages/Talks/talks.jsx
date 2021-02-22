@@ -3,7 +3,7 @@ import { ReactComponent as Cross }  from "../../vectors/cross.svg";
 import './talks.css';
 import talksicon from '../../vectors/leadership2.svg';
 
-const Talks = ({eniView,setView,setBlur}) => {
+const Talks = ({eniView,setView,setBlur,mobile}) => {
 
       const imgStyle={
             width:'30vw',
@@ -17,7 +17,7 @@ const Talks = ({eniView,setView,setBlur}) => {
                         setView({eniView: false});
                         setBlur(false);
                   }}/>
-                  <h1 style={{color:'var(--orange)'}}>Entrepreneurship and Leadership Talks</h1>
+                  <h1 style={{color:'var(--orange)',textAlign: mobile? 'center' : 'none'}}>Entrepreneurship and Leadership Talks</h1>
                   <div className="layout">
                         <div className="images">
                               <img src={talksicon} alt="talks-icon" style={imgStyle} />

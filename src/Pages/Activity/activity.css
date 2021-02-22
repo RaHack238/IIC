@@ -6,6 +6,16 @@
 	width: 100%;
 	text-align: center;
 }
+
+.navbar__title {
+	color: var(--orange);
+	font-family: "Montserrat", sans-serif;
+}
+
+.navbar__center{
+	text-align: center;
+}
+
 .updateContainer {
 	margin-top: 5rem;
 	right: 0;
@@ -108,12 +118,18 @@ hr {
 	--flag:0;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 @media only screen and (max-width: 720px) {
 	:root{
 		--flag:1;
 	}
 	.images {
-		display: none;
+		display: flex;
+		flex-direction: column;
+		height: 30vh;
 	}
 	.updates {
 		display: flex;
@@ -135,4 +151,14 @@ hr {
 	}.updateButton{
 		display: flex;
 	}
+
+	:root{
+		--flag:1;
+	}
 }
+
+:root{
+	--flag: 0;
+}
+
+

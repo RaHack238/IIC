@@ -12,6 +12,8 @@ import Workshops from '../../Components/activityPages/Workshops/workshops';
 import Talks from '../../Components/activityPages/Talks/talks';
 import MIC from '../../Components/activityPages/MIC/mic';
 import Update from '../../Components/activityIcons/update/update';
+import iitlogo from '../../Components/Home/assets/iitgoalogo.svg';
+import iiclogo from '../../Components/Home/assets/iiclogo.svg';
 
 const Activity = () => {
 	const [view, setView] = useState({
@@ -38,74 +40,122 @@ const Activity = () => {
 	});
 
 	return (
-		
-		<div>
+		<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
 			{console.log(mobile)}
-			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
-				<div className='activity' style={{ width: iconV ? '100%' : '' }}>
+			{/* <div className="navbar">
+				<div className="logos">
+					<img src={iitlogo} alt="IIT Goa Logo" style={{width:'8.3vw', marginTop:'0.83vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} />
+					<img src={iiclogo} alt="IIC Logo" style={{width:'15.2vw', marginTop:'0.83vw'}}/>
+				</div>
+				<div className="navbar__center">
+					<h1 className="navbar__title">Activity</h1>
+				</div>
 					<div
 						className='iconButton'
 						style={{ display: mobile ? (iconV ? 'none' : 'flex') : 'none' }}
 						onClick={() => {
 							setIconV(true);
-							setUpdateV(false);
-						}}
-					>
-						&rarr;
-					</div>
-					<ActivityIcons
-						setView={setView}
-						setBlur={setBlur}
-						mobile={mobile}
-						display={iconV}
-					/>
-				</div>
+							setUpdateV(false)	}}>
+							&rarr;
+						</div>
+			</div> */}
+			<div className='activity' style={{ width: iconV ? '100%' : '' }}>
 				<div
-					className='updateButton'
-					style={{ display: mobile ? updateV ? 'none' : 'flex':'none' }}
+					className='iconButton'
+					style={{ display: mobile ? (iconV ? 'none' : 'flex') : 'none' }}
 					onClick={() => {
-						setIconV(false);
-						setUpdateV(true);
+						setIconV(true);
+						setUpdateV(false);
 					}}
 				>
-					{' '}
-					&larr;
+					&rarr;
 				</div>
-				<div
-					className='updateContainer'
-					style={{ display: mobile ? (updateV ? 'flex' : 'none') : 'flex' }}
-				>
-					<div className='container updates'>
-						<Update />
-					</div>
+				<ActivityIcons
+					setView={setView}
+					setBlur={setBlur}
+					mobile={mobile}
+					display={iconV}
+				/>
+			</div>
+			<div
+				className='updateButton'
+				style={{ display: mobile ? (updateV ? 'none' : 'flex') : 'none' }}
+				onClick={() => {
+					setIconV(false);
+					setUpdateV(true);
+				}}
+			>
+				{' '}
+				&larr;
+			</div>
+			<div
+				className='updateContainer'
+				style={{ display: mobile ? (updateV ? 'flex' : 'none') : 'flex' }}
+			>
+				<div className='container updates'>
+					<Update />
 				</div>
 			</div>
 			<div>
-				<IdeaFunnel ifView={view.ifView} setView={setView} setBlur={setBlur} />
-				<Ignite igniteView={view.igniteView} setView={setView} setBlur={setBlur} />
+				<IdeaFunnel
+					ifView={view.ifView}
+					setView={setView}
+					setBlur={setBlur}
+					mobile={mobile}
+				/>
+				<Ignite
+					igniteView={view.igniteView}
+					setView={setView}
+					setBlur={setBlur}
+					mobile={mobile}
+				/>
 				<AcademicProgram
 					aepView={view.aepView}
 					setView={setView}
 					setBlur={setBlur}
+					mobile={mobile}
 				/>
-				<StartupLabs LabView={view.LabView} setView={setView} setBlur={setBlur} />
+				<StartupLabs
+					LabView={view.LabView}
+					setView={setView}
+					setBlur={setBlur}
+					mobile={mobile}
+				/>
 				<Incubation
 					incubationView={view.incubationView}
 					setView={setView}
 					setBlur={setBlur}
+					mobile={mobile}
 				/>
 				<Workshops
 					workshopView={view.workshopView}
 					setView={setView}
 					setBlur={setBlur}
+					mobile={mobile}
 				/>
-				<Talks eniView={view.eniView} setView={setView} setBlur={setBlur} />
-				<MIC micView={view.micView} setView={setView} setBlur={setBlur} />
-				<UpcEvents upcevents={view.upcevents} setView={setView} setBlur={setBlur} />
+				<Talks
+					eniView={view.eniView}
+					setView={setView}
+					setBlur={setBlur}
+					mobile={mobile}
+				/>
+				<MIC
+					micView={view.micView}
+					setView={setView}
+					setBlur={setBlur}
+					mobile={mobile}
+				/>
+				<UpcEvents
+					upcevents={view.upcevents}
+					setView={setView}
+					setBlur={setBlur}
+					mobile={mobile}
+				/>
 				<FieldVisit
 					fieldVisits={view.fieldVisits}
 					setView={setView}
 					setBlur={setBlur}
+					mobile={mobile}
 				/>
 			</div>
 		</div>

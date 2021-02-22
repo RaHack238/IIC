@@ -31,7 +31,7 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 		// >
 		<div
 			className='activityIcons iconDiv'
-			style={{ display: mobile ? (display ? 'flex' : 'none') : '' }}
+			style={{ display: mobile ? (display ? 'flex' : 'none') : '', width:mobile ? '100vw' : ""}}
 		>
 			<img
 				src={funnel}

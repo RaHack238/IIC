@@ -3,7 +3,7 @@ import { ReactComponent as Cross }  from "../../vectors/cross.svg";
 import './startup.css';
 import startupicon from '../../vectors/startuplab2.svg';
 
-const StartupLabs = ({ LabView, setView, setBlur }) => {
+const StartupLabs = ({ LabView, setView, setBlur,mobile }) => {
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
@@ -23,7 +23,7 @@ const StartupLabs = ({ LabView, setView, setBlur }) => {
 				}}
 			/>
 
-			<h1 style={{ color: 'var(--orange)' }}>Startup Labs</h1>
+			<h1 style={{ color: 'var(--orange)',textAlign: mobile? 'center' : 'none' }}>Startup Labs</h1>
 
 			<div className='layout'>
 				<div className='images'>
