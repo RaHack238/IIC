@@ -2,7 +2,7 @@ import { React } from 'react';
 import { ReactComponent as Cross } from '../../vectors/cross.svg';
 import fieldvisits from '../../vectors/fieldvisits2.svg';
 
-const FieldVisit = ({ fieldVisits, setView, setBlur }) => {
+const FieldVisit = ({ fieldVisits, setView, setBlur, mobile }) => {
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
@@ -22,7 +22,7 @@ const FieldVisit = ({ fieldVisits, setView, setBlur }) => {
 					setBlur(false);
 				}}
 			/>
-			<h2 style={{ color: 'var(--orange)' }}>Field Visits</h2>
+			<h2 style={{ color: 'var(--orange)' ,textAlign: mobile? 'center' : 'none'}}>Field Visits</h2>
 
 			<div className='layout'>
 				<div className='images'>

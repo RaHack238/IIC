@@ -3,7 +3,7 @@ import { ReactComponent as Cross }  from "../../vectors/cross.svg";
 import './incubation.css';
 import incubate from '../../vectors/incubation2.svg';
 
-const Incubation = ({ incubationView, setView, setBlur }) => {
+const Incubation = ({ incubationView, setView, setBlur, mobile }) => {
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
@@ -24,7 +24,7 @@ const Incubation = ({ incubationView, setView, setBlur }) => {
 				}}
 			/>
 
-			<h1 style={{ color: 'var(--orange)' }}>Incubation Services</h1>
+			<h1 style={{ color: 'var(--orange)' ,textAlign: mobile? 'center' : 'none'}}>Incubation Services</h1>
 
 			<div className='layout'>
 				<div className='images'>

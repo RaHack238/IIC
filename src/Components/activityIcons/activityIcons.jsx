@@ -27,7 +27,7 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 	return (
 		<div
 			className='activityIcons'
-			style={{ display: mobile ? (display ? 'flex' : 'none') : '' }}
+			style={{ display: mobile ? (display ? 'flex' : 'none') : '', width:mobile ? '100vw' : ""}}
 		>
 			<div className='iconDiv'>
 				<img

@@ -19,7 +19,6 @@ class NavBar extends React.Component {
 	};
 
 	render() {
-		
 		let nav = null;
 		if (this.state.showNavlines) {
 			nav = (
@@ -32,11 +31,9 @@ class NavBar extends React.Component {
 		} else {
 			nav = (
 				<div id='closingNav'>
-					
 					<div id='nbcontainer'>
 						<div id='navitems'>
 							<Link to='/activities'>Activities</Link>
-
 							<Link to='/programs'>Programs</Link>
 							<Link to='/contact-us'>Council</Link>
 						</div>

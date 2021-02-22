@@ -4,7 +4,7 @@ import './mic.css';
 import micicon from '../../vectors/mic2.svg';
 import toy from '../../vectors/toy.svg';
 
-const MIC = ({ micView, setView, setBlur }) => {
+const MIC = ({ micView, setView, setBlur,mobile }) => {
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
@@ -29,7 +29,7 @@ const MIC = ({ micView, setView, setBlur }) => {
 				}}
 			/>
 
-			<h1 style={{ color: 'var(--orange)' }}>MIC Activities</h1>
+			<h1 style={{ color: 'var(--orange)' ,textAlign: mobile? 'center' : 'none'}}>MIC Activities</h1>
 
 			<div className='layout'>
 				<div className='images'>

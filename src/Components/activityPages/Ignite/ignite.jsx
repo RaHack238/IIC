@@ -4,7 +4,7 @@ import './ignite.css';
 import igniteIcon from '../../vectors/ignite2.svg';
 import ignitePoster from '../../vectors/ignite3.svg';
 
-const Ignite = ({ igniteView, setView, setBlur }) => {
+const Ignite = ({ igniteView, setView, setBlur, mobile }) => {
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
@@ -23,7 +23,7 @@ const Ignite = ({ igniteView, setView, setBlur }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 style={{ color: 'var(--orange)' }}>
+			<h1 style={{ color: 'var(--orange)',textAlign: mobile? 'center' : 'none' }}>
 				Ignite PoC Grant (Proof of Concept)
 			</h1>
 			<div className='images'>

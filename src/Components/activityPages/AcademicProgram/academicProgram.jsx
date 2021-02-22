@@ -3,7 +3,7 @@ import { ReactComponent as Cross } from '../../vectors/cross.svg';
 import './academicProgram.css';
 import aepicon from '../../vectors/aep2.svg';
 
-const AcademicProgram = ({ aepView, setView, setBlur }) => {
+const AcademicProgram = ({ aepView, setView, setBlur, mobile }) => {
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
@@ -22,7 +22,7 @@ const AcademicProgram = ({ aepView, setView, setBlur }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 style={{ color: 'var(--orange)' }}>Academic Enabled Program</h1>
+			<h1 style={{ color: 'var(--orange)' , textAlign: mobile? 'center' : 'none'}}>Academic Enabled Program</h1>
 			<div className='layout'>
 				<div className='images'>
 					<img src={aepicon} alt='aep-logo' style={imgStyle} />

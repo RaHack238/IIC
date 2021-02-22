@@ -6,6 +6,16 @@
 	width: 100%;
 	text-align: center;
 }
+
+.navbar__title {
+	color: var(--orange);
+	font-family: "Montserrat", sans-serif;
+}
+
+.navbar__center{
+	text-align: center;
+}
+
 .updateContainer {
 	margin-top: 5rem;
 	right: 0;
@@ -102,9 +112,16 @@ hr {
 	right: 0;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 @media only screen and (max-width: 720px) {
+
 	.images {
-		display: none;
+		display: flex;
+		flex-direction: column;
+		height: 30vh;
 	}
 	.updates {
 		display: flex;
@@ -122,4 +139,14 @@ hr {
 		height: 80vh;
 		width: 100%;
 	}
+
+	:root{
+		--flag:1;
+	}
 }
+
+:root{
+	--flag: 0;
+}
+
+
