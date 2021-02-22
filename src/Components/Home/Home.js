@@ -3,7 +3,7 @@ import { React, useState } from 'react';
 import iitlogo from './assets/iit goa logo@1X.svg'
 import yellowStrip from './assets/Rectangle 1.svg'
 import iiclogo from './assets/iiclogo.svg'
-
+import NavBar from '../Navbar/Navbar';
 
 
 const Home=()=>{
@@ -23,6 +23,7 @@ const Home=()=>{
                     <h3 class='heading492002 ic492002'>
                         Institute's Innovation Council
                     </h3>
+					<NavBar />
 
                     <div className='motivesWrapper'>
                         <div className='motives1 motives'>

@@ -12,6 +12,7 @@ function App() {
 	if(isMobile)
 	return (
 		<div className='App'>
+			{/* <NavBar /> */}
 			<Switch>
 				<Route exact path='/' component={Home} />
 				<Route path='/activities' component={Activity} />
@@ -23,7 +24,6 @@ function App() {
 	else{
 		return (
 			<div className='App'>
-				{/* <NavBar /> */}
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route path='/activities' component={Activity} />
