@@ -14,6 +14,7 @@ import MIC from '../../Components/activityPages/MIC/mic';
 import Update from '../../Components/activityIcons/update/update';
 import iitlogo from '../../Components/Home/assets/iitgoalogo.svg';
 import iiclogo from '../../Components/Home/assets/iiclogo.svg';
+import NavBar from '../../Components/Navbar/Navbar'
 
 const Activity = () => {
 	const [view, setView] = useState({
@@ -33,6 +34,7 @@ const Activity = () => {
 	const [iconV, setIconV] = useState(true);
 	const mediaMatch = window.matchMedia('(max-width: 720px)');
 	const [mobile, setMobile] = useState(mediaMatch.matches);
+
 	useEffect(() => {
 		const handler = (e) => setMobile(e.matches);
 		mediaMatch.addListener(handler);
@@ -41,10 +43,16 @@ const Activity = () => {
 
 	return (
 		<div>
-			<div className="navbar" style={{display: 'flex', flexDirection:'row'}}>
-				<div className="logos">
-					<img src={iitlogo} alt="iit logo" style={{width:'8.3vw', marginTop:'0.83vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} />
-					<img src={iiclogo} alt="iic logo" style={{width:'15.2vw', marginTop: '0.83vw'}}/>
+			< div className="navbar" style={{display:'flex', flexDirection:'row'}}>
+				<div className="logos" style={{float:'left !important'}}>
+					<img src={iitlogo} alt="iit logo" style={{width:'7vw', marginTop:'0.83vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} />
+					<img src={iiclogo} alt="iic logo" style={{width:'14vw', marginTop: '0.83vw'}}/>
+				</div>
+				<div className="heading" style={{display:'inline-block', float:'none !important'}}>
+					<h1 style={{color:'var(--orange)'}}>Activities</h1>
+				</div>
+				<div className="menu" style={{float:'right !important', display:blur? 'none':''}}>
+					<NavBar />
 				</div>
 			</div>
 			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>

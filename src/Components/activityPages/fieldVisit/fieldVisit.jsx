@@ -29,8 +29,8 @@ const FieldVisit = ({ fieldVisits, setView, setBlur, mobile }) => {
 					<img src={fieldvisits} alt='fielf-visit-icon' style={imgStyle} />
 				</div>
 
-				<div className='content'>
-					<h1 style={{ color: 'var(--dark-blue)', textAlign: 'center' }}>
+				<div className='content' style={{textAlign:'center'}}>
+					<h1 style={{ color: 'var(--dark-blue)'}}>
 						COMING SOON!
 					</h1>
 				</div>

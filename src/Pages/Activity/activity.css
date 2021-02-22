@@ -17,7 +17,7 @@
 }
 
 .updateContainer {
-	margin-top: 5rem;
+	margin-top: 2rem;
 	right: 0;
 	width: 100%;
 	background-color: var(--light-orange);
@@ -32,7 +32,7 @@
 	justify-content: center;
 }
 .activity {
-	margin-top: 5rem;
+	margin-top: 2rem;
 	padding-top: 2rem 0 2rem;
 	display: flex;
 }
@@ -40,7 +40,7 @@
 	width: 60vw;
 	border-top-right-radius: 35px;
 	border-bottom-right-radius: 35px;
-	height: 100%;
+	/* height: 100%; */
 	background-color: var(--light-blue);
 	margin-right: 1.5rem;
 	left: 0;
@@ -76,7 +76,6 @@ hr {
 	border-radius: 35px 35px 0 0;
 	display: flex;
 	max-height: 100vh;
-	/* overflow: auto; */
 	overflow-x:hidden
 }
 .images {
@@ -99,7 +98,7 @@ hr {
 .updateButton {
 	background-color: var(--light-orange);
 	width: 40px;
-	margin-top: 5rem;
+	margin-top: 1rem;
 	border-top-left-radius: 35px;
 	border-bottom-left-radius: 35px;
 	right: 0;

@@ -23,7 +23,7 @@ function App() {
 	else{
 		return (
 			<div className='App'>
-				<NavBar />
+				{/* <NavBar /> */}
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route path='/activities' component={Activity} />
