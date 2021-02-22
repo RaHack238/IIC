@@ -1,7 +1,7 @@
-.cross{
-      align-self: flex-end  !important;
+.cross{  
       width: 2rem;
-      margin: 1rem;
+      margin: 2rem;
+      float: right
 }
 
 .cross :hover{

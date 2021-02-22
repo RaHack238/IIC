@@ -7,7 +7,7 @@ import funnel from '../../vectors/ideafunnel4.svg';
 
 const IdeaFunnel = ({ ifView, setView, setBlur, mobile }) => {
 	const imgStyle = {
-		width: '30vw',
+		width: mobile? '90vw' : '30vw',
 		height: '30vh',
 		margin: '1rem',
 	};
@@ -25,12 +25,12 @@ const IdeaFunnel = ({ ifView, setView, setBlur, mobile }) => {
 				}}
 			/>
 
-			<h1 style={{ color: 'var(--orange)' , textAlign: mobile ? 'center' : 'none'}}>Idea Funnel</h1>
+			<h1 style={{ color: 'var(--orange)' , textAlign:  'center',marginTop:'2rem' }}>Idea Funnel</h1>
 
-			<div className='images'>
-				<img src={ideafunnel} alt='icon' style={imgStyle} />
-				<img src={ideafunnelposter} alt='poster' style={imgStyle} />
-				<img src={funnel} alt='funnel' style={imgStyle} />
+			<div className='images' style={{display:mobile? 'flex':'', flexDirection:mobile? 'column':'row'}}>
+				<img src={ideafunnel} alt='icon' style={imgStyle} className="notMobile"/>
+				<img src={ideafunnelposter} alt='poster' style={imgStyle} className="inMobile"/>
+				<img src={funnel} alt='funnel' style={imgStyle} className="inMobile"/>
 			</div>
 
 			<div className='content'>

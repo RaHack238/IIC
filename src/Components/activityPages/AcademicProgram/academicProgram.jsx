@@ -22,7 +22,7 @@ const AcademicProgram = ({ aepView, setView, setBlur, mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 style={{ color: 'var(--orange)' , textAlign: mobile? 'center' : 'none'}}>Academic Enabled Program</h1>
+			<h1 style={{ color: 'var(--orange)' , textAlign: 'center', marginTop:'2rem'}}>Academic Enabled Program</h1>
 			<div className='layout'>
 				<div className='images' style={{display: mobile ? 'none' : 'block'}}>
 					<img src={aepicon} alt='aep-logo' style={imgStyleVector} className="notMobile"/>

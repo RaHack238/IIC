@@ -126,10 +126,8 @@ hr {
 	:root{
 		--flag:1;
 	}
-	.images {
-		display: flex;
-		flex-direction: column;
-		height: 30vh;
+	.notMobile{
+		display: none;
 	}
 	.updates {
 		display: flex;

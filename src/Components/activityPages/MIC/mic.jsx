@@ -29,11 +29,11 @@ const MIC = ({ micView, setView, setBlur,mobile }) => {
 				}}
 			/>
 
-			<h1 style={{ color: 'var(--orange)' ,textAlign: mobile? 'center' : 'none'}}>MIC Activities</h1>
+			<h1 style={{ color: 'var(--orange)' ,textAlign: 'center',marginTop:'2rem'}}>MIC Activities</h1>
 
 			<div className='layout'>
 				<div className='images'>
-					<img src={micicon} alt='incubate-logo' style={imgStyle} />
+					<img src={micicon} alt='incubate-logo' style={imgStyle} className="notMobile"/>
 				</div>
 
 				<div className='content'>

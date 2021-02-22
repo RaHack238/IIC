@@ -15,9 +15,9 @@ const UpcEvents = ({ upcevents, setView, setBlur,mobile }) => (
 				setBlur(false);
 			}}
 		/>
-		<h2 style={{ color: 'var(--orange)',textAlign: mobile? 'center' : 'none' }}>Upcoming Events</h2>
+		<h2 style={{ color: 'var(--orange)',textAlign: 'center',marginTop:'2rem' }}>Upcoming Events</h2>
 		<div className='upce-content'>
-			<img src={upcoming} className='upcoming' />
+			<img src={upcoming} className='upcoming notMobile' />
 			<div style={{ display: 'inline-block', width: '65vw' }}>
 				<span>COMING SOON</span>
 			</div>

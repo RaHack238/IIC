@@ -23,11 +23,11 @@ const Workshops = ({ workshopView, setView, setBlur,mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 style={{ color: 'var(--orange)',textAlign:  'center'  }}>Workshops and Seminars</h1>
+			<h1 style={{ color: 'var(--orange)',textAlign:  'center',marginTop:'2rem' }}>Workshops and Seminars</h1>
 
 			<div className='layout'>
 				<div className='images'>
-					<img src={workshopicon} alt='workshop-logo' style={imgStyle} />
+					<img src={workshopicon} alt='workshop-logo' style={imgStyle} className="notMobile" />
 				</div>
 				<div className='content'>
 					<p style={{ color: 'var(--dark-blue)' }}>

@@ -40,7 +40,7 @@ const Activity = () => {
 	});
 
 	return (
-		<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
+		<div>
 			{console.log(mobile)}
 			{/* <div className="navbar">
 				<div className="logos">
@@ -59,41 +59,43 @@ const Activity = () => {
 							&rarr;
 						</div>
 			</div> */}
-			<div className='activity' style={{ width: iconV ? '100%' : '' }}>
+			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
+				<div className='activity' style={{ width: iconV ? '100%' : '' }}>
+					<div
+						className='iconButton'
+						style={{ display: mobile ? (iconV ? 'none' : 'flex') : 'none' }}
+						onClick={() => {
+							setIconV(true);
+							setUpdateV(false);
+						}}
+					>
+						&rarr;
+					</div>
+					<ActivityIcons
+						setView={setView}
+						setBlur={setBlur}
+						mobile={mobile}
+						display={iconV}
+					/>
+				</div>
 				<div
-					className='iconButton'
-					style={{ display: mobile ? (iconV ? 'none' : 'flex') : 'none' }}
+					className='updateButton'
+					style={{ display: mobile ? (updateV ? 'none' : 'flex') : 'none' }}
 					onClick={() => {
-						setIconV(true);
-						setUpdateV(false);
+						setIconV(false);
+						setUpdateV(true);
 					}}
 				>
-					&rarr;
+					{' '}
+					&larr;
 				</div>
-				<ActivityIcons
-					setView={setView}
-					setBlur={setBlur}
-					mobile={mobile}
-					display={iconV}
-				/>
-			</div>
-			<div
-				className='updateButton'
-				style={{ display: mobile ? (updateV ? 'none' : 'flex') : 'none' }}
-				onClick={() => {
-					setIconV(false);
-					setUpdateV(true);
-				}}
-			>
-				{' '}
-				&larr;
-			</div>
-			<div
-				className='updateContainer'
-				style={{ display: mobile ? (updateV ? 'flex' : 'none') : 'flex' }}
-			>
-				<div className='container updates'>
-					<Update />
+				<div
+					className='updateContainer'
+					style={{ display: mobile ? (updateV ? 'flex' : 'none') : 'flex' }}
+				>
+					<div className='container updates'>
+						<Update />
+					</div>
 				</div>
 			</div>
 			<div>

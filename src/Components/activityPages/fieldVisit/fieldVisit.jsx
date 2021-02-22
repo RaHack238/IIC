@@ -22,10 +22,10 @@ const FieldVisit = ({ fieldVisits, setView, setBlur, mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h2 style={{ color: 'var(--orange)' ,textAlign: mobile? 'center' : 'none'}}>Field Visits</h2>
+			<h2 style={{ color: 'var(--orange)' ,textAlign: 'center',marginTop:'2rem'}}>Field Visits</h2>
 
 			<div className='layout'>
-				<div className='images'>
+				<div className='images' className="notMobile">
 					<img src={fieldvisits} alt='fielf-visit-icon' style={imgStyle} />
 				</div>
 

@@ -4,9 +4,9 @@
 }
 
 .cross{
-      align-self: flex-end  !important;
+      float:right;
       width: 2rem;
-      margin: 1rem;
+      margin: 2rem;
 }
 
 .cross :hover{

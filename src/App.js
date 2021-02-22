@@ -6,9 +6,12 @@ import Home from './Components/Home/Home';
 import NavBar from './Components/Navbar/Navbar';
 
 function App() {
+
+	const isMobile = window.innerWidth <= 720;
+
+	if(isMobile)
 	return (
 		<div className='App'>
-			<NavBar />
 			<Switch>
 				<Route exact path='/' component={Home} />
 				<Route path='/activities' component={Activity} />
@@ -17,6 +20,19 @@ function App() {
 			</Switch>
 		</div>
 	);
+	else{
+		return (
+			<div className='App'>
+				<NavBar />
+				<Switch>
+					<Route exact path='/' component={Home} />
+					<Route path='/activities' component={Activity} />
+					<Route path='/contact-us' component={ContactUs} />
+					<Route path='/program' />
+				</Switch>
+			</div>
+		);
+	}
 }
 
 export default App;
