@@ -6,10 +6,12 @@
 .cross{
       width: 2rem;
       margin: 1rem;
+      top:0px;
+      right:0px;
 }
 
 .cross :hover{
-      cursor: pointer;
+      cursor: pointer;;
 }
 
 

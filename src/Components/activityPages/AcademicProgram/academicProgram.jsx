@@ -4,7 +4,7 @@ import './academicProgram.css';
 import aepicon from '../../vectors/aep2.svg';
 
 const AcademicProgram = ({ aepView, setView, setBlur, mobile }) => {
-	const imgStyle = {
+	const imgStyleVector = {
 		width: '30vw',
 		height: '30vh',
 		margin: '2rem',
@@ -24,8 +24,8 @@ const AcademicProgram = ({ aepView, setView, setBlur, mobile }) => {
 			/>
 			<h1 style={{ color: 'var(--orange)' , textAlign: mobile? 'center' : 'none'}}>Academic Enabled Program</h1>
 			<div className='layout'>
-				<div className='images'>
-					<img src={aepicon} alt='aep-logo' style={imgStyle} />
+				<div className='images' style={{display: mobile ? 'none' : 'block'}}>
+					<img src={aepicon} alt='aep-logo' style={imgStyleVector} />
 				</div>
 
 				<div className='content'>
