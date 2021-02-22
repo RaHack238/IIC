@@ -14,7 +14,6 @@ import MIC from '../../Components/activityPages/MIC/mic';
 import Update from '../../Components/activityIcons/update/update';
 
 const Activity = () => {
-	const hasWindow = typeof window !== 'undefined';
 	const [view, setView] = useState({
 		ifView: false,
 		igniteView: false,
@@ -28,19 +27,18 @@ const Activity = () => {
 		upcevents: false,
 	});
 	const [blur, setBlur] = useState(false);
-	const [mobile, setMobile] = useState(false);
-	const [updateV, setUpdateV] = useState(true);
-	const [iconV, setIconV] = useState(false);
-
+	const [updateV, setUpdateV] = useState(false);
+	const [iconV, setIconV] = useState(true);
+	const mediaMatch = window.matchMedia('(max-width: 720px)');
+	const [mobile, setMobile] = useState(mediaMatch.matches);
 	useEffect(() => {
-		const width = hasWindow ? window.innerWidth : null;
-		if (width < 720) {
-			setMobile(true);
-		}
-		console.log(width);
-	}, []);
+		const handler = (e) => setMobile(e.matches);
+		mediaMatch.addListener(handler);
+		return () => mediaMatch.removeListener(handler);
+	});
 
 	return (
+		
 		<div>
 			{console.log(mobile)}
 			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
@@ -55,7 +53,6 @@ const Activity = () => {
 					>
 						&rarr;
 					</div>
-
 					<ActivityIcons
 						setView={setView}
 						setBlur={setBlur}
@@ -65,7 +62,7 @@ const Activity = () => {
 				</div>
 				<div
 					className='updateButton'
-					style={{ display: updateV ? 'none' : 'flex' }}
+					style={{ display: mobile ? updateV ? 'none' : 'flex':'none' }}
 					onClick={() => {
 						setIconV(false);
 						setUpdateV(true);
