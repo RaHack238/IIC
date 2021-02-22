@@ -17,9 +17,9 @@ const Talks = ({eniView,setView,setBlur,mobile}) => {
                         setView({eniView: false});
                         setBlur(false);
                   }}/>
-                  <h1 style={{color:'var(--orange)',textAlign: mobile? 'center' : 'none'}}>Entrepreneurship and Leadership Talks</h1>
+                  <h1 style={{color:'var(--orange)',textAlign:  'center' }}>Entrepreneurship and Leadership Talks</h1>
                   <div className="layout">
-                        <div className="images">
+                        <div className="images" style={{display: mobile ? 'none' : 'block'}}>
                               <img src={talksicon} alt="talks-icon" style={imgStyle} />
                         </div>
 

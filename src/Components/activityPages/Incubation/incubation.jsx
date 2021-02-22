@@ -24,10 +24,10 @@ const Incubation = ({ incubationView, setView, setBlur, mobile }) => {
 				}}
 			/>
 
-			<h1 style={{ color: 'var(--orange)' ,textAlign: mobile? 'center' : 'none'}}>Incubation Services</h1>
+			<h1 style={{ color: 'var(--orange)' ,textAlign: 'center' }}>Incubation Services</h1>
 
 			<div className='layout'>
-				<div className='images'>
+				<div className='images' style={{display: mobile ? 'none' : 'block'}}>
 					<img src={incubate} alt='incubate-logo' style={imgStyle} />
 				</div>
 

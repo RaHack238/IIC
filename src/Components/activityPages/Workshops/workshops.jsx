@@ -26,7 +26,7 @@ const Workshops = ({ workshopView, setView, setBlur,mobile }) => {
 			<h1 style={{ color: 'var(--orange)',textAlign:  'center'  }}>Workshops and Seminars</h1>
 
 			<div className='layout'>
-				<div className='images'>
+				<div className='images' style={{display: mobile ? 'none' : 'block'}}>
 					<img src={workshopicon} alt='workshop-logo' style={imgStyle} />
 				</div>
 				<div className='content'>

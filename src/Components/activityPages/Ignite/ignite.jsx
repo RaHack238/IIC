@@ -6,9 +6,16 @@ import ignitePoster from '../../vectors/ignite3.svg';
 
 const Ignite = ({ igniteView, setView, setBlur, mobile }) => {
 	const imgStyle = {
+		width: mobile? '90vw':'30vw',
+		height: '30vh',
+		margin: '2rem',
+	};
+
+	const imgStyleVector = {
 		width: '30vw',
 		height: '30vh',
 		margin: '2rem',
+		display: mobile ? 'none' : 'block'
 	};
 
 	return (
@@ -23,11 +30,11 @@ const Ignite = ({ igniteView, setView, setBlur, mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 style={{ color: 'var(--orange)',textAlign: mobile? 'center' : 'none' }}>
+			<h1 style={{ color: 'var(--orange)',textAlign: 'center'  }}>
 				Ignite PoC Grant (Proof of Concept)
 			</h1>
 			<div className='images'>
-				<img src={igniteIcon} alt='ignite-icon' style={imgStyle} />
+				<img src={igniteIcon} alt='ignite-icon' style={imgStyleVector} />
 				<img src={ignitePoster} alt='ignite-poster' style={imgStyle} />
 			</div>
 
