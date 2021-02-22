@@ -14,10 +14,10 @@ import './activityIcons.css';
 const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 
 	const imgStyle = {
-		width: mobile? '7rem':'9rem',
-		margin: mobile? '0.5rem' : '1.5rem',
+		width: mobile ? '7rem' : '10vw',
+		margin: mobile ? '0.5rem' : '0.5rem 1.5rem 0.5rem 1.5rem',
 		cursor: 'pointer',
-		padding: '1rem'
+		padding: mobile ? '1.5rem' : '1.3vw',
 	};
 
 	return (
