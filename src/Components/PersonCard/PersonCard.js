@@ -8,18 +8,16 @@ export default class PersonCard extends Component {
   setFlipTrue = (e) => {
     e.preventDefault();
     this.setState({ flipped: true });
-    console.log(true, this.props.index);
   };
   setFlipFalse = (e) => {
     e.preventDefault();
     this.setState({ flipped: false });
-    console.log(false, this.props.index);
   };
 
   render() {
     return (
       <div
-        className={"col-md-4 col-lg-3 col-6 flip-card"}
+        className={"col-md-4 col-lg-3 col-xs-6 flip-card"}
         onMouseEnter={(e) => this.setFlipTrue(e)}
         onMouseLeave={(e) => this.setFlipFalse(e)}
       >
