@@ -41,7 +41,7 @@ class NavBar extends React.Component {
 							<button
 								id='navButton'
 								type='button'
-								class='cross'
+								class='cross2'
 								onClick={this.NavbarExpandHandler}
 							>
 								<img src={xmark}></img>

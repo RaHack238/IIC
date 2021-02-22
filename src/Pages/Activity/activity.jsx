@@ -41,24 +41,12 @@ const Activity = () => {
 
 	return (
 		<div>
-			{console.log(mobile)}
-			{/* <div className="navbar">
+			<div className="navbar" style={{display: 'flex', flexDirection:'row'}}>
 				<div className="logos">
-					<img src={iitlogo} alt="IIT Goa Logo" style={{width:'8.3vw', marginTop:'0.83vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} />
-					<img src={iiclogo} alt="IIC Logo" style={{width:'15.2vw', marginTop:'0.83vw'}}/>
+					<img src={iitlogo} alt="iit logo" style={{width:'8.3vw', marginTop:'0.83vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} />
+					<img src={iiclogo} alt="iic logo" style={{width:'15.2vw', marginTop: '0.83vw'}}/>
 				</div>
-				<div className="navbar__center">
-					<h1 className="navbar__title">Activity</h1>
-				</div>
-					<div
-						className='iconButton'
-						style={{ display: mobile ? (iconV ? 'none' : 'flex') : 'none' }}
-						onClick={() => {
-							setIconV(true);
-							setUpdateV(false)	}}>
-							&rarr;
-						</div>
-			</div> */}
+			</div>
 			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
 				<div className='activity' style={{ width: iconV ? '100%' : '' }}>
 					<div

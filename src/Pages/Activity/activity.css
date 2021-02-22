@@ -76,7 +76,8 @@ hr {
 	border-radius: 35px 35px 0 0;
 	display: flex;
 	max-height: 100vh;
-	overflow: auto;
+	/* overflow: auto; */
+	overflow-x:hidden
 }
 .images {
 	display: flex;
@@ -152,6 +153,10 @@ hr {
 
 	:root{
 		--flag:1;
+	}
+
+	.cross{
+		display:flex
 	}
 }
 

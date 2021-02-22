@@ -2,7 +2,6 @@
 .cross{
     width: 2rem;
     margin: 0.5rem 0.5rem 0 0;
-    cursor: pointer;
     justify-self: flex-end;
 }
 .upcoming{

@@ -1,37 +1,29 @@
 import { React, useState } from 'react';
-import funnel from './assets/ideaFunnel.svg';
+import funnel from './assets/Idea funnel.svg';
 import ignite from './assets/ignite.svg';
-import acdprogram from './assets/academicProgram.svg';
-import startuplab from './assets/StartupLab.svg';
-import visits from './assets/FieldVisit.svg';
-import upcevents from './assets/UpcomingEvents.svg';
-import incubation from './assets/Incubation.svg';
-import mic from './assets/MICActivity.svg';
-import talks from './assets/Talks.svg';
-import workshops from './assets/workshops.svg';
+import acdprogram from './assets/AEIP.svg';
+import startuplab from './assets/Startup labs.svg';
+import visits from './assets/field visits.svg';
+import upcevents from './assets/upcoming events.svg';
+import incubation from './assets/Incubation services.svg';
+import mic from './assets/MIC activities.svg';
+import talks from './assets/enr.svg';
+import workshops from './assets/seminars.svg';
 import './activityIcons.css';
 
 const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
+
 	const imgStyle = {
-		width: '15vw',
-		height: '20vh',
+		width: mobile? '7rem':'9rem',
+		margin: mobile? '0.5rem' : '1.5rem',
 		cursor: 'pointer',
+		padding: '1rem'
 	};
 
-	const imgStyle1 = {
-		width: '15vw',
-		height: '18vh',
-		paddingTop: '1.5rem',
-		cursor: 'pointer',
-	};
 	return (
-		// <div
-		// 	className='activityIcons'
-
-		// >
 		<div
 			className='activityIcons iconDiv'
-			style={{ display: mobile ? (display ? 'flex' : 'none') : ''}}
+			style={{ display: mobile ? (display ? 'flex' : 'none') : '', width:mobile? '100%':'', overflowY: mobile? 'scroll':''}}
 		>
 			<img
 				src={funnel}
@@ -47,7 +39,7 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 			<img
 				src={ignite}
 				alt='ignite'
-				style={imgStyle1}
+				style={imgStyle}
 				onClick={() => {
 					setView({
 						igniteView: true,
@@ -58,7 +50,7 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 			<img
 				src={acdprogram}
 				alt='acdprogram'
-				style={imgStyle1}
+				style={imgStyle}
 				onClick={() => {
 					setView({
 						aepView: true,
@@ -77,8 +69,6 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
-			{/* </div>
-			<div className='iconDiv'> */}
 			<img
 				src={incubation}
 				alt='incubation'
@@ -123,12 +113,10 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					setBlur(true);
 				}}
 			/>
-			{/* </div>
-			<div className='iconDiv'> */}
 			<img
 				src={visits}
 				alt='field-visits'
-				style={imgStyle1}
+				style={imgStyle}
 				onClick={() => {
 					setView({
 						fieldVisits: true,
@@ -139,7 +127,7 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 			<img
 				src={upcevents}
 				alt='upc-events'
-				style={imgStyle1}
+				style={imgStyle}
 				onClick={() => {
 					setView({
 						upcevents: true,
@@ -148,7 +136,6 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 				}}
 			/>
 		</div>
-		// </div>
 	);
 };
 
