@@ -25,127 +25,130 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 		cursor: 'pointer',
 	};
 	return (
+		// <div
+		// 	className='activityIcons'
+
+		// >
 		<div
-			className='activityIcons'
+			className='activityIcons iconDiv'
 			style={{ display: mobile ? (display ? 'flex' : 'none') : '', width:mobile ? '100vw' : ""}}
 		>
-			<div className='iconDiv'>
-				<img
-					src={funnel}
-					alt='idea-funnel'
-					style={imgStyle}
-					onClick={() => {
-						setView({
-							ifView: true,
-						});
-						setBlur(true);
-					}}
-				/>
-				<img
-					src={ignite}
-					alt='ignite'
-					style={imgStyle1}
-					onClick={() => {
-						setView({
-							igniteView: true,
-						});
-						setBlur(true);
-					}}
-				/>
-				<img
-					src={acdprogram}
-					alt='acdprogram'
-					style={imgStyle1}
-					onClick={() => {
-						setView({
-							aepView: true,
-						});
-						setBlur(true);
-					}}
-				/>
-				<img
-					src={startuplab}
-					alt='startup-lab'
-					style={imgStyle}
-					onClick={() => {
-						setView({
-							LabView: true,
-						});
-						setBlur(true);
-					}}
-				/>
-			</div>
-			<div className='iconDiv'>
-				<img
-					src={incubation}
-					alt='incubation'
-					style={imgStyle}
-					onClick={() => {
-						setView({
-							incubationView: true,
-						});
-						setBlur(true);
-					}}
-				/>
-				<img
-					src={workshops}
-					alt='workshops'
-					style={imgStyle}
-					onClick={() => {
-						setView({
-							workshopView: true,
-						});
-						setBlur(true);
-					}}
-				/>
-				<img
-					src={talks}
-					alt='talks'
-					style={imgStyle}
-					onClick={() => {
-						setView({
-							eniView: true,
-						});
-						setBlur(true);
-					}}
-				/>
-				<img
-					src={mic}
-					alt='mic-activity'
-					style={imgStyle}
-					onClick={() => {
-						setView({
-							micView: true,
-						});
-						setBlur(true);
-					}}
-				/>
-			</div>
-			<div className='iconDiv'>
-				<img
-					src={visits}
-					alt='field-visits'
-					style={imgStyle1}
-					onClick={() => {
-						setView({
-							fieldVisits: true,
-						});
-						setBlur(true);
-					}}
-				/>
-				<img
-					src={upcevents}
-					alt='upc-events'
-					style={imgStyle1}
-					onClick={() => {
-						setView({
-							upcevents: true,
-						});
-						setBlur(true);
-					}}
-				/>
-			</div>
+			<img
+				src={funnel}
+				alt='idea-funnel'
+				style={imgStyle}
+				onClick={() => {
+					setView({
+						ifView: true,
+					});
+					setBlur(true);
+				}}
+			/>
+			<img
+				src={ignite}
+				alt='ignite'
+				style={imgStyle1}
+				onClick={() => {
+					setView({
+						igniteView: true,
+					});
+					setBlur(true);
+				}}
+			/>
+			<img
+				src={acdprogram}
+				alt='acdprogram'
+				style={imgStyle1}
+				onClick={() => {
+					setView({
+						aepView: true,
+					});
+					setBlur(true);
+				}}
+			/>
+			<img
+				src={startuplab}
+				alt='startup-lab'
+				style={imgStyle}
+				onClick={() => {
+					setView({
+						LabView: true,
+					});
+					setBlur(true);
+				}}
+			/>
+			{/* </div>
+			<div className='iconDiv'> */}
+			<img
+				src={incubation}
+				alt='incubation'
+				style={imgStyle}
+				onClick={() => {
+					setView({
+						incubationView: true,
+					});
+					setBlur(true);
+				}}
+			/>
+			<img
+				src={workshops}
+				alt='workshops'
+				style={imgStyle}
+				onClick={() => {
+					setView({
+						workshopView: true,
+					});
+					setBlur(true);
+				}}
+			/>
+			<img
+				src={talks}
+				alt='talks'
+				style={imgStyle}
+				onClick={() => {
+					setView({
+						eniView: true,
+					});
+					setBlur(true);
+				}}
+			/>
+			<img
+				src={mic}
+				alt='mic-activity'
+				style={imgStyle}
+				onClick={() => {
+					setView({
+						micView: true,
+					});
+					setBlur(true);
+				}}
+			/>
+			{/* </div>
+			<div className='iconDiv'> */}
+			<img
+				src={visits}
+				alt='field-visits'
+				style={imgStyle1}
+				onClick={() => {
+					setView({
+						fieldVisits: true,
+					});
+					setBlur(true);
+				}}
+			/>
+			<img
+				src={upcevents}
+				alt='upc-events'
+				style={imgStyle1}
+				onClick={() => {
+					setView({
+						upcevents: true,
+					});
+					setBlur(true);
+				}}
+			/>
 		</div>
+		// </div>
 	);
 };
 
