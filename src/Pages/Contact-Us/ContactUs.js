@@ -1,32 +1,43 @@
 import React, { Component } from "react";
 import ContactUsFooter from "../../Components/ContactUsFooter/ContactUsFooter";
 import "./ContactUs.css";
-import iitGoaLogo from "./assets/iitGoaLogo.png";
-import iicLogo from "./assets/iicLogo.png";
+import iiclogo from "./assets/iiclogo.svg";
+import iitlogo from "./assets/iit goa logo@1X.svg";
+
 import PersonCard from "../../Components/PersonCard/PersonCard";
+import people from "./assets/people.js";
 
 export default class ContactUs extends Component {
+  state = { footer_visible: false };
+
+  componentDidMount() {
+    console.log(people);
+  }
   render() {
     return (
-      <div class="contact__us">
-        <div class="navbar__div">
-          <div class="navbar__left">
-            <img scr={iitGoaLogo} alt="IIT Goa" class="iit__goa__logo" />
-            <img scr={iicLogo} alt="IIC" class="iic__logo" />
+      <div className="contact__us">
+        <div className="navbar__div">
+          <div className="navbar__left">
+            <img scr={iitlogo} alt="IIT Goa" className="iit__goa__logo" />
+            <img scr={iiclogo} alt="IIC" className="iic__logo" />
           </div>
-          <div class="navbar__center">
-            <h1 class="navbar__title">Council</h1>
+          <div className="navbar__center">
+            <h1 className="navbar__title">Council</h1>
           </div>
-          <div class="navbar__right">
-            Navbar
-            {/* Insert navbar here  */}
-          </div>
+          <div className="navbar__right"></div>
         </div>
-        <div>
-          <PersonCard />
-          <PersonCard />
-          <PersonCard />
-          <PersonCard />
+        <div className="row main__council__window">
+          {people.map((person, index) => {
+            return (
+              <PersonCard
+                name={person.name}
+                designation={person.designation}
+                index={index}
+                key={index}
+                img={person.photo}
+              />
+            );
+          })}
         </div>
         <ContactUsFooter />
       </div>
