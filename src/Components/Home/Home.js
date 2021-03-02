@@ -9,6 +9,14 @@ import NavBar from '../Navbar/Navbar';
 const Home=()=>{
     return(
         <div id='outer492002'>
+            <div class="loader">
+                <div class='loaderiit ldr'>
+                    <img src={iitlogo}></img>
+                </div>
+                <div class='loaderiic ldr'>
+                    <img src={iiclogo}></img>
+                </div>
+            </div>
 
             <div id='iitlogo'>
                 <img src={iitlogo}></img>

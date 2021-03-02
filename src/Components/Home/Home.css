@@ -2,6 +2,25 @@
     position: relative;
     font-size: 16px;
 }
+.loader{
+    display: flex;
+    position: absolute;
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.ldr{
+    height: 8vw;
+}
+.ldr img{
+    height: 100%;
+    width: auto;
+}
+
 .ig492002{
     font-size: 4.375em;;
     position:relative;
@@ -82,11 +101,11 @@
 
 #yellowStrip{
     background-color:#FFD69A;
-    height: 5.41vw;
+    height: 4vw;
     width: 19.79vw;
     border-bottom-right-radius: 1.5vw;
     position: relative;
-    top: 6vw;
+    top: 5vw;
     z-index: 5;
     font-size: 16px;
 }
