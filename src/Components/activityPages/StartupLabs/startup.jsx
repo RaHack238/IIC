@@ -23,11 +23,16 @@ const StartupLabs = ({ LabView, setView, setBlur,mobile }) => {
 				}}
 			/>
 
-			<h1 style={{ color: 'var(--orange)',textAlign: 'center',marginTop:'2rem' }}>Startup Labs</h1>
+			<h1 className='headings'>Startup Labs</h1>
 
 			<div className='layout'>
 				<div className='images'>
-					<img src={startupicon} alt='startup-lab-icon' style={imgStyle} className="notMobile" />
+					<img
+						src={startupicon}
+						alt='startup-lab-icon'
+						style={imgStyle}
+						className='notMobile'
+					/>
 				</div>
 
 				<div className='content'>

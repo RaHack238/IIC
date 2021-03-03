@@ -23,12 +23,20 @@ const Ignite = ({ igniteView, setView, setBlur, mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 style={{ color: 'var(--orange)',textAlign: 'center',marginTop:'2rem' }}>
-				Ignite PoC Grant (Proof of Concept)
-			</h1>
-			<div className='images' >
-				<img src={igniteIcon} alt='ignite-icon' style={imgStyle} className="notMobile" />
-				<img src={ignitePoster} alt='ignite-poster' style={imgStyle} className="inMobile" />
+			<h1 className='headings'>Ignite PoC Grant (Proof of Concept)</h1>
+			<div className='images'>
+				<img
+					src={igniteIcon}
+					alt='ignite-icon'
+					style={imgStyle}
+					className='notMobile'
+				/>
+				<img
+					src={ignitePoster}
+					alt='ignite-poster'
+					style={imgStyle}
+					className='inMobile'
+				/>
 			</div>
 
 			<div className='content'>

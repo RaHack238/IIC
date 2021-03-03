@@ -23,156 +23,160 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 	return (
 		<div
 			className='activityIcons iconDiv'
-			style={{ display: mobile ? (display ? 'flex' : 'none') : '', width:mobile? '100%':'', overflowY: mobile? 'scroll':''}}
+			style={{
+				display: mobile ? (display ? 'flex' : 'none') : '',
+				width: mobile ? '100%' : '',
+				overflowY: mobile ? 'scroll' : '',
+			}}
 		>
-			<div className="indIcons">
-			<img
-				src={funnel}
-				alt='idea-funnel'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						ifView: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue', }}>Idea Funnel</h5>
+			<div className='indIcons'>
+				<img
+					src={funnel}
+					alt='idea-funnel'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							ifView: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>Idea Funnel</p>
 			</div>
 
-			<div className="indIcons">
-			<img
-				src={ignite}
-				alt='ignite'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						igniteView: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue'}}>Ignite</h5>
+			<div className='indIcons'>
+				<img
+					src={ignite}
+					alt='ignite'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							igniteView: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>Ignite</p>
 			</div>
 
-			<div className="indIcons">
-			<img
-				src={acdprogram}
-				alt='acdprogram'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						aepView: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue'}}>Academic Program</h5>
+			<div className='indIcons'>
+				<img
+					src={acdprogram}
+					alt='acdprogram'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							aepView: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>Academic Program</p>
 			</div>
 
-			<div className="indIcons">
-			<img
-				src={startuplab}
-				alt='startup-lab'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						LabView: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue'}}>Startup Labs</h5>
+			<div className='indIcons'>
+				<img
+					src={startuplab}
+					alt='startup-lab'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							LabView: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>Startup Labs</p>
 			</div>
 
-			<div className="indIcons">
-			<img
-				src={incubation}
-				alt='incubation'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						incubationView: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue'}}>Incubation</h5>
+			<div className='indIcons'>
+				<img
+					src={incubation}
+					alt='incubation'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							incubationView: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>Incubation</p>
 			</div>
 
-			< div className="indIcons">
-			<img
-				src={workshops}
-				alt='workshops'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						workshopView: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue', }}>Workshops & Seminars</h5>
+			<div className='indIcons'>
+				<img
+					src={workshops}
+					alt='workshops'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							workshopView: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>Workshops & Seminars</p>
 			</div>
 
-			< div className="indIcons">
-			<img
-				src={talks}
-				alt='talks'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						eniView: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue', }}>Talks</h5>
+			<div className='indIcons'>
+				<img
+					src={talks}
+					alt='talks'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							eniView: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>Talks</p>
 			</div>
 
-			< div className="indIcons">
-			<img
-				src={mic}
-				alt='mic-activity'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						micView: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue', }}>MIC Activities</h5>
+			<div className='indIcons'>
+				<img
+					src={mic}
+					alt='mic-activity'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							micView: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>MIC Activities</p>
 			</div>
 
-			<div className="indIcons">
-			<img
-				src={visits}
-				alt='field-visits'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						fieldVisits: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue', }}>Field Visits</h5>
+			<div className='indIcons'>
+				<img
+					src={visits}
+					alt='field-visits'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							fieldVisits: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>Field Visits</p>
 			</div>
 
-			<div className="indIcons">
-			<img
-				src={upcevents}
-				alt='upc-events'
-				style={imgStyle}
-				onClick={() => {
-					setView({
-						upcevents: true,
-					});
-					setBlur(true);
-				}}
-			/>
-			<h5 style={{color:'var(--dark-blue', }}>Upcoming Events</h5>
+			<div className='indIcons'>
+				<img
+					src={upcevents}
+					alt='upc-events'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							upcevents: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<p className='icon-headings'>Upcoming Events</p>
 			</div>
 		</div>
 	);

@@ -22,17 +22,15 @@ const FieldVisit = ({ fieldVisits, setView, setBlur, mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h2 style={{ color: 'var(--orange)' ,textAlign: 'center',marginTop:'2rem'}}>Field Visits</h2>
+			<h2 className='headings'>Field Visits</h2>
 
 			<div className='layout'>
-				<div className='images' className="notMobile">
+				<div className='images' className='notMobile'>
 					<img src={fieldvisits} alt='fielf-visit-icon' style={imgStyle} />
 				</div>
 
-				<div className='content' style={{textAlign:'center'}}>
-					<h1 style={{ color: 'var(--dark-blue)'}}>
-						COMING SOON!
-					</h1>
+				<div className='content' style={{ textAlign: 'center' }}>
+					<h1 style={{ color: 'var(--dark-blue)' }}>COMING SOON!</h1>
 				</div>
 			</div>
 		</div>
