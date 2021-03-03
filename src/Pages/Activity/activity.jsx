@@ -44,25 +44,23 @@ const Activity = () => {
 
 	return (
 		<div>
-			<div className='navbar' style={{ display: 'flex', flexDirection: 'row', filter: blur ? 'blur(4px)' : '' }}>
+			<div
+				className='navbar'
+				style={{
+					display: 'flex',
+					flexDirection: 'row',
+					filter: blur ? 'blur(4px)' : '',
+				}}
+			>
 				<div className='logos' style={{ flex: '1' }}>
 					<Link to='/'>
 						<img
 							src={iitlogo}
 							alt='iit logo'
-							style={{
-								width: '7vw',
-								marginTop: '0.83vw',
-								marginLeft: '1.5vw',
-								marginRight: '0.8vw',
-							}}
+							className='iitGoaLogo'
 						/>
 					</Link>
-					<img
-						src={iiclogo}
-						alt='iic logo'
-						style={{ width: '14vw', marginTop: '0.83vw' }}
-					/>
+					<img src={iiclogo} alt='iic logo' className='iicLogo' />
 				</div>
 				<div className='heading' style={{ flex: '1', textAlign: 'center' }}>
 					<h1 style={{ color: 'var(--orange)' }}>Activities</h1>
