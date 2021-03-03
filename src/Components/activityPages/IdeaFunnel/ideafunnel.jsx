@@ -7,9 +7,9 @@ import funnel from '../../activityIcons/assets/Funnel.svg';
 
 const IdeaFunnel = ({ ifView, setView, setBlur, mobile }) => {
 	const imgStyle = {
-		width: mobile? '90vw' : '30vw',
+		width: mobile ? '90vw' : '30vw',
 		height: '30vh',
-		margin: '1rem',
+		margin: mobile?'1rem 0 0 4rem': '1rem',
 	};
 
 	return (
@@ -24,13 +24,27 @@ const IdeaFunnel = ({ ifView, setView, setBlur, mobile }) => {
 					setBlur(false);
 				}}
 			/>
+				<h1
+					className='headings'
+				>
+					Idea Funnel
+				</h1>
 
-			<h1 style={{ color: 'var(--orange)' , textAlign:  'center',marginTop:'2rem' }}>Idea Funnel</h1>
-
-			<div className='images' style={{display:mobile? 'flex':'', flexDirection:mobile? 'column':'row'}}>
-				<img src={ideafunnel} alt='icon' style={imgStyle} className="notMobile"/>
-				<img src={ideafunnelposter} alt='poster' style={imgStyle} className="inMobile"/>
-				<img src={funnel} alt='funnel' style={imgStyle} className="inMobile"/>
+			<div
+				className='images'
+				style={{
+					display: mobile ? 'flex' : '',
+					flexDirection: mobile ? 'column' : 'row',
+				}}
+			>
+				<img src={ideafunnel} alt='icon' style={imgStyle} className='notMobile' />
+				<img
+					src={ideafunnelposter}
+					alt='poster'
+					style={imgStyle}
+					className='inMobile'
+				/>
+				<img src={funnel} alt='funnel' style={imgStyle} className='inMobile' />
 			</div>
 
 			<div className='content'>

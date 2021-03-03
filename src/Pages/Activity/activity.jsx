@@ -15,6 +15,7 @@ import Update from '../../Components/activityIcons/update/update';
 import iitlogo from '../../Components/Home/assets/iitgoalogo.svg';
 import iiclogo from '../../Components/Home/assets/iiclogo.svg';
 import NavBar from '../../Components/Navbar/Navbar'
+import { Link } from 'react-router-dom';
 
 const Activity = () => {
 	const [view, setView] = useState({
@@ -43,15 +44,30 @@ const Activity = () => {
 
 	return (
 		<div>
-			< div className="navbar" style={{display:'flex', flexDirection:'row'}}>
-				<div className="logos" style={{flex:'1'}}>
-					<img src={iitlogo} alt="iit logo" style={{width:'7vw', marginTop:'0.83vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} />
-					<img src={iiclogo} alt="iic logo" style={{width:'14vw', marginTop: '0.83vw'}}/>
+			<div className='navbar' style={{ display: 'flex', flexDirection: 'row', filter: blur ? 'blur(4px)' : '' }}>
+				<div className='logos' style={{ flex: '1' }}>
+					<Link to='/'>
+						<img
+							src={iitlogo}
+							alt='iit logo'
+							style={{
+								width: '7vw',
+								marginTop: '0.83vw',
+								marginLeft: '1.5vw',
+								marginRight: '0.8vw',
+							}}
+						/>
+					</Link>
+					<img
+						src={iiclogo}
+						alt='iic logo'
+						style={{ width: '14vw', marginTop: '0.83vw' }}
+					/>
 				</div>
-				<div className="heading" style={{flex:'1', textAlign:'center'}}>
-					<h1 style={{color:'var(--orange)'}}>Activities</h1>
+				<div className='heading' style={{ flex: '1', textAlign: 'center' }}>
+					<h1 style={{ color: 'var(--orange)' }}>Activities</h1>
 				</div>
-				<div className="menu" style={{flex:'1'}}>
+				<div className='menu' style={{ flex: '1' }}>
 					<NavBar />
 				</div>
 			</div>

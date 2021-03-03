@@ -148,19 +148,15 @@ hr {
 		display: flex;
 	}.updateButton{
 		display: flex;
-	}
-
-	:root{
-		--flag:1;
-	}
-
-	.cross{
-		display:flex
+	}.icon-headings{
 	}
 }
-
-:root{
-	--flag: 0;
+.headings{
+    color: var(--orange);
+    text-align: center;
+    margin: 2rem 0 0 3rem;
 }
-
-
+.icon-headings{
+	color: var(--dark-blue);
+	font-weight: 500;
+}
