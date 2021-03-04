@@ -70,7 +70,7 @@
 
 .motivesWrapper{
     display: flex !important;
-    justify-content: space-evenly !important;
+    justify-content: space-around !important;
     color: #003049;
     position: relative;
     top: 1vw;
@@ -101,8 +101,8 @@
 
 #yellowStrip{
     background-color:#FFD69A;
-    height: 4vw;
-    width: 19.79vw;
+    height: 5vh;
+    width: 30vh;
     border-bottom-right-radius: 1.5vw;
     position: relative;
     top: 5vw;
@@ -117,7 +117,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-family: Domine-SemiBold;
-  font-size: 3.0625em;
+  font-size: 2.5em;
   color: #003049;
 }
 
@@ -129,6 +129,15 @@
     font-size: 1.875em;
     padding-left: 1.25vw;
     padding-right: 1.25vw;
+}
+@media only screen and (min-width:500px) and (max-width:1300px){
+    .motives{
+        text-align: center;
+        width: 100vw;
+    }
+    #outer492002{
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width:500px){

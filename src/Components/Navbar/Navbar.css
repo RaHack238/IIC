@@ -27,7 +27,7 @@ a{
     position: relative;
     top: 10px !important;
     display: inline-flex;
-    width: 24.79vw;
+    width: 40vw;
     justify-content: space-around;
 }
 
@@ -53,7 +53,6 @@ a{
 
 #closingNav{
     background-color:#FFD69A;
-    
     border-bottom-left-radius: 1.5vw;
     position: relative;
 }

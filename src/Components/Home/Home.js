@@ -22,7 +22,7 @@ class Home extends React.Component{
 
     render(){
         let load=null;
-        setTimeout(this.LoaderHandler,1000);
+        setTimeout(this.LoaderHandler,2000);
         if (this.state.showLoader){
             load=(
                 <div class="loader">
