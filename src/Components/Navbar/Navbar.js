@@ -12,7 +12,7 @@ class NavBar extends React.Component {
 			showNavlines: true,
 		};
 	}
-	
+
 	NavbarExpandHandler = () => {
 		const doesShow = this.state.showNavlines;
 		this.setState({ showNavlines: !doesShow });
@@ -44,7 +44,7 @@ class NavBar extends React.Component {
 								class='cross2'
 								onClick={this.NavbarExpandHandler}
 							>
-								<img src={xmark}></img>
+								<img src={xmark} />
 							</button>
 						</div>
 					</div>
@@ -52,10 +52,14 @@ class NavBar extends React.Component {
 			);
 		}
 
-		return <div id='navdiv'>{nav}</div>;
+		return (
+			<div>
+				<div id='navdiv'>{nav}</div>
+				<div className={this.state.showNavlines? '' : 'nav-blur'}></div>
+			</div>
+		);
 	}
 }
 export default withRouter(NavBar);
-
 
 // this.props.location.pathname;

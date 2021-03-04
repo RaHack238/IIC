@@ -45,30 +45,23 @@ const Activity = () => {
 	return (
 		<div>
 			<div
-				className='navbar'
+				className='topNavDiv'
 				style={{
-					display: 'flex',
-					flexDirection: 'row',
 					filter: blur ? 'blur(4px)' : '',
 				}}
 			>
 				<div className='logos' style={{ flex: '1' }}>
 					<Link to='/'>
-						<img
-							src={iitlogo}
-							alt='iit logo'
-							className='iitGoaLogo'
-						/>
+						<img src={iitlogo} alt='iit logo' className='iitGoaLogo' />
 					</Link>
 					<img src={iiclogo} alt='iic logo' className='iicLogo' />
 				</div>
-				<div className='heading' style={{ flex: '1', textAlign: 'center' }}>
+				<div className='heading' style={{  }}>
 					<h1 style={{ color: 'var(--orange)' }}>Activities</h1>
 				</div>
-				<div className='menu' style={{ flex: '1' }}>
-					<NavBar />
-				</div>
+				<div className='menu' style={{ flex: '1' }}></div>
 			</div>
+			<NavBar />
 			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
 				<div className='activity' style={{ width: iconV ? '100%' : '' }}>
 					<div

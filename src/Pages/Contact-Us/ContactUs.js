@@ -29,10 +29,9 @@ export default class ContactUs extends Component {
 					<div className='navbar__center'>
 						<h1 className='navbar__title'>Council</h1>
 					</div>
-					<div className='navbar__right'>
-						<NavBar />
-					</div>
+					<div className='navbar__right'></div>
 				</div>
+				<NavBar />
 				<div className='row main__council__window'>
 					{people.map((person, index) => {
 						return (

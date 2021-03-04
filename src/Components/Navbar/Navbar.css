@@ -1,105 +1,110 @@
-#buttonouter{
-    height: 4.16vw;
-    display: inline-block;
+#buttonouter {
+	height: 4.16vw;
+	display: inline-block;
 }
-#navButton{
-    width: 3.16vw;
-    height: auto;
-    border: none;
-    cursor: pointer;
-    color: transparent;
-    background-color: transparent;
-    margin-left: 1.75vw;
-    position: relative;
-    top: 43%;
-    transform: translatey(-50%);
+#navButton {
+	width: 3.16vw;
+	height: auto;
+	border: none;
+	cursor: pointer;
+	color: transparent;
+	background-color: transparent;
+	margin-left: 1.75vw;
+	position: relative;
+	top: 43%;
+	transform: translatey(-50%);
 }
-a{
-    text-decoration: none;
-}
-
-#nbcontainer{
-    display: flex;
-    align-items: stretch;
+a {
+	text-decoration: none;
 }
 
-#navitems{
-    position: relative;
-    top: 10px !important;
-    display: inline-flex;
-    width: 24.79vw;
-    justify-content: space-around;
+#nbcontainer {
+	display: flex;
+	align-items: stretch;
 }
 
-#navitems a{
-    color: #577399;
-    font-family: Karla-SemiBold;
-    font-size: 30px;
-    font-weight: 600;
+#navitems {
+	position: relative;
+	top: 10px !important;
+	display: inline-flex;
+	width: 24.79vw;
+	justify-content: space-around;
 }
 
-#navButton img{
-    height: 100%;
-    width: 100%;
+#navitems a {
+	color: #577399;
+	font-family: Karla-SemiBold;
+	font-size: 30px;
+	font-weight: 600;
 }
 
-#navdiv{
-    position: absolute;
-    right: 0;
-    top: 0;
-    
-    z-index: 100;
+#navButton img {
+	height: 100%;
+	width: 100%;
 }
 
-#closingNav{
-    background-color:#FFD69A;
-    
-    border-bottom-left-radius: 1.5vw;
-    position: relative;
+#navdiv {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
 }
 
-#closingNav div{
-    position: relative;
-    top: 0.10vw;
+#closingNav {
+	background-color: #ffd69a;
+
+	border-bottom-left-radius: 1.5vw;
+	position: relative;
 }
 
-.cross2{
-    position: relative;
+#closingNav div {
+	position: relative;
+	top: 0.1vw;
 }
 
-@media only screen and (max-width: 500px){
-    #buttonouter{
-        height: 70px;
-    }
-    #navButton{
-        width: 50px;
-    }
+.cross2 {
+	position: relative;
+}
 
-    #navitems{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 50vw;
-        opacity: 1;
-        height: 40vh;
-        padding-top: 175px;
-    }
+@media only screen and (max-width: 720px) {
+	#buttonouter {
+		height: 70px;
+	}
+	#navButton {
+		width: 50px;
+	}
 
-    
-    #closingNav{
-        height: 812px;
-        border-bottom-left-radius: 0vw;
-    }
+	#navitems {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 50vw;
+		opacity: 1;
+		height: 40vh;
+		padding-top: 175px;
+	}
 
-    #nbcontainer{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
-    .cross2{
-        position: relative;
-        left: 38vw;
-    }
+	#closingNav {
+		height: 812px;
+		border-bottom-left-radius: 0vw;
+	}
 
+	#nbcontainer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.cross2 {
+		position: relative;
+		left: 38vw;
+	}
+	.nav-blur {
+		width: 100vw;
+		height: 100vh;
+		z-index: 90;
+		backdrop-filter: blur(4px);
+		position: absolute;
+		top: 0;
+	}
 }

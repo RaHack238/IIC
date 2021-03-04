@@ -9,10 +9,10 @@
 
 .navbar__title {
 	color: var(--orange);
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.navbar__center{
+.navbar__center {
 	text-align: center;
 }
 
@@ -76,7 +76,7 @@ hr {
 	border-radius: 35px 35px 0 0;
 	display: flex;
 	max-height: 100vh;
-	overflow-x:hidden
+	overflow-x: hidden;
 }
 .images {
 	display: flex;
@@ -114,8 +114,8 @@ hr {
 	right: 0;
 	display: none;
 }
-:root{
-	--flag:0;
+:root {
+	--flag: 0;
 }
 
 ::-webkit-scrollbar {
@@ -123,10 +123,10 @@ hr {
 }
 
 @media only screen and (max-width: 720px) {
-	:root{
-		--flag:1;
+	:root {
+		--flag: 1;
 	}
-	.notMobile{
+	.notMobile {
 		display: none;
 	}
 	.updates {
@@ -144,18 +144,23 @@ hr {
 	.activityIcons {
 		height: 85vh;
 		width: 100%;
-	}.iconButton {
-		display: flex;
-	}.updateButton{
+	}
+	.iconButton {
 		display: flex;
 	}
+	.updateButton {
+		display: flex;
+	}
+	.iicLogo {
+		display: none;
+	}
 }
-.headings{
-    color: var(--orange);
-    text-align: center;
-    margin: 2rem 0 0 3rem;
+.headings {
+	color: var(--orange);
+	text-align: center;
+	margin: 2rem 0 0 3rem;
 }
-.icon-headings{
+.icon-headings {
 	color: var(--dark-blue);
 	font-weight: 500;
 }
@@ -168,4 +173,14 @@ hr {
 .iicLogo {
 	width: 14vw;
 	margin-top: 0.83vw;
+}
+.topNavDiv {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+}
+.heading{
+	flex: 1;
+	text-align: center;
+	padding-top:0.5rem ;
 }
