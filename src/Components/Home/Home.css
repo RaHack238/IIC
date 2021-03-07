@@ -166,3 +166,141 @@
 		padding: 4px;
 	}
 }
+
+#iitlogo img{
+    height: 100%;
+    width: 100%;
+}
+
+#iiclogo{
+    width: 15.2vw;
+    display: inline-block;
+    margin-top: 0.83vw;
+}
+
+#iiclogo img{
+    height: 100%;
+    width: 100%;
+}
+
+.heading492002{
+    color: #003049 ;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.motivesWrapper{
+    display: flex !important;
+    justify-content: space-around !important;
+    color: #003049;
+    position: relative;
+    top: 1vw;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.motives{
+    width:411px;
+}
+
+.motives h4{
+    font-family: Domine;
+    font-size: 3.125em;
+    font-weight: 600;
+    
+}
+.motives h5{
+    font-family: Karla-Medium;
+    font-size: 1.875em;
+}
+
+.motives1{
+    text-align: end;
+}
+.motives2{
+    text-align: center;
+}
+
+#yellowStrip{
+    background-color:#FFD69A;
+    height: 8vh;
+    width: 35vh;
+    border-bottom-right-radius: 1.5vw;
+    position: relative;
+    top: 5vw;
+    z-index: 5;
+    font-size: 16px;
+}
+#yellowStrip h4{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Domine-SemiBold;
+  font-size: 4.5vh;
+  color: #003049;
+}
+
+.text{
+    color: #003049;
+    font-family: Karla-SemiBold;
+    position: relative;
+    top: 7vw;
+    font-size: 1.875em;
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
+}
+@media only screen and (min-width:500px) and (max-width:1300px){
+    .motives{
+        text-align: center;
+        width: 100vw;
+    }
+    #outer492002{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    #outer492002{
+        font-size: 8px;
+        min-width: 375px;
+    }
+    #iitlogo{
+        width: 15vw;
+        position: relative;
+        top: 20px;
+
+        left: 20px;
+    }
+    #iiclogo{
+        width:25vw;
+        position: relative;
+        top: 20px;
+
+        left: 30px;
+
+    }
+    .motives{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #yellowStrip{
+        width: 206px;
+        height: 40px;
+        font-size: 8px;
+        margin-bottom: 15px;
+    }
+    #yellowStrip h4{
+        font-size: 3em;
+    }
+    #otherthanLogo{
+        position: relative;
+        top:89px;
+    }
+    .text{
+        padding: 4px;
+    }
+}

@@ -23,12 +23,12 @@ a {
 	align-items: stretch;
 }
 
-#navitems {
-	position: relative;
-	top: 10px !important;
-	display: inline-flex;
-	width: 24.79vw;
-	justify-content: space-around;
+#navitems{
+    position: relative;
+    top: 10px !important;
+    display: inline-flex;
+    width: 40vw;
+    justify-content: space-around;
 }
 
 #navitems a {
@@ -50,11 +50,10 @@ a {
 	z-index: 100;
 }
 
-#closingNav {
-	background-color: #ffd69a;
-
-	border-bottom-left-radius: 1.5vw;
-	position: relative;
+#closingNav{
+    background-color:#FFD69A;
+    border-bottom-left-radius: 1.5vw;
+    position: relative;
 }
 
 #closingNav div {
