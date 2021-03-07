@@ -1,25 +1,21 @@
 import './Home.css';
 import React from 'react';
-import iitlogo from './assets/iit goa logo@1X.svg'
-import yellowStrip from './assets/Rectangle 1.svg'
-import iiclogo from './assets/iiclogo.svg'
+import iitlogo from './assets/iit goa logo@1X.svg';
+import yellowStrip from './assets/Rectangle 1.svg';
+import iiclogo from './assets/iiclogo.svg';
 import NavBar from '../Navbar/Navbar';
 
-
-class Home extends React.Component{
-    constructor(props) {
+class Home extends React.Component {
+	constructor(props) {
 		super(props);
 		this.state = {
 			showLoader: true,
 		};
 	}
 
-    LoaderHandler=()=>{
-        this.setState({showLoader: false});
-    };
-
-    
-
+	LoaderHandler = () => {
+		this.setState({ showLoader: false });
+	};
     render(){
         let load=null;
         setTimeout(this.LoaderHandler,2000);

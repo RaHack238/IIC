@@ -1,26 +1,26 @@
-#buttonouter{
-    height: 4.16vw;
-    display: inline-block;
+#buttonouter {
+	height: 4.16vw;
+	display: inline-block;
 }
-#navButton{
-    width: 3.16vw;
-    height: auto;
-    border: none;
-    cursor: pointer;
-    color: transparent;
-    background-color: transparent;
-    margin-left: 1.75vw;
-    position: relative;
-    top: 43%;
-    transform: translatey(-50%);
+#navButton {
+	width: 3.16vw;
+	height: auto;
+	border: none;
+	cursor: pointer;
+	color: transparent;
+	background-color: transparent;
+	margin-left: 1.75vw;
+	position: relative;
+	top: 43%;
+	transform: translatey(-50%);
 }
-a{
-    text-decoration: none;
+a {
+	text-decoration: none;
 }
 
-#nbcontainer{
-    display: flex;
-    align-items: stretch;
+#nbcontainer {
+	display: flex;
+	align-items: stretch;
 }
 
 #navitems{
@@ -31,24 +31,23 @@ a{
     justify-content: space-around;
 }
 
-#navitems a{
-    color: #577399;
-    font-family: Karla-SemiBold;
-    font-size: 30px;
-    font-weight: 600;
+#navitems a {
+	color: #577399;
+	font-family: Karla-SemiBold;
+	font-size: 30px;
+	font-weight: 600;
 }
 
-#navButton img{
-    height: 100%;
-    width: 100%;
+#navButton img {
+	height: 100%;
+	width: 100%;
 }
 
-#navdiv{
-    position: absolute;
-    right: 0;
-    top: 0;
-    
-    z-index: 100;
+#navdiv {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
 }
 
 #closingNav{
@@ -57,48 +56,54 @@ a{
     position: relative;
 }
 
-#closingNav div{
-    position: relative;
-    top: 0.10vw;
+#closingNav div {
+	position: relative;
+	top: 0.1vw;
 }
 
-.cross2{
-    position: relative;
+.cross2 {
+	position: relative;
 }
 
-@media only screen and (max-width: 500px){
-    #buttonouter{
-        height: 70px;
-    }
-    #navButton{
-        width: 50px;
-    }
+@media only screen and (max-width: 720px) {
+	#buttonouter {
+		height: 70px;
+	}
+	#navButton {
+		width: 50px;
+	}
 
-    #navitems{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 50vw;
-        opacity: 1;
-        height: 40vh;
-        padding-top: 175px;
-    }
+	#navitems {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		width: 50vw;
+		opacity: 1;
+		height: 40vh;
+		padding-top: 175px;
+	}
 
-    
-    #closingNav{
-        height: 812px;
-        border-bottom-left-radius: 0vw;
-    }
+	#closingNav {
+		height: 812px;
+		border-bottom-left-radius: 0vw;
+	}
 
-    #nbcontainer{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
-    .cross2{
-        position: relative;
-        left: 38vw;
-    }
+	#nbcontainer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 
+	.cross2 {
+		position: relative;
+		left: 38vw;
+	}
+	.nav-blur {
+		width: 100vw;
+		height: 100vh;
+		z-index: 90;
+		backdrop-filter: blur(4px);
+		position: absolute;
+		top: 0;
+	}
 }
