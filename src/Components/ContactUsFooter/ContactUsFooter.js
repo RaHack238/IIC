@@ -3,8 +3,8 @@ import "./ContactUsFooter.css";
 import down_arrow from "./assets/down_arrow.svg";
 import up_arrow from "./assets/up_arrow.svg";
 import twitter_icon from "./assets/twitter.svg";
-import email__icon from "./assets/email.png";
-import linkedin_icon from "./assets/linkedin.png";
+import insta__icon from "./assets/instagram.svg";
+import linkedin_icon from "./assets/linkedin.svg";
 
 export default class ContactUsFooter extends Component {
   constructor(props) {
@@ -46,15 +46,15 @@ export default class ContactUsFooter extends Component {
           <div className="row contact__us_info__div">
             <div className="footer__left col-sm-6 col-xs-12">
               <div className="icons__div">
-                <a href="">
+                <a href="https://twitter.com/iiciitgoa">
                   <img
                     src={twitter_icon}
                     className="footer__icon"
                     alt="twitter"
                   />
                 </a>
-                <a href="">
-                  <img src={email__icon} className="footer__icon" alt="email" />
+                <a href="https://www.instagram.com/ecell_iitgoa/">
+                  <img src={insta__icon} className="footer__icon" alt="email" />
                 </a>
                 <a href="">
                   <img
@@ -64,7 +64,14 @@ export default class ContactUsFooter extends Component {
                   />
                 </a>
               </div>
-              <p className="left__column__text">Contact Us</p>
+              <p className="left__column__text">
+                <a
+                  className="left__column__text_1"
+                  href="mailto:iic@iitgoa.ac.in"
+                >
+                  Contact Us
+                </a>
+              </p>
             </div>
             <div className="footer__right col-sm-6 col-xs-12">
               <p className="right__column__text">
@@ -79,16 +86,16 @@ export default class ContactUsFooter extends Component {
         ) : (
           <div className="footer__info__div__mobile">
             <div className="icons__div_mobile">
-              <a href="">
+              <a href="https://twitter.com/iiciitgoa">
                 <img
                   src={twitter_icon}
                   className="footer__icon_mobile"
                   alt="twitter"
                 />
               </a>
-              <a href="">
+              <a href="https://www.instagram.com/ecell_iitgoa/">
                 <img
-                  src={email__icon}
+                  src={insta__icon}
                   className="footer__icon_mobile"
                   alt="email"
                 />
@@ -101,7 +108,14 @@ export default class ContactUsFooter extends Component {
                 />
               </a>
             </div>
-            <p className="contact__us__mobile__text">Contact Us</p>
+            <p className="contact__us__mobile__text">
+              <a
+                className="contact__us__mobile__text_1"
+                href="mailto:iic@iitgoa.ac.in"
+              >
+                Contact Us
+              </a>
+            </p>
             <div className="iit__goa__text">
               <p className="right__column__text__mobile">
                 Indian Institute of Technology Goa
