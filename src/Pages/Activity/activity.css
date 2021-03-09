@@ -154,6 +154,7 @@ hr {
 	.iicLogo {
 		display: none;
 	}
+	
 }
 .headings {
 	color: var(--orange);
@@ -165,13 +166,12 @@ hr {
 	font-weight: 500;
 }
 .iitGoaLogo {
-	width: 7vw;
 	margin-top: 0.83vw;
 	margin-left: 1.5vw;
 	margin-right: 0.8vw;
 }
 .iicLogo {
-	width: 14vw;
+	width: 12vw;
 	margin-top: 0.83vw;
 }
 .topNavDiv {

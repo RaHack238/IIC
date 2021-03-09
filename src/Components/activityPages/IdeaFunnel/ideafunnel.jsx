@@ -25,7 +25,7 @@ const IdeaFunnel = ({ ifView, setView, setBlur, mobile }) => {
 				}}
 			/>
 				<h1
-					className='headings'
+					className='headings' style={{fontFamily:'Karla', fontWeight: 'bold' }}
 				>
 					Idea Funnel
 				</h1>
@@ -48,25 +48,25 @@ const IdeaFunnel = ({ ifView, setView, setBlur, mobile }) => {
 			</div>
 
 			<div className='content'>
-				<p style={{ color: 'var(--dark-blue)' }}>
+				<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight: 'bold' }}>
 					Many students have various innovative ideas that run across their minds but
 					don't have the platform, guidance and direction to do so. To facilitate
 					this IIT Goa has come with - Idea Funnel.
 				</p>
 
-				<p style={{ color: 'var(--dark-blue)' }}>
+				<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight: 'bold' }}>
 					Idea Funnel is a continuous tool for idea scouting, validation and
 					facilitation. In order to encourage students to bring forward executable
 					ideas, IIC has set up an online idea consolidation mechanism.
 				</p>
 
-				<p style={{ color: 'var(--dark-blue)' }}>
+				<p style={{ color: 'var(--dark-blue)' ,fontFamily:'Karla', fontWeight: 'bold'}}>
 					Before building a prototype, a series of events involving learning, system
 					filter, review of the idea etc. This will ensure effective and refined
 					outcomes.
 				</p>
 
-				<p style={{ color: 'var(--dark-blue)' }}>
+				<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight: 'bold' }}>
 					The students will have to submit their idea. There will be a list of
 					protocols and instructions that will be followed before the idea is
 					approved. Students will then be counselled for 45-60 days as per faculty
@@ -74,7 +74,7 @@ const IdeaFunnel = ({ ifView, setView, setBlur, mobile }) => {
 					will be conducted.
 				</p>
 
-				<p style={{ color: 'var(--orange)' }}>
+				<p style={{ color: 'var(--orange)', fontFamily:'Karla', fontWeight: 'bold'}}>
 					Link for the application is: https://forms.gle/BeZuxVrnXFQXd9nB9
 				</p>
 			</div>

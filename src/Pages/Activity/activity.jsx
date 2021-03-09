@@ -42,6 +42,10 @@ const Activity = () => {
 		return () => mediaMatch.removeListener(handler);
 	});
 
+	const logoStyle = {
+		width: mobile? '3rem' : '6vw'
+	}
+
 	return (
 		<div>
 			<div>
@@ -53,12 +57,12 @@ const Activity = () => {
 				>
 					<div className='logos' style={{ flex: '1' }}>
 						<Link to='/'>
-							<img src={iitlogo} alt='iit logo' className='iitGoaLogo' />
+							<img src={iitlogo} alt='iit logo' className='iitGoaLogo' style={logoStyle} />
 						</Link>
 						<img src={iiclogo} alt='iic logo' className='iicLogo' />
 					</div>
 					<div className='heading' style={{}}>
-						<h1 style={{ color: 'var(--orange)' }}>Activities</h1>
+						<h1 style={{ color: 'var(--orange)', fontFamily: 'Montserrat' }}>Activities</h1>
 					</div>
 
 					<div className='menu' style={{ flex: '1' }}></div>

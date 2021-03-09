@@ -24,7 +24,7 @@ const Incubation = ({ incubationView, setView, setBlur, mobile }) => {
 				}}
 			/>
 
-			<h1 className='headings'>Incubation Services</h1>
+			<h1 className='headings' style={{fontFamily:'Karla', fontWeight:'bold' }}>Incubation Services</h1>
 
 			<div className='layout'>
 				<div className='images'>
@@ -37,11 +37,11 @@ const Incubation = ({ incubationView, setView, setBlur, mobile }) => {
 				</div>
 
 				<div className='content'>
-					<p style={{ color: 'var(--dark-blue)' }}>
+					<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight:'bold'  }}>
 						Pre-incubation programs are designed to be :
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem', fontFamily:'Karla', fontWeight:'bold' }}>
 						<ul>
 							<li>
 								<font style={{ color: 'var(--orange' }}>Accessible</font> — All graduate
