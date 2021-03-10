@@ -5,6 +5,7 @@ import xmark from './x-mark.svg';
 import { Link } from 'react-router-dom';
 import { withRouter, useLocation } from 'react-router-dom';
 
+
 class NavBar extends React.Component {
 	constructor(props) {
 		super(props);
@@ -20,6 +21,11 @@ class NavBar extends React.Component {
 
 	render() {
 		let nav = null;
+
+		let path = this.props.location.pathname;
+		if(path!='/') path = path[1].toUpperCase() + path.substring(2);
+		if(path=="Contact-us") path = "Council";
+		
 		if (this.state.showNavlines) {
 			nav = (
 				<div id='buttonouter'>
@@ -32,10 +38,11 @@ class NavBar extends React.Component {
 			nav = (
 				<div id='closingNav'>
 					<div id='nbcontainer'>
-						<div id='navitems' className={'navCover'? this.props.location.pathname : ''}>
-							<Link to='/activities'>Activities</Link>
-							<Link to='/programs'>Programs</Link>
-							<Link to='/contact-us'>Council</Link>
+						<div id='navitems' className={this.props.location.pathname!='/' ? 'navCover' : ''}>
+							<div className={path!='/' ? "targetPath" : ""}><h1>{path!='/' ? path : ""}</h1></div>
+							<Link to='/activities' className={path=="Activities" ? "currTab" : ""}>Activities</Link>
+							<Link to='/programs' className={path=="Programs" ? "currTab" : ""}>Programs</Link>
+							<Link to='/contact-us' className={path=="Council" ? "currTab" : ""}>Council</Link>
 						</div>
 						<div id='buttonouter'>
 							<button
