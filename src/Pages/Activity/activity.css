@@ -37,7 +37,7 @@
 	display: flex;
 }
 .activityIcons {
-	width: 60vw;
+	width:55vw;
 	border-top-right-radius: 35px;
 	border-bottom-right-radius: 35px;
 	/* height: 100%; */
@@ -114,10 +114,6 @@ hr {
 	right: 0;
 	display: none;
 }
-:root {
-	--flag: 0;
-}
-
 @media only screen and (max-width: 720px) {
 	:root {
 		--flag: 1;
@@ -150,7 +146,6 @@ hr {
 	.iicLogo {
 		display: none;
 	}
-	
 }
 .headings {
 	color: var(--orange);
@@ -162,12 +157,13 @@ hr {
 	font-weight: 500;
 }
 .iitGoaLogo {
+	width: 7vw;
 	margin-top: 0.83vw;
 	margin-left: 1.5vw;
 	margin-right: 0.8vw;
 }
 .iicLogo {
-	width: 12vw;
+	width: 14vw;
 	margin-top: 0.83vw;
 }
 .topNavDiv {
@@ -182,4 +178,7 @@ hr {
 }
 .temp{
 	z-index: 101;
+}
+::-webkit-scrollbar{
+	display: none;
 }

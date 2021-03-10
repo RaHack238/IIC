@@ -10,8 +10,17 @@
 	}
 }
 
-.icon-headings{
+.icon-heading{
 	font-family: Karla;
 	font-weight: bold;
 }
 
+.icon-headings{
+	width: 150px;
+	text-align: center;
+}
+.indIcons{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

@@ -12,7 +12,6 @@ import workshops from './assets/seminars.svg';
 import './activityIcons.css';
 
 const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
-
 	const imgStyle = {
 		width: mobile ? '7rem' : '10vw',
 		margin: mobile ? '0.5rem' : '0.5rem 1.5rem 0.5rem 1.5rem',
@@ -41,7 +40,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>Idea Funnel</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Idea Funnel</p>
+				</div>
 			</div>
 
 			<div className='indIcons'>
@@ -56,7 +57,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>Ignite</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Ignite</p>
+				</div>
 			</div>
 
 			<div className='indIcons'>
@@ -71,7 +74,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>Academic Program</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Academic Program</p>
+				</div>
 			</div>
 
 			<div className='indIcons'>
@@ -86,7 +91,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>Startup Labs</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Startup Labs</p>
+				</div>
 			</div>
 
 			<div className='indIcons'>
@@ -101,7 +108,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>Incubation</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Incubation</p>
+				</div>
 			</div>
 
 			<div className='indIcons'>
@@ -116,7 +125,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>Workshops & Seminars</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Workshops & Seminars</p>
+				</div>
 			</div>
 
 			<div className='indIcons'>
@@ -131,7 +142,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>Talks</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Talks</p>
+				</div>
 			</div>
 
 			<div className='indIcons'>
@@ -146,7 +159,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>MIC Activities</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>MIC Activities</p>
+				</div>
 			</div>
 
 			<div className='indIcons'>
@@ -161,7 +176,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>Field Visits</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Field Visits</p>
+				</div>
 			</div>
 
 			<div className='indIcons'>
@@ -176,7 +193,9 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 						setBlur(true);
 					}}
 				/>
-				<p className='icon-headings'>Upcoming Events</p>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Upcoming Events</p>
+				</div>
 			</div>
 		</div>
 	);
