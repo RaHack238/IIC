@@ -1,5 +1,6 @@
 .App{
   position: relative;
+  background-color: var(--white-bgcolor) !important;
 }
 
 .App-logo {
