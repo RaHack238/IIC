@@ -163,24 +163,6 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 					<p className='icon-heading'>MIC Activities</p>
 				</div>
 			</div>
-
-			<div className='indIcons'>
-				<img
-					src={visits}
-					alt='field-visits'
-					style={imgStyle}
-					onClick={() => {
-						setView({
-							fieldVisits: true,
-						});
-						setBlur(true);
-					}}
-				/>
-				<div className='icon-headings'>
-					<p className='icon-heading'>Field Visits</p>
-				</div>
-			</div>
-
 			<div className='indIcons'>
 				<img
 					src={upcevents}
@@ -195,6 +177,22 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 				/>
 				<div className='icon-headings'>
 					<p className='icon-heading'>Upcoming Events</p>
+				</div>
+			</div>
+			<div className='indIcons'>
+				<img
+					src={visits}
+					alt='field-visits'
+					style={imgStyle}
+					onClick={() => {
+						setView({
+							fieldVisits: true,
+						});
+						setBlur(true);
+					}}
+				/>
+				<div className='icon-headings'>
+					<p className='icon-heading'>Field Visits</p>
 				</div>
 			</div>
 		</div>
