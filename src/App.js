@@ -3,13 +3,13 @@ import { Route, Switch } from 'react-router-dom';
 import ContactUs from '../src/Pages/Contact-Us/ContactUs';
 import Activity from '../src/Pages/Activity/activity';
 import Home from './Components/Home/Home';
-import NavBar from './Components/Navbar/Navbar';
+import Programs from './Pages/Programs/Programs';
 
 function App() {
 
 	const isMobile = window.innerWidth <= 720;
 
-	if(isMobile)
+	if(isMobile){
 	return (
 		<div className='App'>
 			{/* <NavBar /> */}
@@ -17,10 +17,11 @@ function App() {
 				<Route exact path='/' component={Home} />
 				<Route path='/activities' component={Activity} />
 				<Route path='/contact-us' component={ContactUs} />
-				<Route path='/program' />
+				<Route path='/programs' component={Programs} />
 			</Switch>
 		</div>
 	);
+	}
 	else{
 		return (
 			<div className='App'>
@@ -28,7 +29,7 @@ function App() {
 					<Route exact path='/' component={Home} />
 					<Route path='/activities' component={Activity} />
 					<Route path='/contact-us' component={ContactUs} />
-					<Route path='/program' />
+					<Route path='/programs' component={Programs}/>
 				</Switch>
 			</div>
 		);
