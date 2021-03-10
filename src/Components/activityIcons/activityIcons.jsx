@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React } from 'react';
 import funnel from './assets/Idea funnel.svg';
 import ignite from './assets/ignite.svg';
 import acdprogram from './assets/AEIP.svg';
@@ -14,7 +14,7 @@ import './activityIcons.css';
 const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 	const imgStyle = {
 		width: mobile ? '7rem' : '10vw',
-		margin: mobile ? '0.5rem' : '0.5rem 1.5rem 0.5rem 1.5rem',
+		margin: mobile ? '0.5rem' : '0 1.5rem 0 1.5rem',
 		cursor: 'pointer',
 		padding: mobile ? '1.5rem' : '1.3vw',
 	};

@@ -1,39 +1,31 @@
 import React from 'react';
+import './update.css';
 
 const Update = () => (
-	<div style={{ display: 'flex', flexDirection: 'column' }}>
-		<h1
-			style={{
-				color: 'var(--dark-blue)',
-				marginTop: '4rem',
-				fontFamily: 'Domine-Bold',
-				fontWeight: 'bold',
-			}}
-		>
-			Updates
-		</h1>
+	<div className='updateC'>
+		<h1 className='updateHeading'>Updates</h1>
 		<div className='individualUpdates'>
-			<p>
+			<p className='inup'>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua
 			</p>
 			<hr />
-			<p>
+			<p className='inup'>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua
 			</p>
 			<hr />
-			<p>
+			<p className='inup'>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua
 			</p>
 			<hr />
-			<p>
+			<p className='inup'>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua
 			</p>
 			<hr />
-			<p>
+			<p className='inup'>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua
 			</p>

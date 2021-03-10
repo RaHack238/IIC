@@ -47,7 +47,7 @@ const Activity = () => {
 	};
 
 	return (
-		<div>
+		<div className='activity-container'>
 			<div>
 				<div
 					className='topNavDiv'
@@ -66,7 +66,7 @@ const Activity = () => {
 						</Link>
 						<img src={iiclogo} alt='iic logo' className='iicLogo' />
 					</div>
-					<div className='heading' style={{}}>
+					<div className='heading'>
 						<h1 style={{ color: 'var(--orange)', fontFamily: 'Montserrat' }}>
 							Activities
 						</h1>
