@@ -18,7 +18,7 @@ import NavBar from '../../Components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
 
 const Activity = () => {
-	const [view, setView] = useState({
+	const [view, setView] = useState({..
 		ifView: false,
 		igniteView: false,
 		aepView: false,

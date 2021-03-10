@@ -118,10 +118,6 @@ hr {
 	--flag: 0;
 }
 
-::-webkit-scrollbar {
-	display: none;
-}
-
 @media only screen and (max-width: 720px) {
 	:root {
 		--flag: 1;
