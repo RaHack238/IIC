@@ -40,6 +40,7 @@ class Home extends React.Component {
                 <div id='iiclogo'>
                     <img src={iiclogo}></img>
                 </div>
+                <NavBar />
                 <div id="otherthanLogo">
                         <h2 class='heading492002 ig492002'>
                             IIT GOA
@@ -47,7 +48,7 @@ class Home extends React.Component {
                         <h3 class='heading492002 ic492002'>
                             Institute's Innovation Council
                         </h3>
-                        <NavBar />
+                        
     
                         <div className='motivesWrapper'>
                             <div className='motives1 motives'>

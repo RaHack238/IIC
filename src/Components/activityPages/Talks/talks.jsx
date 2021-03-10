@@ -23,7 +23,7 @@ const Talks = ({ eniView, setView, setBlur, mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 className='headings'>Entrepreneurship and Leadership Talks</h1>
+			<h1 className='headings' style={{fontFamily:'Karla', fontWeight:'bold' }}>Entrepreneurship and Leadership Talks</h1>
 			<div className='layout'>
 				<div className='images'>
 					<img
@@ -35,7 +35,7 @@ const Talks = ({ eniView, setView, setBlur, mobile }) => {
 				</div>
 
 				<div className='content'>
-					<p style={{ color: 'var(--dark-blue)' }}>
+					<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight:'bold' }}>
 						The E-Cell is a student driven club within the IIC. In the month of
 						November and December, the E-Cell has conducted E&I Series i.e. the{' '}
 						<font style={{ color: 'var(--orange' }}>
@@ -48,7 +48,7 @@ const Talks = ({ eniView, setView, setBlur, mobile }) => {
 						interact with them.
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem', fontFamily:'Karla', fontWeight:'bold'  }}>
 						<font style={{ color: 'var(--orange)' }}>
 							E&I session with Ms. Mugdha Hedaoo: 15th Nov
 						</font>
@@ -75,7 +75,7 @@ const Talks = ({ eniView, setView, setBlur, mobile }) => {
 						faculty and students.
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem', fontFamily:'Karla', fontWeight:'bold' }}>
 						<font style={{ color: 'var(--orange)' }}>
 							E&I session with Mr. Kumar Anshu: 26th Nov
 						</font>
@@ -104,7 +104,7 @@ const Talks = ({ eniView, setView, setBlur, mobile }) => {
 						conducted by student host Arpit Maurya from the Events Team.
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem', fontFamily:'Karla', fontWeight:'bold' }}>
 						<font style={{ color: 'var(--orange)' }}>
 							E&I session with Prof. Kums: 5th Dec
 						</font>

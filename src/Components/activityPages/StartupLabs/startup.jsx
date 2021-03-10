@@ -23,7 +23,7 @@ const StartupLabs = ({ LabView, setView, setBlur,mobile }) => {
 				}}
 			/>
 
-			<h1 className='headings'>Startup Labs</h1>
+			<h1 className='headings' style={{fontFamily:'Karla', fontWeight:'bold' }}>Startup Labs</h1>
 
 			<div className='layout'>
 				<div className='images'>
@@ -36,7 +36,7 @@ const StartupLabs = ({ LabView, setView, setBlur,mobile }) => {
 				</div>
 
 				<div className='content'>
-					<p style={{ color: 'var(--dark-blue)' }}>
+					<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight:'bold'  }}>
 						In order to support our{' '}
 						<font style={{ color: 'var(--orange' }}>Idea Funnel & Ignite </font>{' '}
 						programs as a successor, and to support the student innovators and to
@@ -52,11 +52,11 @@ const StartupLabs = ({ LabView, setView, setBlur,mobile }) => {
 						to the startup lab facilities.
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)' }}>
+					<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight:'bold' }}>
 						Key objectives of the Startup Lab program:
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem', fontFamily:'Karla', fontWeight:'bold'  }}>
 						<ul>
 							<li>
 								To develop{' '}
@@ -81,11 +81,11 @@ const StartupLabs = ({ LabView, setView, setBlur,mobile }) => {
 						</ul>
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem', fontFamily:'Karla', fontWeight:'bold'  }}>
 						Why do we exactly require a Startup Lab program:
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem', fontFamily:'Karla', fontWeight:'bold' }}>
 						<ul>
 							<li>
 								It provides a physical space where{' '}

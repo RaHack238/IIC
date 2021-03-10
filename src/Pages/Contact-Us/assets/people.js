@@ -13,6 +13,8 @@ import nandkumar_img from "./images/Nandakumar - Nandakumar N P.jpeg";
 import sashidhar_img from "./images/Sashidhar (2) - Sashidhar Sampathirao.jpg";
 import sreenath_img from "./images/Sreenath - Sreenath Balakrishnan.jpg";
 import twisha_img from "./images/twishabansal - TWISHA BANSAL.png";
+import mayank_img from "./images/Mayank Shreshtha.jpg";
+import rahul_img from "./images/Rahul Bahadur.JPG";
 
 const people = [
   {
@@ -66,7 +68,7 @@ const people = [
   {
     name: "Mr. Rahul Bahadur",
     designation: "Social Media, Startup Activity",
-    photo: avatar_img,
+    photo: rahul_img,
     email: "rahul@iitgoa.ac.in",
   },
   {
@@ -144,7 +146,7 @@ const people = [
   {
     name: "Mayank Shreshtha",
     designation: "Student IPR, Projects Coordinator",
-    photo: avatar_img,
+    photo: mayank_img,
     email: "mayank.shreshtha.19063@iitgoa.ac.in",
   },
   {

@@ -32,7 +32,7 @@ class NavBar extends React.Component {
 			nav = (
 				<div id='closingNav'>
 					<div id='nbcontainer'>
-						<div id='navitems'>
+						<div id='navitems' className={'navCover'? this.props.location.pathname : ''}>
 							<Link to='/activities'>Activities</Link>
 							<Link to='/programs'>Programs</Link>
 							<Link to='/contact-us'>Council</Link>
