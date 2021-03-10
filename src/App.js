@@ -7,9 +7,6 @@ import Programs from './Pages/Programs/Programs';
 
 function App() {
 
-	const isMobile = window.innerWidth <= 720;
-
-	if(isMobile){
 	return (
 		<div className='App'>
 			{/* <NavBar /> */}
@@ -21,19 +18,6 @@ function App() {
 			</Switch>
 		</div>
 	);
-	}
-	else{
-		return (
-			<div className='App'>
-				<Switch>
-					<Route exact path='/' component={Home} />
-					<Route path='/activities' component={Activity} />
-					<Route path='/contact-us' component={ContactUs} />
-					<Route path='/programs' component={Programs}/>
-				</Switch>
-			</div>
-		);
-	}
 }
 
 export default App;

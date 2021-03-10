@@ -14,7 +14,8 @@ import MIC from '../../Components/activityPages/MIC/mic';
 import Update from '../../Components/activityIcons/update/update';
 import iitlogo from '../../Components/Home/assets/iitgoalogo.svg';
 import iiclogo from '../../Components/Home/assets/iiclogo.svg';
-import NavBar from '../../Components/Navbar/Navbar'
+import NavBar from '../../Components/Navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 const Activity = () => {
 	const [view, setView] = useState({
@@ -41,60 +42,80 @@ const Activity = () => {
 		return () => mediaMatch.removeListener(handler);
 	});
 
+	const logoStyle = {
+		width: mobile ? '3rem' : '6vw',
+	};
+
 	return (
 		<div>
-			< div className="navbar" style={{display:'flex', flexDirection:'row'}}>
-				<div className="logos" style={{flex:'1'}}>
-					<img src={iitlogo} alt="iit logo" style={{width:'7vw', marginTop:'0.83vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} />
-					<img src={iiclogo} alt="iic logo" style={{width:'14vw', marginTop: '0.83vw'}}/>
-				</div>
-				<div className="heading" style={{flex:'1', textAlign:'center'}}>
-					<h1 style={{color:'var(--orange)'}}>Activities</h1>
-				</div>
-				<div className="menu" style={{flex:'1'}}>
-					<NavBar />
-				</div>
-			</div>
-			<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
-				<div className='activity' style={{ width: iconV ? '100%' : '' }}>
-					<div
-						className='iconButton'
-						style={{ display: mobile ? (iconV ? 'none' : 'flex') : 'none' }}
-						onClick={() => {
-							setIconV(true);
-							setUpdateV(false);
-						}}
-					>
-						&rarr;
-					</div>
-					<ActivityIcons
-						setView={setView}
-						setBlur={setBlur}
-						mobile={mobile}
-						display={iconV}
-					/>
-				</div>
+			<div>
 				<div
-					className='updateButton'
-					style={{ display: mobile ? (updateV ? 'none' : 'flex') : 'none' }}
-					onClick={() => {
-						setIconV(false);
-						setUpdateV(true);
+					className='topNavDiv'
+					style={{
+						filter: blur ? 'blur(4px)' : '',
 					}}
 				>
-					{' '}
-					&larr;
+					<div className='logos' style={{ flex: '1' }}>
+						<Link to='/'>
+							<img
+								src={iitlogo}
+								alt='iit logo'
+								className='iitGoaLogo'
+								style={logoStyle}
+							/>
+						</Link>
+						<img src={iiclogo} alt='iic logo' className='iicLogo' />
+					</div>
+					<div className='heading' style={{}}>
+						<h1 style={{ color: 'var(--orange)', fontFamily: 'Montserrat' }}>
+							Activities
+						</h1>
+					</div>
+
+					<div className='menu' style={{ flex: '1' }}></div>
 				</div>
-				<div
-					className='updateContainer'
-					style={{ display: mobile ? (updateV ? 'flex' : 'none') : 'flex' }}
-				>
-					<div className='container updates'>
-						<Update />
+				<NavBar />
+				<div className='layout' style={{ filter: blur ? 'blur(4px)' : '' }}>
+					<div className='activity' style={{ width: iconV ? '100%' : '' }}>
+						<div
+							className='iconButton'
+							style={{ display: mobile ? (iconV ? 'none' : 'flex') : 'none' }}
+							onClick={() => {
+								setIconV(true);
+								setUpdateV(false);
+							}}
+						>
+							&rarr;
+						</div>
+						<ActivityIcons
+							setView={setView}
+							setBlur={setBlur}
+							mobile={mobile}
+							display={iconV}
+						/>
+					</div>
+					<div
+						className='updateButton'
+						style={{ display: mobile ? (updateV ? 'none' : 'flex') : 'none' }}
+						onClick={() => {
+							setIconV(false);
+							setUpdateV(true);
+						}}
+					>
+						{' '}
+						&larr;
+					</div>
+					<div
+						className='updateContainer'
+						style={{ display: mobile ? (updateV ? 'flex' : 'none') : 'flex' }}
+					>
+						<div className='container updates'>
+							<Update />
+						</div>
 					</div>
 				</div>
 			</div>
-			<div>
+			<div className='temp'>
 				<IdeaFunnel
 					ifView={view.ifView}
 					setView={setView}

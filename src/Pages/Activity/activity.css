@@ -9,10 +9,10 @@
 
 .navbar__title {
 	color: var(--orange);
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
-.navbar__center{
+.navbar__center {
 	text-align: center;
 }
 
@@ -37,7 +37,7 @@
 	display: flex;
 }
 .activityIcons {
-	width: 60vw;
+	width:55vw;
 	border-top-right-radius: 35px;
 	border-bottom-right-radius: 35px;
 	/* height: 100%; */
@@ -55,6 +55,8 @@
 	border-radius: 35px;
 	max-height: 52vh;
 	overflow: auto;
+	font-weight: bold; 
+	font-family: 'Karla';
 	margin: 30px;
 	padding: 20px 0 0 0;
 }
@@ -63,6 +65,10 @@ hr {
 	height: 3px !important;
 	opacity: 1;
 }
+hr:last-child {
+	display: none;
+}
+
 .yellow {
 	color: var(--orange);
 	font-weight: bold;
@@ -75,8 +81,8 @@ hr {
 	z-index: 1;
 	border-radius: 35px 35px 0 0;
 	display: flex;
-	max-height: 100vh;
-	overflow-x:hidden
+	max-height: 94vh;
+	overflow-x: hidden;
 }
 .images {
 	display: flex;
@@ -114,19 +120,11 @@ hr {
 	right: 0;
 	display: none;
 }
-:root{
-	--flag:0;
-}
-
-::-webkit-scrollbar {
-	display: none;
-}
-
 @media only screen and (max-width: 720px) {
-	:root{
-		--flag:1;
+	:root {
+		--flag: 1;
 	}
-	.notMobile{
+	.notMobile {
 		display: none;
 	}
 	.updates {
@@ -144,23 +142,49 @@ hr {
 	.activityIcons {
 		height: 85vh;
 		width: 100%;
-	}.iconButton {
-		display: flex;
-	}.updateButton{
+	}
+	.iconButton {
 		display: flex;
 	}
-
-	:root{
-		--flag:1;
+	.updateButton {
+		display: flex;
 	}
-
-	.cross{
-		display:flex
+	.iicLogo {
+		display: none;
 	}
 }
-
-:root{
-	--flag: 0;
+.headings {
+	color: var(--orange);
+	text-align: center;
+	margin: 2rem 0 0 3rem;
 }
-
-
+.icon-headings {
+	color: var(--dark-blue);
+	font-weight: 500;
+}
+.iitGoaLogo {
+	width: 7vw;
+	margin-top: 0.83vw;
+	margin-left: 1.5vw;
+	margin-right: 0.8vw;
+}
+.iicLogo {
+	width: 14vw;
+	margin-top: 0.83vw;
+}
+.topNavDiv {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+}
+.heading{
+	flex: 1;
+	text-align: center;
+	padding-top:0.5rem ;
+}
+.temp{
+	z-index: 101;
+}
+::-webkit-scrollbar{
+	display: none;
+}

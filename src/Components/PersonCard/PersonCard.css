@@ -1,7 +1,7 @@
 .flip-card {
   background-color: transparent;
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 220px;
   margin: 20px 15px;
   border-radius: 20px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -72,12 +72,12 @@
 .member__name {
   font-family: "Domine";
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 .member__designation {
   font-family: "Domine";
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
 }
 .text__color__blue {
   color: var(--dark-blue);

@@ -1,30 +1,40 @@
 .contact__us {
-  height: 100vh;
-  overflow-x: hidden;
-  background-color: var(--white-bgcolor);
+	height: 100vh;
+	overflow-x: hidden;
+	background-color: var(--white-bgcolor);
 }
 .navbar__div {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
 }
 .navbar__center {
-  flex: 1;
-  text-align: center;
+	flex: 1;
+	text-align: center;
 }
 .navbar__left {
-  flex: 1;
+	flex: 1;
 }
 .navbar__title {
-  color: var(--orange);
-  font-family: "Montserrat", sans-serif;
+	color: var(--orange);
+	font-family: 'Montserrat', sans-serif;
 }
 .navbar__right {
-  flex: 1;
+	flex: 1;
 }
 .main__council__window {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 10px 30px 30px 30px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 10px 30px 30px 30px;
+}
+.iit__goa__logo {
+	width: 7vw;
+	margin-top: 0.83vw;
+	margin-left: 1.5vw;
+	margin-right: 0.8vw;
+}
+.iic__logo {
+	width: 14vw;
+	margin-top: 0.83vw;
 }

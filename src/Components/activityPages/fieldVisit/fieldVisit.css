@@ -1,10 +1,8 @@
 .cross{  
       width: 2rem;
       margin: 2rem;
-      float: right
-}
-
-.cross :hover{
+      float: right;
+      position: absolute;
       cursor: pointer;
 }
 

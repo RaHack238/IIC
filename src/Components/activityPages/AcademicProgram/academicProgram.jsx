@@ -13,7 +13,7 @@ const AcademicProgram = ({ aepView, setView, setBlur, mobile }) => {
 	return (
 		<div
 			className='individualComponents'
-			style={{ display: aepView ? 'block' : 'none' }}
+			style={{ display: aepView ? 'block' : 'none', float: mobile? 'left' : 'center' }}
 		>
 			<Cross
 				className='cross'
@@ -22,14 +22,19 @@ const AcademicProgram = ({ aepView, setView, setBlur, mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 style={{ color: 'var(--orange)' , textAlign: 'center', marginTop:'2rem'}}>Academic Enabled Program</h1>
+			<h1 className='headings' style={{fontFamily:'Karla', fontWeight: 'bold'}}>Academic Enabled Program</h1>
 			<div className='layout'>
-				<div className='images' style={{display: mobile ? 'none' : 'block'}}>
-					<img src={aepicon} alt='aep-logo' style={imgStyleVector} className="notMobile"/>
+				<div className='images' style={{ display: mobile ? 'none' : 'block' }}>
+					<img
+						src={aepicon}
+						alt='aep-logo'
+						style={imgStyleVector}
+						className='notMobile'
+					/>
 				</div>
 
 				<div className='content'>
-					<p style={{ color: 'var(--dark-blue)' }}>
+					<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight: 'bold'}}>
 						The objective of this program is to guide the student through the process
 						of identifying an idea for an entrepreneurial venture, evaluating it and
 						different steps required to build a successful venture around it. It is
@@ -43,7 +48,7 @@ const AcademicProgram = ({ aepView, setView, setBlur, mobile }) => {
 						make the student innovators familiar to:
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem', fontFamily:'Karla', fontWeight: 'bold'}}>
 						<ul>
 							<li>Provide them entrepreneurial ecosystem</li>
 							<li>Ideation process and Idea evaluation</li>
@@ -52,14 +57,14 @@ const AcademicProgram = ({ aepView, setView, setBlur, mobile }) => {
 						</ul>
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem', fontFamily:'Karla', fontWeight: 'bold'}}>
 						These program and courses may include:
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginLeft: '5rem', fontFamily:'Karla', fontWeight: 'bold'}}>
 						<ul>
 							<li>
-								<font style={{ color: 'var(--orange' }}>Credit transfer </font>{' '}
+								<font style={{ color: 'var(--orange',  }}>Credit transfer </font>{' '}
 								opportunity from other institutions
 							</li>
 							<li>

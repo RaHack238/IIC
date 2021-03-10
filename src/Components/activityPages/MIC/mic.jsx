@@ -12,7 +12,8 @@ const MIC = ({ micView, setView, setBlur,mobile }) => {
 	};
 
 	const toyStyle = {
-		marginLeft: '8rem',
+		marginLeft: mobile? '0' :  '8rem',
+		width: mobile? '80vw' : ''
 	};
 
 	return (
@@ -29,19 +30,24 @@ const MIC = ({ micView, setView, setBlur,mobile }) => {
 				}}
 			/>
 
-			<h1 style={{ color: 'var(--orange)' ,textAlign: 'center',marginTop:'2rem'}}>MIC Activities</h1>
+			<h1 className='headings' style={{fontFamily:'Karla', fontWeight:'bold' }}>MIC Activities</h1>
 
 			<div className='layout'>
 				<div className='images'>
-					<img src={micicon} alt='incubate-logo' style={imgStyle} className="notMobile"/>
+					<img
+						src={micicon}
+						alt='incubate-logo'
+						style={imgStyle}
+						className='notMobile'
+					/>
 				</div>
 
-				<div className='content'>
-					<p style={{ color: 'var(--dark-blue)' }}>
+				<div className='content' >
+					<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight:'bold'  }}>
 						Pre-incubation programs are designed to be :
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)' }}>
+					<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight:'bold'  }}>
 						Moving forward with its objectives to engage large number of faculty,
 						students and staff in various innovation and entrepreneurship related
 						activities such as ideation, problem solving, Proof of Concept

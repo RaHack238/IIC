@@ -23,14 +23,19 @@ const Workshops = ({ workshopView, setView, setBlur,mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h1 style={{ color: 'var(--orange)',textAlign:  'center',marginTop:'2rem' }}>Workshops and Seminars</h1>
+			<h1 className='headings' style={{fontFamily:'Karla', fontWeight:'bold' }}>Workshops and Seminars</h1>
 
 			<div className='layout'>
 				<div className='images'>
-					<img src={workshopicon} alt='workshop-logo' style={imgStyle} className="notMobile" />
+					<img
+						src={workshopicon}
+						alt='workshop-logo'
+						style={imgStyle}
+						className='notMobile'
+					/>
 				</div>
 				<div className='content'>
-					<p style={{ color: 'var(--dark-blue)' }}>
+					<p style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight:'bold' }}>
 						In order to forge ahead with the objectives, we keep conducting seminars
 						and various workshops to motivate the young innovators, introduce them
 						with some of the leaders of their field and indulge them with some
@@ -38,7 +43,7 @@ const Workshops = ({ workshopView, setView, setBlur,mobile }) => {
 						<br />A few of such sessions are listed below:
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem', fontFamily:'Karla', fontWeight:'bold'  }}>
 						<font style={{ color: 'var(--orange)' }}>
 							iDEX - DISC 4 (Defence india startup challenge Ver 4 roadshow){' '}
 						</font>
@@ -57,7 +62,7 @@ const Workshops = ({ workshopView, setView, setBlur,mobile }) => {
 						local and national media.
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem' , fontFamily:'Karla', fontWeight:'bold' }}>
 						<font style={{ color: 'var(--orange)' }}>
 							Webinar on Intellectual Property rights and filing of Patents: 24th
 							August
@@ -74,7 +79,7 @@ const Workshops = ({ workshopView, setView, setBlur,mobile }) => {
 						IP protection - copyright, patent, trademark were also touched upon.
 					</p>
 
-					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem' }}>
+					<p style={{ color: 'var(--dark-blue)', marginTop: '2rem', fontFamily:'Karla', fontWeight:'bold'  }}>
 						<font style={{ color: 'var(--orange)' }}>
 							Blockchain and Cryptocurrency Webinar: 30th September
 							<br />

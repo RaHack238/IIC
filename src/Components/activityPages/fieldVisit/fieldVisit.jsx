@@ -3,6 +3,7 @@ import { ReactComponent as Cross } from '../../vectors/cross.svg';
 import fieldvisits from '../../vectors/fieldvisits2.svg';
 
 const FieldVisit = ({ fieldVisits, setView, setBlur, mobile }) => {
+
 	const imgStyle = {
 		width: '30vw',
 		height: '30vh',
@@ -22,17 +23,15 @@ const FieldVisit = ({ fieldVisits, setView, setBlur, mobile }) => {
 					setBlur(false);
 				}}
 			/>
-			<h2 style={{ color: 'var(--orange)' ,textAlign: 'center',marginTop:'2rem'}}>Field Visits</h2>
+			<h2 className='headings'>Field Visits</h2>
 
-			<div className='layout'>
-				<div className='images' className="notMobile">
+			<div className='layout' style={{justifyContent:'center'}}>
+				<div className='images' className='notMobile'>
 					<img src={fieldvisits} alt='fielf-visit-icon' style={imgStyle} />
 				</div>
 
-				<div className='content' style={{textAlign:'center'}}>
-					<h1 style={{ color: 'var(--dark-blue)'}}>
-						COMING SOON!
-					</h1>
+				<div className='content'>
+					<h1 style={{ color: 'var(--dark-blue)', fontFamily:'Karla', fontWeight: 'bold', paddingTop: mobile? '0' : '5rem'}}>COMING SOON!</h1>
 				</div>
 			</div>
 		</div>

@@ -1,43 +1,17 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 28 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
-<g>
-	<g id="x">
-		<g>
-			<polygon style="fill:#030104;" points="28,22.398 19.594,14 28,5.602 22.398,0 14,8.402 5.598,0 0,5.602 8.398,14 0,22.398 
-				5.598,28 14,19.598 22.398,28 			"/>
-		</g>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" width="48.66" height="46.159" viewBox="0 0 48.66 46.159">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #003049;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Group_11" data-name="Group 11" transform="translate(-1654.788 -40.678)">
+    <g id="Group_1" data-name="Group 1" transform="translate(1656.5 42.5)">
+      <line id="Line_4" data-name="Line 4" class="cls-1" x2="45.236" y2="42.516" transform="translate(0 0)"/>
+      <line id="Line_5" data-name="Line 5" class="cls-1" x1="45.236" y2="42.516" transform="translate(0 0)"/>
+    </g>
+  </g>
 </svg>
