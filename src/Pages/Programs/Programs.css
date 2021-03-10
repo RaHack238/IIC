@@ -1,0 +1,178 @@
+.programs {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.pre-incubation {
+    font-family: Domine-Bold;
+    font-size: 3vw;
+    text-align: center;   
+    
+    
+}
+
+.content_1 {
+    display: flex;
+}
+
+
+.accessible {
+    flex: 0.25;
+    padding: 0 10px;
+}
+
+.educational {
+    flex: 0.25;
+
+}
+
+.personalized {
+    flex: 0.25;
+    padding: 0px 10px;
+
+}
+.practical {
+    flex: 0.25;
+ 
+}
+
+.card_content {
+  
+    display: flex;   
+    height: 52vh;
+    width: 100vw;
+    bottom: 0px;
+    position: absolute;
+    
+}
+.card_1, .card_2, .card_3, .card_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 0.25;
+}
+
+.idea_funnel {
+    
+    height: 75%;
+    background-color: var(--light-blue);
+    border-top-left-radius: 49px;
+    border-top-right-radius: 49px;  
+    
+}
+.ignite {
+    height: 75%;
+    background-color: var(--dark-blue);
+    border-top-left-radius: 49px;
+    border-top-right-radius: 49px;   
+    margin: 0 10px;
+}
+.aeiEP {
+    height: 75%;
+    background-color: var(--light-blue);
+    border-top-left-radius: 49px;
+    border-top-right-radius: 49px;   
+}
+.startuplabs {
+    height: 75%;
+    background-color: var(--dark-blue);
+    border-top-left-radius: 49px;
+    border-top-right-radius: 49px;   
+    margin: 0 10px;
+}
+
+
+.info_card_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+#icons {
+    cursor: pointer;
+}
+#info_card_content_text {
+    font-size: 17px;
+}
+#info_card_content_text_startup {
+    font-size: 15px;
+}
+
+#content_text {
+    font-size: 26px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1370px){
+    #info_card_content_text {
+        font-size: 16px;
+    }
+    #info_card_content_text_startup {
+        font-size: 15px;
+    }
+    #content_text {
+        font-size: 20px;
+    }
+    .pre-incubation {
+        font-size: 4vw;
+    }
+
+ }
+
+ @media only screen and (max-width: 1024px){
+    #info_card_content_text {
+        font-size: 16px;
+    }
+    #info_card_content_text_startup {
+        font-size: 14px;
+    }
+    #content_text {
+        font-size: 18px;
+    }
+
+ }
+ @media only screen and (max-width: 920px){
+    #info_card_content_text {
+        font-size: 14px;
+    }
+    #info_card_content_text_startup {
+        font-size: 12px;
+    }
+    #content_text {
+        font-size: 18px;
+    }
+    #heading_text {
+        font-size: 1.5em !important;
+    }
+    .pre-incubation {
+        font-size: 6vw;
+    }
+
+ }
+@media only screen and (max-width: 720px){
+    .pre-incubation{
+        font-size: 2em;
+    }
+    .content_1{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    #heading_text {
+        margin: 0px;
+    }
+    #content_text {
+        margin: 0px;
+    }
+    
+
+}
