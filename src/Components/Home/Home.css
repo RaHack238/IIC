@@ -254,15 +254,13 @@
     padding-left: 1.25vw;
     padding-right: 1.25vw;
 }
-@media only screen and (min-width:500px) and (max-width:1200px){
+@media only screen and (min-width:500px) and (max-width:1245px){
 	
     .motives{
         text-align: center;
         width: 100vw;
     }
-    #outer492002{
-        font-size: 12px;
-    }
+    
 }
 
 @media only screen and (max-width:500px){
@@ -308,11 +306,8 @@
 }
 
 @media only screen and (min-width:1245px) and (max-width:1600px){
-
-	.motives h4{
-		font-size: 2.5em;
-	}
-	.motives h5{
-		font-size: 1.2em;
-	}
+	#outer492002{
+        font-size: 12px;
+    }
+	
 }
