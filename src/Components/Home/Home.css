@@ -260,6 +260,9 @@
         text-align: center;
         width: 100vw;
     }
+	#outer492002{
+        font-size: 12px;
+    }
     
 }
 
@@ -306,8 +309,6 @@
 }
 
 @media only screen and (min-width:1245px) and (max-width:1600px){
-	#outer492002{
-        font-size: 12px;
-    }
+	
 	
 }
