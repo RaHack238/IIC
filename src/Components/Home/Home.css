@@ -1,6 +1,9 @@
 #outer492002 {
 	position: relative;
 	font-size: 16px;
+	background-color: #F5F3F4 !important;
+	color: #003049;
+
 }
 .loader {
 	display: flex;
@@ -114,7 +117,7 @@
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	font-family: Domine-SemiBold;
+	font-family: Domine;
 	font-size: 3.0625em;
 	color: #003049;
 }
@@ -309,6 +312,7 @@
 }
 
 @media only screen and (min-width:1245px) and (max-width:1600px){
+
 	#outer492002{
         font-size: 12px;
     }
