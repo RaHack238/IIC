@@ -33,8 +33,9 @@ a {
 
 #navitems a {
 	color: #577399;
-	font-family: Karla-SemiBold;
-	font-size: 1.85vw;
+	font-family: Karla;
+	font-weight: 400;
+	font-size: 1.75vw;
 	font-weight: 600;
 }
 
@@ -84,7 +85,7 @@ a {
 
 @media only screen and (max-width: 720px) {
 	#buttonouter {
-		height: 70px;
+		height: 130px;
 	}
 	#navButton {
 		width: 50px;
@@ -113,7 +114,7 @@ a {
 
 	.cross2 {
 		position: relative;
-		left: 38vw;
+		left: 35vw;
 	}
 	.nav-blur {
 		width: 100vw;
