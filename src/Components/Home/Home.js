@@ -32,7 +32,10 @@ class Home extends React.Component {
             )
         }
         return(
+
             <div id='outer492002'>
+                
+
                 {load}
                 <div id='iitlogo'>
                     <img src={iitlogo}></img>
@@ -49,7 +52,7 @@ class Home extends React.Component {
                         Institute's Innovation Council
                     </h3>
                         
-    
+                    <div className='motivesOuter'>
                     <div className='motivesWrapper'>
                         <div className='motives1 motives'>
                             <h4>Ideate</h4>
@@ -64,6 +67,9 @@ class Home extends React.Component {
                             <h5>Build a product or a prototype</h5>
                         </div>
                     </div>
+
+                    </div>
+                    
                     <div id='yellowStrip'>
                         <h4 >About Us</h4>   
                     </div>
