@@ -123,7 +123,7 @@ hr:last-child {
 	right: 0;
 	display: none;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
 	:root {
 		--flag: 1;
 	}
@@ -148,6 +148,8 @@ hr:last-child {
 	}
 	.iconButton {
 		display: flex;
+	}.heading{
+		margin-left: 0;
 	}
 	.updateButton {
 		display: flex;
@@ -184,6 +186,7 @@ hr:last-child {
 	flex: 1;
 	text-align: center;
 	padding-top: 0.5rem;
+	margin-left: 3.5rem;
 }
 .temp {
 	z-index: 101;
