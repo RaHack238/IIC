@@ -16,7 +16,7 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 		width: mobile ? '7rem' : '10vw',
 		margin: mobile ? '0.5rem' : '0 1.5rem 0 1.5rem',
 		cursor: 'pointer',
-		padding: mobile ? '1.5rem' : '1.3vw',
+		padding: mobile ? '1.5rem' : '1.5vw',
 	};
 
 	return (
