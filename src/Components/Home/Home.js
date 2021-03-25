@@ -16,6 +16,8 @@ class Home extends React.Component {
 	LoaderHandler = () => {
 		this.setState({ showLoader: false });
 	};
+
+
     render(){
         let load=null;
         setTimeout(this.LoaderHandler,2000);
@@ -71,7 +73,7 @@ class Home extends React.Component {
                     </div>
                     
                     <div id='yellowStrip'>
-                        <h4 >About Us</h4>   
+                        <p >About Us</p>   
                     </div>
                     <h6 class='text'>IIC, IIT Goa aims to develop a culture of innovation by providing relevant education and solving real world problems and developing all faculty, students and all staff and support systems into future leaders and entrepreneurs. To develop a culture of “innovation-to-market” and empower all stakeholders to lead the entrepreneurial way.</h6>
                 </div>

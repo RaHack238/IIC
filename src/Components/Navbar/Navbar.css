@@ -3,7 +3,7 @@
 	display: inline-block;
 }
 #navButton {
-	width: 3.16vw;
+	width: 3.90vw;
 	height: auto;
 	border: none;
 	cursor: pointer;
@@ -83,7 +83,7 @@ a {
 	color: #003049 !important;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 800px) {
 	#buttonouter {
 		height: 130px;
 	}

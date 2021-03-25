@@ -60,7 +60,7 @@
 	z-index: 5;
 	font-size: 16px;
 }
-#yellowStrip h4 {
+#yellowStrip p {
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -189,14 +189,15 @@
 #yellowStrip{
     background-color:#FFD69A;
     height: 8vh;
-    width: 55vh;
+    width: 35vh;
     border-bottom-right-radius: 1.5vw;
     position: relative;
     top: 5vw;
     z-index: 5;
     font-size: 16px;
+
 }
-#yellowStrip h4{
+#yellowStrip p{
   margin: 0;
   position: absolute;
   top: 50%;
@@ -204,9 +205,10 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-family: Domine;
-  font-size: 5.7vh;
+  font-size: 5vh;
   font-weight: bold;
   color: #003049;
+  white-space: nowrap !important;
 }
 
 .text{
@@ -260,7 +262,7 @@
         font-size: 8px;
         margin-bottom: 15px;
     }
-    #yellowStrip h4{
+    #yellowStrip p{
         font-size: 2.8em;
     }
     #otherthanLogo{
@@ -282,6 +284,9 @@
 	}
 	.ic492002{
 		font-size: 3.5em;
+	}
+	.motivesWrapper{
+		width: 100vw;
 	}
 	
 }
