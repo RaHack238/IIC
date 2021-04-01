@@ -31,6 +31,7 @@ function Programs() {
 	});
     const handleIdeaFunnel = () => {        
         setIsideaFunnelShown(!isIdeaFunnelShown);
+        
     }
     
 
@@ -41,14 +42,19 @@ function Programs() {
     
 
     const handleAeiEP= () => {
-        setIsaeiEPShown(!isAeiEPShown);              
+        setIsaeiEPShown(!isAeiEPShown);  
     }
 
     const handleStartupLabs = () => {    
-        setIsstartupLabShown(!isStartupLabShown);       
+        setIsstartupLabShown(!isStartupLabShown);  
     }
 
-    
+    const handleIncubation = () => { 
+        if( (isIdeaFunnelShown == true) || (isIgniteShown == true) || (isAeiEPShown == true) || (isStartupLabShown == true) ) {
+            return true;
+        }
+        return false;
+    }
     const handleActiveIndex = (index) => {
         
         setActiveIndex(index);
@@ -73,7 +79,7 @@ function Programs() {
                 <div className="idea_funnel" style={{ backgroundColor: 'var(--light-blue)'}}>
                     
                         
-                    <img src ={ideaFunnel} alt="Idea Funnel"  onClick=  {handleIdeaFunnel} width='30%' height='30%' />                                    
+                    <img src ={ideaFunnel} alt="Idea Funnel"  onClick=  {handleIdeaFunnel} width='40%' height='40%' style={{marginTop: '-1.5vw'}}/>                                    
                                                 
                     <p style={{color:'var(--dark-blue)'}} id="info_card_title_shown">Idea Funnel</p>    
                 
@@ -113,7 +119,7 @@ function Programs() {
                 <div className="ignite" style={{ backgroundColor: 'var(--dark-blue)'}} >
                     
                         
-                    <img src ={igniteIcon} alt="Ignite"  onClick=  {handleIgnite} width='30%' height='30%' />                                    
+                    <img src ={igniteIcon} alt="Ignite"  onClick=  {handleIgnite}  width='40%' height='40%' style={{marginTop: '-1.5vw'}}/>                                    
                                                 
                     <p style={{color:'var(--orange)'}} id="info_card_title_shown">Ignite PoC Grant</p>    
                 
@@ -152,7 +158,7 @@ function Programs() {
             <div className="card_3_shown"  >
                 <div className="aeIEP" style={{ backgroundColor: 'var(--light-blue)'}}>
     
-                    <img src ={aeiEPicon} alt="aeIEP"  onClick=  {handleAeiEP} width ='30%' height = '30%' id="card_img" />                                    
+                    <img src ={aeiEPicon} alt="aeIEP"  onClick=  {handleAeiEP}  width='40%' height='40%' style={{marginTop: '-1.5vw'}} id="card_img" />                                    
                                                 
                     <p style={{color:'var(--dark-blue)'}} id="info_card_title_shown">AeiEP</p>    
 
@@ -181,7 +187,7 @@ function Programs() {
     
                     <img src ={startuplabs} alt="startuplabs"  onClick=  {handleStartupLabs} width ='70%' height = '70%' id="card_img" />                                    
                                                 
-                    <p style={{color:'var(--orange)'}} id="info_card_title">Ignite PoC Grant</p>    
+                    <p style={{color:'var(--orange)'}} id="info_card_title">Startup Labs</p>    
 
                 </div>
             </div>
@@ -192,7 +198,7 @@ function Programs() {
             <div className="card_4_shown"  >
                 <div className="startuplabs" style={{ backgroundColor: 'var(--dark-blue)'}} >
     
-                    <img src ={startuplabs} alt="startuplabs"  onClick=  {handleStartupLabs} width ='30%' height = '30%' id="card_img" />                                    
+                    <img src ={startuplabs} alt="startuplabs"  onClick=  {handleStartupLabs}  width='40%' height='40%' style={{marginTop: '-1.5vw'}} id="card_img" />                                    
                                                 
                     <p style={{color:'var(--orange)'}} id="info_card_title_shown">Startup Labs</p>    
 
@@ -219,34 +225,34 @@ function Programs() {
             <div className="navbar" style={{display:'flex', flexDirection:'row', height: mobile ? '10vh' : '15vh'}}>
 				<div className="logos" style={{flex:'1'}}>
                     <Link to="/">
-                        <img src={iitlogo} alt="iit logo" style={{width:'7vw', marginTop:'0.70vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} />
+                        <img src={iitlogo} alt="iit logo" style={{width:'5vw', marginTop:'0.70vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} className="iit-logo" />
                     </Link>					
-					<img src={iiclogo} alt="iic logo" style={{width:'14vw', marginTop: '0.70vw'}}/>
+					<img src={iiclogo} alt="iic logo" style={{width:'10vw', marginTop: '0.70vw'}} className="iic-logo"/>
 				</div>
 				<div className="heading" style={{flex:'1', textAlign:'center'}}>
-					<h1 style={{color:'var(--orange)', marginTop: mobile ? '' : 'max(-4.5vw,-9vh)', fontFamily:' Montserrat'}}>Programs</h1>
+					<h1 style={{color:'var(--orange)', fontFamily:' Montserrat'}} className="program-text">Programs</h1>
 				</div>
 				<div className="menu" style={{flex:'1'}}>
 					<NavBar />
 				</div>
 			</div>
 
-            <p className="pre-incubation" >Pre-Incubation Support</p>
+            <p className="pre-incubation" style={{transition: 'transform 100ms' ,transform: (handleIncubation() == true && !mobile) ? 'translateY(-6vh)' : ''}}>Pre-Incubation Support</p>
 
             <div className="content_1" >
-                    <div className="accessible" style={{ transition: 'transform 100ms' ,transform: isIdeaFunnelShown ? 'translateY(-6vh)' : ''}}>
+                    <div className="accessible" style={{ transition: 'transform 100ms' ,transform: isIdeaFunnelShown ? 'translateY(-10vh)' : ''}}>
                         <p style={{color:'var(--dark-blue)', textAlign: 'right',}} id="heading_text">Accessible</p>
                         <p style={{ color: 'var(--orange)',textAlign:  'right',}} id="content_text">All graduate and undergraduate students can participate</p>
                     </div>
-                    <div className="educational" style={{ transition: 'transform 100ms' ,transform: isIgniteShown ? 'translateY(-6vh)' : ''}}>
+                    <div className="educational" style={{ transition: 'transform 100ms' ,transform: isIgniteShown ? 'translateY(-10vh)' : ''}}>
                         <p style={{color:'var(--orange)',textAlign:'center',fontFamily:'Domine'}} id="heading_text">Educational</p>
                         <p style={{ color: 'var(--dark-blue)',textAlign: 'center', }}  id="content_text">Designed to fit within the academic experience, the programs help students pursue entrepreneurial ideas along with classwork</p>
                     </div>
-                    <div className="personalized" style={{ transition: 'transform 100ms' ,transform: isAeiEPShown ? 'translateY(-6vh)' : ''}}>
+                    <div className="personalized" style={{ transition: 'transform 100ms' ,transform: isAeiEPShown ? 'translateY(-10vh)' : ''}}>
                         <p style={{color:'var(--darl-blue)', textAlign:'center'}} id="heading_text">Personalized</p>
                         <p style={{ color: 'var(--orange)', textAlign: 'center',}} id="content_text">Student teams are matched with mentors and given personalized attention that best support them in moving their ideas forward</p>
                     </div>
-                    <div className="practical" style={{ transition: 'transform 100ms' ,transform: isStartupLabShown ? 'translateY(-6vh)' : ''}}>
+                    <div className="practical" style={{ transition: 'transform 100ms' ,transform: isStartupLabShown ? 'translateY(-10vh)' : ''}}>
                         <p style={{color:'var(--orange)',  textAlign: 'left'}} id="heading_text">Practical</p>
                         <p style={{ color: 'var(--dark-blue)',  textAlign: 'left',}} id="content_text"> Students learn by doing and gain real world experience in moving their ideas forward from concept to creation</p>
                     </div>
