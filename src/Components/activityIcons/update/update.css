@@ -5,10 +5,10 @@
 }
 .updateHeading {
 	color: var(--dark-blue);
-	margin-top: 4rem;
+	margin-top: 3rem;
 	font-family: 'Domine-Bold';
-	font-weight: bold;
-	font-size: 48px;
+	/* font-weight: bold; */
+	font-size: 55px;
 }
 
 .inup {

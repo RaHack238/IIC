@@ -61,7 +61,6 @@ const Activity = () => {
 								src={iitlogo}
 								alt='iit logo'
 								className='iitGoaLogo'
-								style={logoStyle}
 							/>
 						</Link>
 						<img src={iiclogo} alt='iic logo' className='iicLogo' />

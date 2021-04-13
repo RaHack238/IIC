@@ -3,7 +3,7 @@ import './update.css';
 
 const Update = () => (
 	<div className='updateC'>
-		<h1 className='updateHeading'>Updates</h1>
+		<p className='updateHeading'>Updates</p>
 		<div className='individualUpdates'>
 			<p className='inup'>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

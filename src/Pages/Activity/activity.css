@@ -17,7 +17,7 @@
 }
 
 .updateContainer {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	right: 0;
 	width: 100%;
 	background-color: var(--light-orange);
@@ -35,7 +35,7 @@
 	justify-content: center;
 }
 .activity {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	padding-top: 2rem 0 2rem;
 	display: flex;
 }
@@ -60,7 +60,7 @@
 	overflow: auto;
 	font-weight: bold;
 	font-family: 'Karla';
-	margin: 30px;
+	margin: 0 30px 30px 30px;
 	padding: 20px 0 0 0;
 }
 hr {
@@ -107,7 +107,7 @@ hr:last-child {
 .updateButton {
 	background-color: var(--light-orange);
 	width: 40px;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	border-top-left-radius: 35px;
 	border-bottom-left-radius: 35px;
 	right: 0;
@@ -148,14 +148,19 @@ hr:last-child {
 	}
 	.iconButton {
 		display: flex;
-	}.heading{
-		margin-left: 0;
+	}
+	.heading {
+		margin-left: 0 !important;
+		padding-top: 0.75rem !important;
 	}
 	.updateButton {
 		display: flex;
 	}
 	.iicLogo {
 		display: none;
+	}
+	.iitGoaLogo {
+		width: 3rem !important;
 	}
 }
 .headings {
@@ -168,18 +173,20 @@ hr:last-child {
 	font-weight: 500;
 }
 .iitGoaLogo {
-	width: 7vw;
-	margin-top: 0.83vw;
+	width: 5vw;
+	margin-top: 0.7vw;
 	margin-left: 1.5vw;
 	margin-right: 0.8vw;
 }
 .iicLogo {
-	width: 14vw;
-	margin-top: 0.83vw;
+	width: 10vw;
+
+	margin-top: 0.7vw;
 }
 .topNavDiv {
 	display: flex;
 	flex-direction: row;
+	padding-top: 0.5rem;
 	align-content: flex-start;
 }
 .heading {
@@ -193,4 +200,7 @@ hr:last-child {
 }
 ::-webkit-scrollbar {
 	display: none;
+}
+.activityIcons {
+	padding-bottom: 0.5rem;
 }
