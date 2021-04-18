@@ -1,15 +1,18 @@
 import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 import ContactUs from '../src/Pages/Contact-Us/ContactUs';
 import Activity from '../src/Pages/Activity/activity';
 import Home from './Components/Home/Home';
 import Programs from './Pages/Programs/Programs';
 
-function App() {
-
+function App(props) {
+	if (props.location.pathname !== '/') {
+		document.getElementById('expertrons_pop_up').style.display = 'none';
+	}else{
+		document.getElementById('expertrons_pop_up').style.display = 'block';
+	}
 	return (
 		<div className='App'>
-			{/* <NavBar /> */}
 			<Switch>
 				<Route exact path='/' component={Home} />
 				<Route path='/activities' component={Activity} />
@@ -20,4 +23,4 @@ function App() {
 	);
 }
 
-export default App;
+export default withRouter(App);
