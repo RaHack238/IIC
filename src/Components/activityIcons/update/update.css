@@ -8,19 +8,21 @@
 	margin-top: 3rem;
 	font-family: 'Domine-Bold';
 	/* font-weight: bold; */
-	font-size: 55px;
+	font-size: 3.5vw;
 }
 
 .inup {
-	font-size: 18px;
+	font-size: 1.2vw;
 }
 
-@media only screen and (max-width: 720px){
-    .inup{
-        font-size: 14px;
-    }.updateHeading{
-        font-size: 40px;
-    }.updateC{
-        margin-top: 1rem;
-    }
+@media only screen and (max-width: 720px) {
+	.inup {
+		font-size: 14px;
+	}
+	.updateHeading {
+		font-size: 40px;
+	}
+	.updateC {
+		margin-top: 1rem;
+	}
 }
