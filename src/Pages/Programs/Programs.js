@@ -225,9 +225,9 @@ function Programs() {
             <div className="navbar" style={{display:'flex', flexDirection:'row', height: mobile ? '10vh' : '15vh'}}>
 				<div className="logos" style={{flex:'1'}}>
                     <Link to="/">
-                        <img src={iitlogo} alt="iit logo" style={{width:'5vw', marginTop:'0.70vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} className="iit-logo" />
+                        <img src={iitlogo} alt="iit logo" style={{width:'5vw', marginTop:'-0.2vw',marginLeft:'1.5vw',marginRight:'0.8vw'}} className="iit-logo" />
                     </Link>					
-					<img src={iiclogo} alt="iic logo" style={{width:'10vw', marginTop: '0.70vw'}} className="iic-logo"/>
+					<img src={iiclogo} alt="iic logo" style={{width:'10vw', marginTop: '-0.2vw'}} className="iic-logo"/>
 				</div>
 				<div className="heading" style={{flex:'1', textAlign:'center'}}>
 					<h1 style={{color:'var(--orange)', fontFamily:' Montserrat'}} className="program-text">Programs</h1>

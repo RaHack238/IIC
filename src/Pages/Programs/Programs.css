@@ -166,6 +166,7 @@
     .pre-incubation{
         font-size: 5vw;
         margin-top: -5vw;
+        transform: none !important
     }
     .accessible, .educational, .personalized, .practical {
         width: 100vw;
@@ -268,6 +269,7 @@
     .pre-incubation{
         font-size: 5vw;
         margin-top: -5vw;
+        transform: none !important;
     }
     .accessible, .educational, .personalized, .practical {
         width: 100vw;
@@ -357,7 +359,7 @@
     }
     .program-text {
         margin-top: -5.5vw;
-        margin-right: 13.8vw;
+        margin-right: 0;
     }
     .pre-incubation{
         font-size: 6vw;
@@ -385,7 +387,7 @@
         
     }
     .content_2{
-        height: 56vh;
+        height: 60vh;
         overflow-y: scroll;
     }
     .card_1_shown, .card_2_shown, .card_3_shown, .card_4_shown{
@@ -417,7 +419,8 @@
         padding: 0px 25px;
     }
     .iit-logo{
-        width: 3rem !important
+        width: 3rem !important;
+        margin-top: -2.5vw !important;
     }
     
 }

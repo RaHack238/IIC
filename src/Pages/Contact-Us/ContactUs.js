@@ -21,10 +21,10 @@ export default class ContactUs extends Component {
 				<div className='navbar__div'>
 					<div className='navbar__left'>
 						<Link to='/'>
-							<img src={iitlogo} alt='IIT Goa' className='iit__goa__logo' />
+							<img src={iitlogo} alt='IIT Goa' style={{width:'5vw', marginTop:'0.6vw',marginLeft:'0.5vw',marginRight:'0.8vw'}} className='iit__goa__logo' />
 						</Link>
 
-						<img src={iiclogo} alt='IIC' className='iic__logo' />
+						<img src={iiclogo} alt='IIC' style={{width:'10vw', marginTop: '0.6vw'}} className='iic__logo' />
 					</div>
 					<div className='navbar__center'>
 						<h1 className='navbar__title'>Council</h1>

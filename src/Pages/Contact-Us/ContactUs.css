@@ -35,6 +35,10 @@
 	margin-right: 0.8vw;
 }
 .iic__logo {
-	width: 14vw;
-	margin-top: 0.83vw;
+	
+}
+@media only screen and (max-width: 720px) {
+	.iic__logo {
+		display: none;
+	}
 }
