@@ -1,7 +1,7 @@
 .flip-card {
   background-color: transparent;
-  height: 250px;
-  width: 220px;
+  height: 15.5rem;
+  width: 13.5rem;
   margin: 20px 15px;
   border-radius: 20px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
