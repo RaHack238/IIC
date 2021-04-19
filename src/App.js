@@ -5,12 +5,9 @@ import Activity from '../src/Pages/Activity/activity';
 import Home from './Components/Home/Home';
 import Programs from './Pages/Programs/Programs';
 
-function App(props) {
-	if (props.location.pathname !== '/') {
-		document.getElementById('expertrons_pop_up').style.display = 'none';
-	}else{
-		document.getElementById('expertrons_pop_up').style.display = 'block';
-	}
+function App({ location }) {
+	document.getElementById('expertrons_pop_up').style.display =
+		location.pathname !== '/' ? 'none' : 'block';
 	return (
 		<div className='App'>
 			<Switch>
