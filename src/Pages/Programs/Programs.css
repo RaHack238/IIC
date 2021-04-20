@@ -5,8 +5,8 @@
    
 }
 .program-text {
-    margin-top: max(-3.5vw,-9vh);
-    margin-right: 5.5vw;
+    margin-top: max(-2.3vw,-9vh);
+    margin-right: 2vw;
 }
 .pre-incubation {
     font-family: "Montserrat";
@@ -76,11 +76,15 @@
 .info_card_content {
     padding: 10px 5px;
 }
+.imgs {
+    margin-top: -1.5vw;
+}
 #info_card_content_text_1{
     font-family: 'Karla';
     font-weight: bold;
     font-size: min(3vh,1vw);
     margin: 0px;
+    
 }
 #info_card_content_text_2{
     font-family: 'Karla';
@@ -132,7 +136,7 @@
 @media only screen and (max-width: 1580px ) {
     .program-text {
         margin-top: max(-4.5vw,-9vh);
-        margin-right: 4.5vw;
+        margin-right: 1.5vw;
         
     }
 
@@ -140,14 +144,14 @@
 @media only screen and (max-width: 1400px ) {
     .program-text {
         margin-top: max(-5.5vw,-9vh);
-        margin-right: 3.5vw;
+        margin-right: 0.6vw;
     }
 
 }
 @media only screen and (max-width: 1200px ) {
     .program-text {
-        margin-top: max(-6.5vw,-9vh);
-        margin-right: 2.5vw;
+        margin-top: max(-7.5vw,-9vh);
+        margin-right: -0.8vw;
     }
 
 }
@@ -204,8 +208,8 @@
         margin-right: 2%;
     }
     .card_4_block {
-        margin-right: 4%;
         margin-left: 2%;
+        margin-right: 4%;
     }
 
     .card_1_shown{
@@ -221,20 +225,26 @@
         margin-right: 2%;
     }
     .card_4_shown {
-        margin-right: 2%;
-        margin-left: 4%;
+        margin-left: 2%;
+        margin-right: 4%;
     }
     .card_1_shown, .card_2_shown, .card_3_shown, .card_4_shown{
         width: 50vw;
         height: 70vw;
         min-height: 20vh;
     }
+    #info_card_title {
+        font-size: 4vw;
+    }
+    .imgs {
+        margin-top: -7vw;
+    }
     #info_card_title_shown{
         font-size: 4vw;
         margin-top: -6vw;
     }
     #info_card_content_text_1{
-        font-size: min(3vh,2.5vw);
+        font-size: min(3vh,2.4vw);
         margin: 0px;
     }
     #info_card_content_text_2{
@@ -242,14 +252,24 @@
         margin: 0px;
     }
     #info_card_content_text_3{
-        font-size: min(3vh,2.6vw);
+        font-size: min(3vh,2.5vw);
         margin: 0px;
     }
     #info_card_content_text_4{
         font-size: min(3vh,2.3vw);
         margin: 0px;
     }    
-   
+    .iit-logo{
+        margin-top: -10vw !important;
+        width: 7vw !important;
+    }
+    .iic-logo{
+        margin-top: -10vw !important;
+        width: 12vw !important;
+    }
+    #form-link {
+        font-size: 2vw;
+    }
 }
 
 @media only screen and (max-width: 920px) {
@@ -294,39 +314,7 @@
         width: 50vw;
         height: 35vw;
     }
-    .card_1_block {
-        margin-left: 4%;
-        margin-right: 2%;
-    }
-    .card_2_block {
-        margin-left: 2%;
-        margin-right: 4%;
-    }
-    .card_3_block {
-        margin-left: 4%;
-        margin-right: 2%;
-    }
-    .card_4_block {
-        margin-right: 4%;
-        margin-left: 2%;
-    }
-
-    .card_1_shown{
-        margin-left: 4%;
-        margin-right: 2%;
-    }
-    .card_2_shown {
-        margin-left: 2%;
-        margin-right: 4%;
-    }
-    .card_3_shown {
-        margin-left: 4%;
-        margin-right: 2%;
-    }
-    .card_4_shown {
-        margin-right: 2%;
-        margin-left: 4%;
-    }
+    
     .card_1_shown, .card_2_shown, .card_3_shown, .card_4_shown{
         width: 50vw;
         height: 70vw;
@@ -337,7 +325,7 @@
         margin-top: -6vw;
     }
     #info_card_content_text_1{
-        font-size: min(3vh,2.5vw);
+        font-size: min(3vh,2.3vw);
         margin: 0px;
     }
     #info_card_content_text_2{
@@ -345,7 +333,7 @@
         margin: 0px;
     }
     #info_card_content_text_3{
-        font-size: min(3vh,2.6vw);
+        font-size: min(3vh,2.5vw);
         margin: 0px;
     }
     #info_card_content_text_4{
@@ -422,5 +410,7 @@
         width: 3rem !important;
         margin-top: -2.5vw !important;
     }
-    
+    #form-link {
+        font-size: 16px;
+    }
 }
