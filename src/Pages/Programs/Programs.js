@@ -96,7 +96,7 @@ function Programs() {
             onClick={handleIdeaFunnel}
             width="40%"
             height="40%"
-            style={{ marginTop: "-1.5vw" }}
+            className="imgs"
           />
 
           <p style={{ color: "var(--dark-blue)" }} id="info_card_title_shown">
@@ -123,11 +123,11 @@ function Programs() {
               style={{ color: "var(--dark-blue)" }}
               id="info_card_content_text_1"
             >
-              {" "}
-              Link for the application is:{" "}
+              
+              Link for the application is:
               <a href="https://forms.gle/BeZuxVrnXFQXd9nB9" target="_blank">
-                https://forms.gle/BeZuxVrnXFQXd9nB9
-              </a>{" "}
+                <p id="form-link">https://forms.gle/BeZuxVrnXFQXd9nB9</p>
+              </a>
               ( All question details in the appendix)
             </p>
           </div>
@@ -170,7 +170,7 @@ function Programs() {
             onClick={handleIgnite}
             width="40%"
             height="40%"
-            style={{ marginTop: "-1.5vw" }}
+            className="imgs"
           />
 
           <p style={{ color: "var(--orange)" }} id="info_card_title_shown">
@@ -227,7 +227,7 @@ function Programs() {
             onClick={handleAeiEP}
             width="40%"
             height="40%"
-            style={{ marginTop: "-1.5vw" }}
+            className="imgs"
             id="card_img"
           />
 
@@ -293,7 +293,7 @@ function Programs() {
             onClick={handleStartupLabs}
             width="40%"
             height="40%"
-            style={{ marginTop: "-1.5vw" }}
+            className="imgs"
             id="card_img"
           />
 
