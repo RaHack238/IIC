@@ -32,7 +32,7 @@ export default class PersonCard extends Component {
           <div
             className={
               "flip-card-back " +
-              (this.props.index % 2 !== 0
+              (this.props.index % 2 === 0
                 ? "bg__light__blue"
                 : "bg__dark__blue")
             }
@@ -40,7 +40,7 @@ export default class PersonCard extends Component {
             <h1
               className={
                 "member__name " +
-                (this.props.index % 2 !== 0
+                (this.props.index % 2 === 0
                   ? "text__color__blue"
                   : "text__color__orange")
               }
@@ -50,7 +50,7 @@ export default class PersonCard extends Component {
             <p
               className={
                 "member__designation " +
-                (this.props.index % 2 !== 0
+                (this.props.index % 2 === 0
                   ? "text__color__blue"
                   : "text__color__orange")
               }
