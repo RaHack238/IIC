@@ -53,7 +53,7 @@ export default class ContactUs extends Component {
               <PersonCard
                 name={person.name}
                 designation={person.designation}
-                index={index}
+                index={2 * index}
                 key={index}
                 img={person.photo}
               />
