@@ -41,7 +41,7 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #f5f3f4;
   color: black;
   border-radius: 20px;
 }

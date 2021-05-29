@@ -5,7 +5,7 @@ import shreyas_img from "./images/dp final (1) (1) - Shreyas Pawar.jpg";
 import prateek_img from "./images/E2BBDDC1-FD57-4AE3-89FC-109AA958C207 - PRATEEK SEN.jpeg";
 import neeraj_img from "./images/IMG_20200831_133815 (2) - Neeraj Krishnan.jpg";
 import sarthak_img from "./images/IMG_20210201_075126 - SARTHAK.jpg";
-import avatar_img from "./images/img_avatar.png";
+import avatar_img from "./images/img_avatar.svg";
 import shubham_img from "./images/IMG-20200830-WA0016 - SHUBHAM GARG.jpg";
 import saksham_img from "./images/IMG-20210201-WA0001 - Students GS Cultural IITGOA.jpg";
 import meghaj_img from "./images/Meghej_Khandelwal - Meghej Khandelwal.jpg";

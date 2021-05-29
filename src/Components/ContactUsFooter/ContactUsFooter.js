@@ -3,8 +3,7 @@ import "./ContactUsFooter.css";
 import down_arrow from "./assets/down_arrow.svg";
 import up_arrow from "./assets/up_arrow.svg";
 import twitter_icon from "./assets/twitter.svg";
-import insta__icon from "./assets/instagram.svg";
-import linkedin_icon from "./assets/linkedin.svg";
+import email_icon from "./assets/email.svg";
 
 export default class ContactUsFooter extends Component {
   constructor(props) {
@@ -53,24 +52,35 @@ export default class ContactUsFooter extends Component {
                     alt="twitter"
                   />
                 </a>
-                <a href="https://www.instagram.com/ecell_iitgoa/">
-                  <img src={insta__icon} className="footer__icon" alt="email" />
-                </a>
-                <a href="">
-                  <img
-                    src={linkedin_icon}
-                    className="footer__icon"
-                    alt="linkedin"
-                  />
+                <a href="mailto:iic@iitgoa.ac.in">
+                  <img src={email_icon} className="footer__icon" alt="email" />
                 </a>
               </div>
               <p className="left__column__text">
-                <a
-                  className="left__column__text_1"
-                  href="mailto:iic@iitgoa.ac.in"
-                >
-                  Contact Us
-                </a>
+                <p className="contact__us__mobile__text">
+                  <a
+                    className="contact__us__mobile__text_1"
+                    href="https://mic.gov.in/"
+                  >
+                    MIC
+                  </a>
+                </p>
+                <p className="contact__us__mobile__text">
+                  <a
+                    className="contact__us__mobile__text_1"
+                    href="https://iitgoa.ac.in/aboutiit.php?var=newsletter"
+                  >
+                    Gurukal Varta
+                  </a>
+                </p>
+                <p className="contact__us__mobile__text">
+                  <a
+                    className="contact__us__mobile__text_1"
+                    href="https://www.aicte-india.org/"
+                  >
+                    AICTE
+                  </a>
+                </p>
               </p>
             </div>
             <div className="footer__right col-sm-6 col-xs-12">
@@ -93,27 +103,33 @@ export default class ContactUsFooter extends Component {
                   alt="twitter"
                 />
               </a>
-              <a href="https://www.instagram.com/ecell_iitgoa/">
+              <a href="mailto:iic@iitgoa.ac.in">
                 <img
-                  src={insta__icon}
+                  src={email_icon}
                   className="footer__icon_mobile"
                   alt="email"
-                />
-              </a>
-              <a href="">
-                <img
-                  src={linkedin_icon}
-                  className="footer__icon_mobile"
-                  alt="linkedin"
                 />
               </a>
             </div>
             <p className="contact__us__mobile__text">
               <a
                 className="contact__us__mobile__text_1"
-                href="mailto:iic@iitgoa.ac.in"
+                href="https://mic.gov.in/"
               >
-                Contact Us
+                MIC
+              </a>
+
+              <a
+                className="contact__us__mobile__text_1"
+                href="https://iitgoa.ac.in/aboutiit.php?var=newsletter"
+              >
+                Gurukal Varta
+              </a>
+              <a
+                className="contact__us__mobile__text_1"
+                href="https://www.aicte-india.org/"
+              >
+                AICTE
               </a>
             </p>
             <div className="iit__goa__text">
@@ -128,14 +144,17 @@ export default class ContactUsFooter extends Component {
         )}
         {this.state.windowWidth > 578 ? (
           <div className="footer__copyright__div">
+            <p className="footer__copyright__text">Copyright: IIT GOA</p>
+            <p className="footer__copyright__text">Partners: Wadhwani</p>
             <p className="footer__copyright__text">
-              Copyright @ ArchiTechs2021
+              Designed by: ArchiTechs2021
             </p>
           </div>
         ) : (
-          <div className="footer__copyright__div">
+          <div className="footer__copyright__div_mobile">
             <p className="footer__copyright__text__mobile">
-              Copyright @ ArchiTechs2021
+              Copyright: IIT GOA, Partners: Wadhwani, Designed by:
+              ArchiTechs2021
             </p>
           </div>
         )}
