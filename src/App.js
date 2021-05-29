@@ -4,7 +4,7 @@ import ContactUs from '../src/Pages/Contact-Us/ContactUs';
 import Activity from '../src/Pages/Activity/activity';
 import Home from './Components/Home/Home';
 import Programs from './Pages/Programs/Programs';
-import { Component, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import iitlogo from './Components/Home/assets/iit goa logo@1X.svg';
 import iiclogo from './Components/Home/assets/iiclogo.svg';
 
