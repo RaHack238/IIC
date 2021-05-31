@@ -3,29 +3,35 @@
 	justify-content: center;
 	align-items: center;
 }
+.close {
+	margin-left: -350px;
+}
+.open {
+	margin-left: 1px;
+}
 
-@media only screen and (max-width: 768px){
-	h5{
+@media only screen and (max-width: 768px) {
+	h5 {
 		font-size: 1rem;
-	}.icon-heading{
+	}
+	.icon-heading {
 		font-size: 16px !important;
 	}
 }
 
-.icon-heading{
+.icon-heading {
 	font-family: 'Karla';
 	font-weight: bold;
 	font-size: 1vw;
 	margin-bottom: 0 !important;
 }
 
-.icon-headings{
+.icon-headings {
 	width: 150px;
 	text-align: center;
 }
-.indIcons{
+.indIcons {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-

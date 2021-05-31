@@ -21,13 +21,14 @@ const ActivityIcons = ({ setView, setBlur, display, mobile }) => {
 
 	return (
 		<div
-			className='activityIcons iconDiv'
+			className={`activityIcons iconDiv ${
+				mobile ? (display ? 'open' : 'close') : ''
+			}`}
 			style={{
-				display: mobile ? (display ? 'flex' : 'none') : '',
-				width: mobile ? '100%' : '',
+				display: display ? 'flex' : 'block',
+				// width: mobile ? '100%' : '',
 				overflowY: mobile ? 'scroll' : '',
-			}}
-		>
+			}}>
 			<div className='indIcons'>
 				<img
 					src={funnel}
