@@ -34,9 +34,8 @@ export default class ContactUsFooter extends Component {
           (this.state.footer_open ? "footer__open" : "footer__closed")
         }
       >
-        <div className="footer__arrow__div">
+        <div className="footer__arrow__div" onClick={this.toggle_footer}>
           <img
-            onClick={this.toggle_footer}
             src={this.state.footer_open ? down_arrow : up_arrow}
             className="arrow__img"
           />
@@ -153,8 +152,13 @@ export default class ContactUsFooter extends Component {
         ) : (
           <div className="footer__copyright__div_mobile">
             <p className="footer__copyright__text__mobile">
-              Copyright: IIT GOA, Partners: Wadhwani, Designed by:
-              ArchiTechs2021
+              Copyright: IIT GOA
+            </p>
+            <p className="footer__copyright__text__mobile">
+              Partners: Wadhwani
+            </p>
+            <p className="footer__copyright__text__mobile">
+              Designed by: ArchiTechs2021
             </p>
           </div>
         )}
