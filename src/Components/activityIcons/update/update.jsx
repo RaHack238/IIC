@@ -5,30 +5,15 @@ const Update = () => (
 	<div className='updateC'>
 		<p className='updateHeading'>Updates</p>
 		<div className='individualUpdates'>
-			<p className='inup'>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua
-			</p>
+			<p className='inup'>Startup lab program</p>
 			<hr />
-			<p className='inup'>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua
-			</p>
+			<p className='inup'>Upcoming Design competition</p>
 			<hr />
-			<p className='inup'>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua
-			</p>
+			<p className='inup'>Upcoming Case study competition</p>
 			<hr />
-			<p className='inup'>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua
-			</p>
+			<p className='inup'>World IP day talk</p>
 			<hr />
-			<p className='inup'>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua
-			</p>
+			<p className='inup'>Pitch it competition details and prize winners</p>
 			<hr />
 		</div>
 	</div>

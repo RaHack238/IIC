@@ -28,6 +28,8 @@
 }
 .activity-container {
 	min-height: 100vh;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none;
 }
 
 .updates {
@@ -36,7 +38,7 @@
 }
 .activity {
 	margin-top: 1rem;
-	padding-top: 2rem 0 2rem;
+	padding-top: 2rem 0 2rem 0;
 	display: flex;
 }
 .activityIcons {
@@ -50,6 +52,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
+	transition: all 0.5s ease-in-out;
+	scrollbar-width: none;
 }
 .individualUpdates {
 	background-color: var(--light-blue);
@@ -60,8 +64,10 @@
 	overflow: auto;
 	font-weight: bold;
 	font-family: 'Karla';
-	margin: 0 30px 30px 30px;
+	margin: 30px 30px 30px 30px;
 	padding: 20px 0 0 0;
+	width: 32vw;
+	scrollbar-width: none;
 }
 hr {
 	color: var(--dark-blue);
@@ -81,11 +87,12 @@ hr:last-child {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	z-index: 1;
+	z-index: 101;
 	border-radius: 35px 35px 0 0;
 	display: flex;
 	max-height: 94vh;
 	overflow-x: hidden;
+	scrollbar-width: none;
 }
 .images {
 	display: flex;
@@ -138,9 +145,12 @@ hr:last-child {
 	}
 	.updateContainer {
 		width: 100%;
+		margin-left: 4rem;
 	}
 	.individualUpdates {
 		max-height: 55vh;
+		width: unset;
+		margin: 15px;
 	}
 	.activityIcons {
 		height: 85vh;

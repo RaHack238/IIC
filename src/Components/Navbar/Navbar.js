@@ -40,6 +40,7 @@ class NavBar extends React.Component {
 					<div id='nbcontainer'>
 						<div id='navitems' className={this.props.location.pathname!='/' ? 'navCover' : ''}>
 							<div className={path!='/' ? "targetPath" : ""}><h1>{path!='/' ? path : ""}</h1></div>
+							<Link to='/' className="homeForMobile">Home</Link>
 							<Link to='/activities' className={path=="Activities" ? "currTab" : ""}>Activities</Link>
 							<Link to='/programs' className={path=="Programs" ? "currTab" : ""}>Programs</Link>
 							<Link to='/contact-us' className={path=="Council" ? "currTab" : ""}>Council</Link>
