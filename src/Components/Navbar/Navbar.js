@@ -5,7 +5,6 @@ import xmark from './x-mark.svg';
 import { Link } from 'react-router-dom';
 import { withRouter, useLocation } from 'react-router-dom';
 
-
 class NavBar extends React.Component {
 	constructor(props) {
 		super(props);
@@ -23,13 +22,16 @@ class NavBar extends React.Component {
 		let nav = null;
 
 		let path = this.props.location.pathname;
-		if(path!='/') path = path[1].toUpperCase() + path.substring(2);
-		if(path=="Contact-us") path = "Council";
-		
+		if (path != '/') path = path[1].toUpperCase() + path.substring(2);
+		if (path == 'Contact-us') path = 'Council';
+
 		if (this.state.showNavlines) {
 			nav = (
 				<div id='buttonouter'>
-					<button id='navButton' type='button' onClick={this.NavbarExpandHandler}>
+					<button
+						id='navButton'
+						type='button'
+						onClick={this.NavbarExpandHandler}>
 						<img src={menuButton}></img>
 					</button>
 				</div>
@@ -38,20 +40,39 @@ class NavBar extends React.Component {
 			nav = (
 				<div id='closingNav'>
 					<div id='nbcontainer'>
-						<div id='navitems' className={this.props.location.pathname!='/' ? 'navCover' : ''}>
-							<div className={path!='/' ? "targetPath" : ""}><h1>{path!='/' ? path : ""}</h1></div>
-							<Link to='/' className="homeForMobile">Home</Link>
-							<Link to='/activities' className={path=="Activities" ? "currTab" : ""}>Activities</Link>
-							<Link to='/programs' className={path=="Programs" ? "currTab" : ""}>Programs</Link>
-							<Link to='/contact-us' className={path=="Council" ? "currTab" : ""}>Council</Link>
+						<div
+							id='navitems'
+							className={this.props.location.pathname != '/' ? 'navCover' : ''}>
+							<div className={path != '/' ? 'targetPath' : ''}>
+								<h1>{path != '/' ? path : ''}</h1>
+							</div>
+							<Link
+								to='/'
+								className={`homeForMobile ${path == '/' ? 'currTab' : ''}`}>
+								Home
+							</Link>
+							<Link
+								to='/activities'
+								className={path == 'Activities' ? 'currTab' : ''}>
+								Activities
+							</Link>
+							<Link
+								to='/programs'
+								className={path == 'Programs' ? 'currTab' : ''}>
+								Programs
+							</Link>
+							<Link
+								to='/contact-us'
+								className={path == 'Council' ? 'currTab' : ''}>
+								Council
+							</Link>
 						</div>
 						<div id='buttonouter'>
 							<button
 								id='navButton'
 								type='button'
 								class='cross2'
-								onClick={this.NavbarExpandHandler}
-							>
+								onClick={this.NavbarExpandHandler}>
 								<img src={xmark} />
 							</button>
 						</div>
@@ -63,7 +84,7 @@ class NavBar extends React.Component {
 		return (
 			<div>
 				<div id='navdiv'>{nav}</div>
-				<div className={this.state.showNavlines? '' : 'nav-blur'}></div>
+				<div className={this.state.showNavlines ? '' : 'nav-blur'}></div>
 			</div>
 		);
 	}

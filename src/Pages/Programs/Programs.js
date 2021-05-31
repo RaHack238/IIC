@@ -354,11 +354,9 @@ function Programs() {
 						Programs
 					</h1>
 				</div>
-				<div className='menu' style={{ flex: '1' }}>
-					<NavBar />
-				</div>
+				<div className='menu' style={{ flex: '1' }}></div>
 			</div>
-
+			<NavBar />
 			<p
 				className='pre-incubation'
 				style={{
