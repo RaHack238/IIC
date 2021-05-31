@@ -84,6 +84,12 @@ a {
 	color: #003049 !important;
 }
 
+.homeForMobile{
+	color: #003049 !important;
+	display: none;
+}
+
+
 @media only screen and (max-width: 1100px) {
 	#buttonouter {
 		/* height: 130px; */
@@ -145,5 +151,8 @@ a {
 
 	#navitems{
 		margin-top: 100px;
+	}
+	.homeForMobile{
+		display: block;
 	}
 }
