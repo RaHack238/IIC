@@ -106,7 +106,7 @@ hr:last-child {
 	border-top-right-radius: 35px;
 	border-bottom-right-radius: 35px;
 	left: 0;
-	height: 86vh;
+	height: 75vh;
 	justify-content: center;
 	align-items: center;
 	display: none;
@@ -118,7 +118,7 @@ hr:last-child {
 	border-top-left-radius: 35px;
 	border-bottom-left-radius: 35px;
 	right: 0;
-	height: 85vh;
+	height: 75vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -139,7 +139,7 @@ hr:last-child {
 	}
 	.updates {
 		display: flex;
-		height: 85vh;
+		height: 75vh;
 		justify-self: flex-end;
 		align-self: flex-end;
 	}
@@ -153,7 +153,7 @@ hr:last-child {
 		margin: 15px;
 	}
 	.activityIcons {
-		height: 85vh;
+		height: 75vh;
 		width: 100%;
 	}
 	.iconButton {

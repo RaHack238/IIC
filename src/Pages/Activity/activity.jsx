@@ -69,9 +69,12 @@ const Activity = () => {
 					</div>
 					<div className='menu' style={{ flex: '1' }}></div>
 				</div>
-				<div >
-					<NavBar />
-					<div className='layout' >
+				<NavBar />
+				<div
+					style={{
+						filter: blur ? 'blur(4px)' : '',
+					}}>
+					<div className='layout'>
 						<div className='activity' style={{ width: iconV ? '100%' : '' }}>
 							<div
 								className='iconButton'
