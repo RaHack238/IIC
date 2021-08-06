@@ -108,13 +108,11 @@ export default class ContactUsFooter extends Component {
 				{this.state.windowWidth > 578 ? (
 					<div className='footer__copyright__div'>
 						<p className='footer__copyright__text'>Copyright: IIT GOA</p>
-						<p className='footer__copyright__text'>Partners: Wadhwani</p>
 						<p className='footer__copyright__text'>Designed by: ArchiTechs2021</p>
 					</div>
 				) : (
 					<div className='footer__copyright__div_mobile'>
 						<p className='footer__copyright__text__mobile'>Copyright: IIT GOA</p>
-						<p className='footer__copyright__text__mobile'>Partners: Wadhwani</p>
 						<p className='footer__copyright__text__mobile'>Designed by: ArchiTechs2021</p>
 					</div>
 				)}
